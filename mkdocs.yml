@@ -6,3 +6,6 @@ theme:
   name: material
   logo: assets/logo-contentdesk-blau.svg
   favicon: assets/favicon-180-180.png
+
+extra_css:
+  - stylesheets/contentdesk.css
