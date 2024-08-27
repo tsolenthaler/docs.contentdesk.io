@@ -1,6 +1,6 @@
 # Changelog
 
-## Datamodel 3.0.0 - "Taxonomie" <small>August 12, 2024</small> { id="Datamodel-3.0.0" }
+## Datamodel 3.0.0 - "Taxonomie" <small>August 12, 2024</small>
 
 ### Verbesserung
 

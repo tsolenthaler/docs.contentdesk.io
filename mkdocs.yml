@@ -21,5 +21,11 @@ nav:
   - Home: index.md
   - Erste Schritte: getting-started.md
   - Verbindungen: connect/index.md
-  - Entwicklung: dev/index.md
+  - Entwicklung: 
+    - dev/index.md
+    - Data Schema: 
+      - dev/dataschema/index.md
+      - Types: dev/types/index.md
+      - Properties: dev/properties/index.md
+  - API: api/index.md
   - Änderungen: changelog/index.md
