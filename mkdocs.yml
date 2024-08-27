@@ -1,11 +1,16 @@
 
 # Project information
-site_name: Docs Contentdesk.io
+site_name: Contentdesk.io Dokumnentation
 site_url: https://docs.Contentdesk.io
 theme:
   name: material
   logo: assets/logo-contentdesk-blau.svg
   favicon: assets/favicon-180-180.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.indexes
 
 extra_css:
   - stylesheets/contentdesk.css
