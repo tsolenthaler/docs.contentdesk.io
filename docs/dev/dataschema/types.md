@@ -1,0 +1,6 @@
+# Typen / Produktfamilien
+
+
+
+* Place
+* Recommendation

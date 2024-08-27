@@ -25,7 +25,7 @@ nav:
     - dev/index.md
     - Data Schema: 
       - dev/dataschema/index.md
-      - Types: dev/types/index.md
-      - Properties: dev/properties/index.md
+      - Types: dev/dataschema/types/index.md
+      - Properties: dev/dataschema/properties/index.md
   - API: api/index.md
   - Änderungen: changelog/index.md
