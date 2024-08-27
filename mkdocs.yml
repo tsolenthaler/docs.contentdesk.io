@@ -14,3 +14,12 @@ theme:
 
 extra_css:
   - stylesheets/contentdesk.css
+
+
+# Page tree
+nav:
+  - Home: index.md
+  - Erste Schritte: getting-started.md
+  - Verbindungen: connect/index.md
+  - Entwicklung: dev/index.md
+  - Änderungen: changelog,md
