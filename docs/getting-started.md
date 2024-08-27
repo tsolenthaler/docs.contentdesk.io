@@ -2,5 +2,5 @@
 
 
 * Attributes
-* Produktfamilies
-* Verknüpfunge
+* Produktfamilien / Typen
+* Verknüpfungen
