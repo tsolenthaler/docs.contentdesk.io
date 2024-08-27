@@ -25,7 +25,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Erste Schritte: getting-started.md
-  - Verbindungen: connect/index.md
+  - Verbindungen: 
+    - connect/index.md
+    - discover.swiss: connect/discover.md
+    - Outdooractive: connect/outdooractive.md
   - Entwicklung: 
     - dev/index.md
     - Data Schema: 
