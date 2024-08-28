@@ -9,9 +9,12 @@ https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
 
 ``` mermaid
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+    Recommendation -.->|inherits|Review
+    Recommendation -->|itemReviewed 0 ... n|Trail
+    Recommendation -->|itemReviewed 0 ... n|Place
+    Recommendation -->|itemReviewed 0 ... n|Product
+    Product -->|availableAtOrFrom 0 ... n|Place
+    Product -->|offers|Offer
+    Offer -->|offeredBy|Organization
+    Offer -->|offeredBy|Person
 ```
