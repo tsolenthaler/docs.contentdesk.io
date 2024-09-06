@@ -7,12 +7,12 @@ https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
 ## Schema
 
 ``` mermaid
-graph LR
-    subgraph Product
+graph TD
+    subgraph Products
         direction TB
         Product -->|offers|Offer
     end
-    Recommendation -.->|inherits|Review
+    Review <-.->|inherits|Recommendation
     Recommendation -->|itemReviewed 0 ... n|Trail
     Recommendation -->|itemReviewed 0 ... n|Place
     Recommendation -->|itemReviewed 0 ... n|Product
@@ -20,7 +20,7 @@ graph LR
     Recommendation -->|isRelatedTo 0 ... 1|Product
     Recommendation -->|isRelatedTo 0 ... 1|Event
     Product -->|availableAtOrFrom 0 ... n|Place
-    
+
     Offer -->|offeredBy|Organization
     Offer -->|offeredBy|Person
 ```

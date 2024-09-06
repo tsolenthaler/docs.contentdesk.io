@@ -56,9 +56,11 @@ nav:
     - Outdooractive: connect/outdooractive.md
   - Entwicklung: 
     - dev/index.md
+    - Konzept: dev/concepts/index.md
     - Data Schema: 
       - dev/dataschema/index.md
       - Types: dev/dataschema/types.md
       - Properties: dev/dataschema/properties.md
+    
   - API: api/index.md
   - Änderungen: changelog/index.md
