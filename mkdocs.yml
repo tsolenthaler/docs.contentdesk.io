@@ -13,6 +13,12 @@ theme:
     - navigation.indexes
     - content.tabs.link
     - content.code.copy
+    - content.action.view
+    - content.action.edit
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
 
 extra_css:
   - stylesheets/contentdesk.css
