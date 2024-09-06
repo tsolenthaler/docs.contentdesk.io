@@ -8,7 +8,7 @@ theme:
   favicon: assets/favicon-180-180.png
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs.sticky
     - navigation.tracking
     - navigation.indexes
     - content.tabs.link
@@ -16,6 +16,14 @@ theme:
 
 extra_css:
   - stylesheets/contentdesk.css
+
+plugin:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: datetime
+      format: "%d.%m.%Y"
 
 markdown_extensions:
   - pymdownx.tabbed:
