@@ -12,8 +12,8 @@ graph TD
         direction TB
         Product -->|offers|Offer
     end
-    Review <-.->|inherits|Recommendation
-    Recommendation -->|itemReviewed 0 ... n|Trail
+    CreativeWork <-.->|inherits|Recommendation
+    Recommendation(Review) -->|itemReviewed 0 ... n|Trail
     Recommendation -->|itemReviewed 0 ... n|Place
     Recommendation -->|itemReviewed 0 ... n|Product
     Recommendation -->|isRelatedTo 0 ... 1|Place

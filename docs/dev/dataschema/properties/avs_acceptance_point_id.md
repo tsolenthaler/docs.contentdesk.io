@@ -4,3 +4,6 @@ Akzepttanzstelle ID für die Platform AVS Abrechnungs- und Verwaltungs-Systeme G
 
 https://www.avs.de/
 
+
+Attribut
+Typ: string
