@@ -10,7 +10,7 @@ Verknüpfung / Association-type
 ## Schema
 ``` mermaid
 graph LR
-    Offer(Angebot) -->|addOn|Offer
+    Product --->|offers|Offer
     Offer -->|addOn|Offer
 ```
 
