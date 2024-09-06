@@ -15,3 +15,64 @@ https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-class
 | [description]    | Textarea | Beschreibung des Objekts |
 | [image]    | Image | Hauptbild des Objekts |
 | [license]    | Einfache-Auswahl | Lizenz des Objekts |
+
+
+## Use-Case / Beispiele
+
+### Empfehlungen (Recommandation)
+``` 
+
+```
+
+### Weitere Orte (containedInPlace)
+``` json
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Stiftsbibliothek St. Gallen",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Klosterhof 6D",
+    "addressLocality": "St. Gallen",
+    "postalCode": "9000",
+    "addressCountry": "Schweiz"
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Stiftsbezirk St. Gallen"
+  }
+}
+```
+
+### containsPlace
+``` json
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Stiftsbibliothek St. Gallen",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Klosterhof 6D",
+    "addressLocality": "St. Gallen",
+    "postalCode": "9000",
+    "addressCountry": "Schweiz"
+  },
+  "containsPlace": [
+    {
+      "@type": "Place",
+      "name": "Lesesaal"
+    },
+    {
+      "@type": "Place",
+      "name": "Ausstellungsraum"
+    }
+  ]
+}
+```
+
+### event
+
+
+### Videos
+
+
