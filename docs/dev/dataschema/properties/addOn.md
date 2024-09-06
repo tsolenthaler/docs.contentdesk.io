@@ -14,6 +14,8 @@ graph LR
     Offer -->|addOn|Offer
 ```
 
+!!! example
+
 ## Beispiele
 
 ### Zuschläge

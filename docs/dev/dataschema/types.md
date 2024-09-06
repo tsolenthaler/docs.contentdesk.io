@@ -1,5 +1,5 @@
 # Typen / Produktfamilien
 
 
-* [Place]
-* Recommendation
+* [Place](Place)
+* [Recommendation](Recommendation)
