@@ -14,6 +14,8 @@ graph TD
         Product -->|offers|Offer
     end
     CreativeWork <-.->|inherits|Recommendation
+    CreativeWork -->|author|Person
+    CreativeWork -->|author|Organization
     Recommendation(Review 
     Recommendation) -->|itemReviewed 0 ... n|Trail
     Recommendation -->|itemReviewed 0 ... n|Place
