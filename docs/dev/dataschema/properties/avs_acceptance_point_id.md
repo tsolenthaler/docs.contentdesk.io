@@ -4,8 +4,53 @@ Akzepttanzstelle ID für die Platform AVS Abrechnungs- und Verwaltungs-Systeme G
 
 https://www.avs.de/
 
+Attribut im Contentdesk.io
 
-Attribut
 Typ: string
+
+
+## Beispiel
+
+### Akeneo API
+``` json
+{
+    ...,
+    "values":{
+        ...
+        "avs_acceptance_point_id": [
+            {
+                "locale": null,
+                "scope": null,
+                "data": "2edda1cc-ce96-4451-9ffc-ab1a100fba99"
+            }
+        ],
+        ...
+    }
+}
+```
+
+### Schema.org JSON-LD
+Additional Property
+``` json
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Beispielort",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Musterstraße 1",
+    "addressLocality": "Musterstadt",
+    "postalCode": "12345",
+    "addressCountry": "DE"
+  },
+  "additionalProperty": {
+    "@type": "PropertyValue",
+    "name": "avs_acceptance_point_id",
+    "value": "2edda1cc-ce96-4451-9ffc-ab1a100fba99"
+  }
+}
+```
+
+
 
 
