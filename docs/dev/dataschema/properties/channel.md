@@ -2,7 +2,6 @@
 
 Spezifisches Properties für das definieren für welchen Ausgabekanal das Objekt verwendet werden soll.
 
-
 ## Beispiel / Use-Case
 
 ### Gästekarten / App
