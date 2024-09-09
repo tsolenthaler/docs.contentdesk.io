@@ -9,12 +9,13 @@ https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
 
 ``` mermaid
 graph TD
-    subgraph ProductsGroup
+    subgraph Products
         direction TB
         Product -->|offers|Offer
     end
     CreativeWork <-.->|inherits|Recommendation
-    Recommendation(Review(Recommendation)) -->|itemReviewed 0 ... n|Trail
+    Recommendation(Review 
+    Recommendation) -->|itemReviewed 0 ... n|Trail
     Recommendation -->|itemReviewed 0 ... n|Place
     Recommendation -->|itemReviewed 0 ... n|Product
     Recommendation -->|isRelatedTo 0 ... 1|Place
