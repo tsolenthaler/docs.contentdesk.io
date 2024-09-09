@@ -54,21 +54,21 @@ markdown_extensions:
           class: mermaid
 
 # Page tree
-nav:
-  - Home: index.md
-  - Erste Schritte: getting-started.md
-  - Verbindungen: 
-    - connect/index.md
-    - discover.swiss: connect/discover.md
-    - Outdooractive: connect/outdooractive.md
-  - Entwicklung: 
-    - dev/index.md
-    - Konzept: dev/concepts/index.md
-    - Data Schema: 
-      - dev/dataschema/index.md
-      - Types: dev/dataschema/types.md
-      - Typen: dev/dataschema/types/
-      - Properties: dev/dataschema/properties.md
+# nav:
+#  - Home: index.md
+#  - Erste Schritte: getting-started.md
+#  - Verbindungen: 
+#    - connect/index.md
+#    - discover.swiss: connect/discover.md
+#    - Outdooractive: connect/outdooractive.md
+#  - Entwicklung: 
+#    - dev/index.md
+#    - Konzept: dev/concepts/index.md
+#    - Data Schema: 
+#      - dev/dataschema/index.md
+#      - Types: dev/dataschema/types.md
+#      - Typen: dev/dataschema/types/
+#      - Properties: dev/dataschema/properties.md
     
-  - API: api/index.md
-  - Änderungen: changelog/index.md
+#  - API: api/index.md
+#  - Änderungen: changelog/index.md
