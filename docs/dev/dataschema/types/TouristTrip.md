@@ -1,12 +1,15 @@
 # TouristTrip
 
-Bspw. für Führungen.
+Thing > Intangible > Trip > TouristTrip
 
+Dieser Typ ist speziell für touristische Ausflüge und Führungen gedacht und bietet verschiedene Eigenschaften, um Details wie den Namen der Tour, die Dauer, den Preis und vieles mehr anzugeben1.
 
 
 ## Use-Case / Beispiele
 
 ### Führung
+
+#### Schema.org JSON-LD
 ``` json
 {
   "@context": "https://schema.org",
@@ -21,6 +24,4 @@ Bspw. für Führungen.
     "priceCurrency": "CHF"
   }
 }
-
-
 ```
