@@ -9,7 +9,7 @@ https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
 
 ``` mermaid
 graph TD
-    subgraph Products
+    subgraph ProductsGroup
         direction TB
         Product -->|offers|Offer
     end
