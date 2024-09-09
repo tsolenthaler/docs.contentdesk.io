@@ -7,15 +7,22 @@ theme:
   logo: assets/logo-contentdesk-blau.svg
   favicon: assets/favicon-180-180.png
   features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
     #- navigation.tabs.sticky
-    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
     - navigation.indexes
+    - toc.follow
+    #- toc.integrate
+    - navigation.top
     - content.tabs.link
     - content.code.copy
     - content.action.view
     - content.action.edit
-    - toc.integrate
+
     - search.suggest
     - search.highlight
     - search.share
