@@ -1,5 +1,5 @@
 # TouristTrip
-
+https://schema.org/TouristTrip
 Thing > Intangible > Trip > TouristTrip
 
 Dieser Typ ist speziell für touristische Ausflüge und Führungen gedacht und bietet verschiedene Eigenschaften, um Details wie den Namen der Tour, die Dauer, den Preis und vieles mehr anzugeben1.

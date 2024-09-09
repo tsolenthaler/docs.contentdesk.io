@@ -2,30 +2,43 @@
 
 https://schema.org/Place
 
-
 https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Place/
-
 
 ## Properties
 
-| Name      | Type                          | Beschreibung |
-| ----------- | ------------------------------------ | ------------------------------------ |
-| [name]       | Text  | Bezeichnung des Objekts |
-| [disambiguatingDescription]      | Textarea | Kurzbeschreibung |
-| [description]    | Textarea | Beschreibung des Objekts |
-| [image]    | Image | Hauptbild des Objekts |
-| [license]    | Einfache-Auswahl | Lizenz des Objekts |
-
+| Name                        | Type             | Beschreibung             |
+| --------------------------- | ---------------- | ------------------------ |
+| [name]                      | Text             | Bezeichnung des Objekts  |
+| [disambiguatingDescription] | Textarea         | Kurzbeschreibung         |
+| [description]               | Textarea         | Beschreibung des Objekts |
+| [image]                     | Image            | Hauptbild des Objekts    |
+| [license]                   | Einfache-Auswahl | Lizenz des Objekts       |
 
 ## Use-Case / Beispiele
 
 ### Empfehlungen (Recommandation)
-``` 
+
+### Akeneo API
+
+```json
+{
+  ...,
+  "associations": {
+    ...
+    "Recommendation": {
+            "products": [],
+            "product_models": [],
+            "groups": []
+      },
+    ...
+  }
+}
 
 ```
 
 ### Weitere Orte (containedInPlace)
-``` json
+
+```json
 {
   "@context": "https://schema.org",
   "@type": "Place",
@@ -45,7 +58,8 @@ https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-class
 ```
 
 ### containsPlace
-``` json
+
+```json
 {
   "@context": "https://schema.org",
   "@type": "Place",
@@ -72,7 +86,4 @@ https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-class
 
 ### event
 
-
 ### Videos
-
-
