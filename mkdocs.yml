@@ -60,6 +60,7 @@ nav:
     - Data Schema: 
       - dev/dataschema/index.md
       - Types: dev/dataschema/types.md
+      - Typen: dev/dataschema/types/
       - Properties: dev/dataschema/properties.md
     
   - API: api/index.md
