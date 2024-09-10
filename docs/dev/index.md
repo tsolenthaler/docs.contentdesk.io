@@ -16,7 +16,7 @@ flowchart LR
     eventfrog-->contentdesk
 ```
 
-### SOLL
+### VISION
 ``` mermaid
 flowchart LR
 
