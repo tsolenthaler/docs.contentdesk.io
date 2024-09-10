@@ -3,15 +3,10 @@
 
 ## Übersicht
 ``` mermaid
-architecture-beta
-    group api(cloud)[API]
+flowchart LR
 
-    service db(database)[Database] in api
-    service disk1(disk)[Storage] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Server] in api
-
-    db:L -- R:server
-    disk1:T -- B:server
-    disk2:T -- B:db
+    contentdesk[fa-solid fa-database]-->docs.contentdesk.io
+    contentdesk-->app.contentdesk.io
+    contentdesk-->outdooractive
+    contentdesk-->discover.swiss
 ```
