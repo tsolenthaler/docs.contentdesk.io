@@ -14,6 +14,15 @@ flowchart LR
 ```
 
 ### Vision
+``` mermaid
+flowchart LR
+    app.contentdesk.io-->Objekt
+    Objekt-->Check
+    Check-->AssociationType[Verknüpfungen]
+    AssociationType[Verknüpfungen]-->Graph
+    Objekt-->Connect[Verbindungen]
+    Objekt-->Compare[Vergleichen]
+```
 
 ## Checks
 
