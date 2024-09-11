@@ -11,6 +11,12 @@ graph TD
     Recommendation -->|ist verbunden mit|Product
 ```
 
+### Types
+
+* Place
+* Produkt / Offer
+* Recommendation
+
 ### Properties
 
 * availableAtOrFrom 0..n - erhältlich bei oder von
