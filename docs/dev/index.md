@@ -6,12 +6,15 @@
 ### IST
 ``` mermaid
 flowchart LR
-    contentdesk[fa-solid fa-database Contentdesk]-->docs.contentdesk.io
+    contentdesk[fa:fa-database Contentdesk]-->discover.swiss
     contentdesk-->app.contentdesk.io
     contentdesk-->outdooractive
-    contentdesk-->discover.swiss
+    contentdesk-->docs.contentdesk.io
 
+    excel[Excel / CSV]-->contentdesk
     onboarding-->contentdesk
+    app.contentdesk.io-->contentdesk
+    docs.contentdesk.io-->contentdesk
 
     guidle-->contentdesk
     eventfrog-->contentdesk
