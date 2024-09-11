@@ -5,10 +5,10 @@
 
 ``` mermaid
 graph TD
-    Offer[Tagespass]-->|erhältlich bei oder von|Place[POI/Ort]
+    Product[Tagespass(Produkt)]-->|erhältlich bei oder von|Place[POI/Ort (Place)]
 
-    Recommendation[Ausflugstipps] -->|empfohlene Orte|Place[POI/Ort]
-    Recommendation -->|ist verbunden mit|Offer
+    Recommendation[Ausflugstipps (Empfehlung)] -->|empfohlene Orte|Place
+    Recommendation -->|ist verbunden mit|Product
 ```
 
 ### Properties
