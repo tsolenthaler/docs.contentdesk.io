@@ -7,6 +7,8 @@
 flowchart LR
     app.contentdesk.io-->Objekt
     Objekt-->Check
+    Report-->|prüft mehrere|Objekt
+    Report-->|wöchentlich / monatlich|Check
     Check-->AssociationType[Verknüpfungen]
     AssociationType[Verknüpfungen]-->Graph
     Objekt-->Connect[Verbindungen]
