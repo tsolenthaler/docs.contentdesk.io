@@ -1,4 +1,4 @@
-# avs_acceptance_point_id
+# avs_id
 
 Akzepttanzstelle ID für die Platform AVS Abrechnungs- und Verwaltungs-Systeme GmbH.
 
@@ -17,7 +17,7 @@ Typ: string
     ...,
     "values":{
         ...
-        "avs_acceptance_point_id": [
+        "avs_id": [
             {
                 "locale": null,
                 "scope": null,
@@ -45,7 +45,7 @@ Additional Property
   },
   "additionalProperty": {
     "@type": "PropertyValue",
-    "name": "avs_acceptance_point_id",
+    "name": "avs_id",
     "value": "2edda1cc-ce96-4451-9ffc-ab1a100fba99"
   }
 }
