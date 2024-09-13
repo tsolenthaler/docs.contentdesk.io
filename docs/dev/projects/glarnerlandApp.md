@@ -36,7 +36,7 @@ graph TD
     Offer-->|availableAtOrFrom|Place
 ```
 
-https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
+[Discover.swiss Docs](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
 
 ### ER Model
 
