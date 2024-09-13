@@ -60,7 +60,7 @@ nav:
   - Schema: schema.md
   - Entwicklung: 
     - dev/index.md
-    - Konzept: dev/concepts.md
+    - Konzepte: dev/concepts.md
     - Projekte: dev/projects.md
 #  - Verbindungen: 
 #    - connect/index.md
