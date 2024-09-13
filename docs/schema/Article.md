@@ -4,5 +4,6 @@ tags:
 ---
 
 # Article
+Type
 
 
