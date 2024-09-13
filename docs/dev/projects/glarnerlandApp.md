@@ -51,6 +51,8 @@ erDiagram
         array channel
     }
 
+    PRODUCT ||--o{ OFFER : offers
+
     PLACE{
         array channel
         uuid avs_acceptance_point_id
