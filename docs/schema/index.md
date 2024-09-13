@@ -1,1 +1,0 @@
-# Contentdesk.io Data schema

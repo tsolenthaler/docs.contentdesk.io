@@ -10,7 +10,7 @@ theme:
     #- navigation.instant
     #- navigation.instant.progress
     #- navigation.tracking
-    #- navigation.tabs
+    - navigation.tabs
     #- navigation.tabs.sticky
     #- navigation.sections
     #- navigation.expand
@@ -54,18 +54,17 @@ markdown_extensions:
           class: mermaid
 
 # Page tree
-# nav:
-#  - Home: index.md
+nav:
+  - Home: index.md
 #  - Erste Schritte: getting-started.md
-#  - Verbindungen: 
+  - Verbindungen: 
 #    - connect/index.md
 #    - discover.swiss: connect/discover.md
 #    - Outdooractive: connect/outdooractive.md
-#  - Entwicklung: 
+  - Entwicklung: 
 #    - dev/index.md
 #    - Konzept: dev/concepts/index.md
-#    - Data Schema: 
-#      - dev/dataschema/index.md
+  - Schema: /schema/
 #      - Types: dev/dataschema/types.md
 #      - Typen: dev/dataschema/types/
 #      - Properties: dev/dataschema/properties.md
