@@ -96,7 +96,7 @@ erDiagram
     }
 
     Offer ||--o{ Product : itemOffered
-    Offer ||--o{ Place : [availableAtOrFrom]
+    Offer ||--o{ Place : availableAtOrFrom
 
     Place{
         array channel
