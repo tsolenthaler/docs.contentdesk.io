@@ -37,9 +37,9 @@ graph TD
     OfferB -->|ist erhältlich bei|PlaceB[POI B]
     OfferC -->|ist erhältlich bei|PlaceA
 
-    OfferA-->|angeboten von|OrganisationA[Organisation X]
-    OfferB-->|angeboten von|OrganisationA[Organisation Y]
-    OfferC-->|angeboten von|OrganisationA[Organisation Z]
+    OfferA -->|angeboten von|OrganisationA[Organisation X]
+    OfferB -->|angeboten von|OrganisationA[Organisation Y]
+    OfferC -->|angeboten von|OrganisationA[Organisation Z]
 
     OfferA -->|Angebot von Produkt| Tagespass
     OfferB -->|Angebot von Produkt| Tagespass
