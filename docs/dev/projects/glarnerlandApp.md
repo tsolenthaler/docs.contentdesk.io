@@ -36,7 +36,7 @@ graph TD
     Recommendation -->|itemReviewed|Place
     Recommendation -->|itemReviewed|Product
     Recommendation -->|itemReviewed|Event
-    Recommendation -->|itemReviewed|Tour
+    Recommendation -->|itemReviewed|Trail
     Recommendation -->|isRelatedTo|Product
     Product-->|offers|Offer
     Offer-->|availableAtOrFrom|Place
@@ -88,6 +88,7 @@ erDiagram
 * [Product]
 * [Offer]
 * [Recommendation]
+* [Organization] ?
 
 [Place]: ../../schema/Place.md
 [Product]: ../../schema/Product.md
@@ -101,6 +102,8 @@ erDiagram
 * [isRelatedTo] 0...1 - ist verbunden mit 
 * [channel]
 * [avs_acceptance_point_id]
+* [offeredBy] ?
+* [makesOffer] ?
 
 [availableAtOrFrom]: ../../schema/availableAtOrFrom.md
 [itemReviewed]: ../../schema/itemReviewed.md
