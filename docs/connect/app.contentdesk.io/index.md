@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  #- toc
+---
+
 # app.contentdesk.io
 
 ## Übersicht
@@ -6,6 +12,7 @@
 ``` mermaid
 flowchart LR
     app.contentdesk.io-->Objekt
+    app.contentdesk.io-->Report
     Objekt-->Check
     Report-->|prüft mehrere|Objekt
     Report-->|wöchentlich / monatlich|Check
