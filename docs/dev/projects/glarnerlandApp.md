@@ -11,6 +11,19 @@ graph TD
     Recommendation -->|ist verbunden mit|Product
 ```
 
+### Schema.org / Discover.swiss
+``` mermaid
+graph TD
+    Product-->|availableAtOrFrom|Place
+    Recommendation -->|itemReviewed|Place
+    Recommendation -->|itemReviewed|Product
+    Recommendation -->|itemReviewed|Event
+    Recommendation -->|itemReviewed|Tour
+    Recommendation -->|isRelatedTo|Product
+```
+
+https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
+
 ### ER Model
 
 ``` mermaid

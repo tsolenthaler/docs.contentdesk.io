@@ -61,7 +61,8 @@ nav:
 #    - connect/index.md
 #    - discover.swiss: connect/discover.md
 #    - Outdooractive: connect/outdooractive.md
-  - Entwicklung:
+  - Entwicklung: 
+    - dev/index.md
     - Konzept: dev/concepts/index.md
     - Projekte: dev/projects/index.md
   - Schema: schema.md
