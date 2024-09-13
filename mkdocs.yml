@@ -57,18 +57,14 @@ markdown_extensions:
 nav:
   - Home: index.md
 #  - Erste Schritte: getting-started.md
-#  - Verbindungen: 
-#    - connect/index.md
-#    - discover.swiss: connect/discover.md
-#    - Outdooractive: connect/outdooractive.md
+  - Schema: schema.md
   - Entwicklung: 
     - dev/index.md
     - Konzept: dev/concepts/index.md
     - Projekte: dev/projects/index.md
-  - Schema: schema.md
-#      - Types: dev/dataschema/types.md
-#      - Typen: dev/dataschema/types/
-#      - Properties: dev/dataschema/properties.md
-    
+#  - Verbindungen: 
+#    - connect/index.md
+#    - discover.swiss: connect/discover.md
+#    - Outdooractive: connect/outdooractive.md
 #  - API: api/index.md
 #  - Änderungen: changelog/index.md
