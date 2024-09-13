@@ -22,7 +22,7 @@ graph TD
     OfferC[Leistung / Angebot C]
     OfferC -->|ist erhältlich bei|PlaceA
 
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Place[POI]
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|PlaceA
     Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Product[Produkt]
     Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Event[Veranstaltung]
     Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Tour
@@ -57,6 +57,7 @@ erDiagram
     RECOMMENDATION ||--o| PRODUCT : isRelatedTo
     RECOMMENDATION ||--o| EVENT : isRelatedTo
     RECOMMENDATION ||--o| PLACE : isRelatedTo
+    RECOMMENDATION ||--o| TRAIL : isRelatedTo
 
     PRODUCT{
         array channel
