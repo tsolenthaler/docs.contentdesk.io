@@ -84,7 +84,7 @@ erDiagram
         uuid avs_acceptance_point_id
     }
 
-    Product ||--o{ OFFER : offers
+    Product ||--o{ Offer : offers
 
     Offer{
         string name
