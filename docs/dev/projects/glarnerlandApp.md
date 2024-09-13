@@ -68,6 +68,9 @@ erDiagram
 
     OFFER{
         uuid avs_acceptance_point_id
+        number price
+        date validFrom
+        date validThrough
     }
 
     OFFER ||--o{ PLACE : availableAtOrFrom
@@ -81,6 +84,25 @@ erDiagram
     }
 ```
 
+### Properties
+
+* [availableAtOrFrom] 0..n - erhältlich bei oder von
+* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
+* [isRelatedTo] 0...1 - ist verbunden mit 
+* [channel]
+* [avs_acceptance_point_id]
+* [validFrom]
+* [validThrough]
+* [offeredBy] ?
+* [makesOffer] ?
+
+[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
+[itemReviewed]: ../../schema/itemReviewed.md
+[isRelatedTo]: ../../schema/isRelatedTo.md
+[channel]: ../../schema/channel.md
+[avs_acceptance_point_id]: ../../schema/avs_acceptance_point_id.md
+[validFrom]: ../../schema/validFrom.md
+[validThrough]: ../../schema/validThrough.md
 
 ### Types
 
@@ -94,19 +116,3 @@ erDiagram
 [Product]: ../../schema/Product.md
 [Offer]: ../../schema/Offer.md
 [Recommendation]: ../../schema/Recommendation.md
-
-### Properties
-
-* [availableAtOrFrom] 0..n - erhältlich bei oder von
-* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
-* [isRelatedTo] 0...1 - ist verbunden mit 
-* [channel]
-* [avs_acceptance_point_id]
-* [offeredBy] ?
-* [makesOffer] ?
-
-[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
-[itemReviewed]: ../../schema/itemReviewed.md
-[isRelatedTo]: ../../schema/isRelatedTo.md
-[channel]: ../../schema/channel.md
-[avs_acceptance_point_id]: ../../schema/avs_acceptance_point_id.md
