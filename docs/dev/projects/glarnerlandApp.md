@@ -13,12 +13,15 @@ hide:
 
 ``` mermaid
 graph TD
-    Recommendation[Ausflugstipps - Empfehlung] -->|empfohlen|PlaceA
-    Recommendation[Ausflugstipps - Empfehlung] -->|empfohlen|PlaceB
-    Recommendation[Ausflugstipps - Empfehlung] -->|empfohlen|PlaceC
+    Recommendation[Ausflugstipps - Empfehlung]
+    Recommendation -->|empfohlen|PlaceA
+    Recommendation -->|empfohlen|PlaceB
+    Recommendation -->|empfohlen|PlaceC
+
     Recommendation -->|empfohlen|Product[Produkt]
-    Recommendation-->|empfohlen|Event[Veranstaltung]
+    Recommendation -->|empfohlen|Event[Veranstaltung]
     Recommendation -->|empfohlen|Tour
+
     Recommendation -->|ist verbunden mit|Tagespass
 
     Tagespass[Tagespass - Produkt]
@@ -27,10 +30,11 @@ graph TD
     Tagespass -->|hat Leistungen/Angebot|OfferC
     
     OfferA[Leistung / Angebot A]
-    OfferA -->|ist erhältlich bei|PlaceA[POI A]
     OfferB[Leistung / Angebot B]
-    OfferB -->|ist erhältlich bei|PlaceB[POI B]
     OfferC[Leistung / Angebot C]
+
+    OfferA -->|ist erhältlich bei|PlaceA[POI A]
+    OfferB -->|ist erhältlich bei|PlaceB[POI B]
     OfferC -->|ist erhältlich bei|PlaceA
 
     OfferA-->|angeboten von|OrganisationA[Organisation X]
