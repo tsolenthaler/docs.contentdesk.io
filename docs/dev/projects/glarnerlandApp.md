@@ -65,44 +65,52 @@ graph TD
 
 ``` mermaid
 erDiagram
-    RECOMMENDATION ||--o{ PLACE : itemReviewed
-    RECOMMENDATION{
+    Recommendation ||--o{ Place : itemReviewed
+    Recommendation{
         array channel
     }
-    RECOMMENDATION ||--o{ PRODUCT : itemReviewed
+    Recommendation ||--o{ Product : itemReviewed
     
-    RECOMMENDATION ||--o| PRODUCT : isRelatedTo
-    RECOMMENDATION ||--o| EVENT : isRelatedTo
-    RECOMMENDATION ||--o| PLACE : isRelatedTo
-    RECOMMENDATION ||--o| TRAIL : isRelatedTo
+    Recommendation ||--o| Product : isRelatedTo
+    Recommendation ||--o| Event : isRelatedTo
+    Recommendation ||--o| Place : isRelatedTo
+    Recommendation ||--o| Trail : isRelatedTo
 
-    PRODUCT{
+    Product{
+        string name
+        string description
         array channel
         uuid avs_acceptance_point_id
     }
 
-    PRODUCT ||--o{ OFFER : offers
+    Product ||--o{ OFFER : offers
 
-    OFFER{
-        uuid avs_acceptance_point_id
+    Offer{
+        string name
         number price
         date validFrom
         date validThrough
+        array channel
+        uuid avs_acceptance_point_id
     }
 
-    OFFER ||--o{ PLACE : availableAtOrFrom
+    Offer ||--o{ Product : itemOffered
+    Offer ||--o{ Place : availableAtOrFrom
 
-    PLACE{
+    Place{
         array channel
     }
 
-    EVENT{
+    Event{
         array channel
     }
 
-    TRAIL{
+    Trail{
         array channel
     }
+
+    Organization||--o{ Offer : makesOffer
+    Organization||--o{ Place : areaServed
 ```
 
 ### Properties
