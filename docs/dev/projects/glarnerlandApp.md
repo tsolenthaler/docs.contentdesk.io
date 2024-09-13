@@ -14,13 +14,13 @@ hide:
 ``` mermaid
 graph TD
     Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|empfohlen|PlaceA
-    Recommendation -->|empfohlen|PlaceB
-    Recommendation -->|empfohlen|PlaceC
+    Recommendation -->|empfiehlt|PlaceA
+    Recommendation -->|empfiehlt|PlaceB
+    Recommendation -->|empfiehlt|PlaceC
 
-    Recommendation -->|empfohlen|Product[Produkt]
-    Recommendation -->|empfohlen|Event[Veranstaltung]
-    Recommendation -->|empfohlen|Tour
+    Recommendation -->|empfiehlt|Product[Produkt]
+    Recommendation -->|empfiehlt|Event[Veranstaltung]
+    Recommendation -->|empfiehlt|Tour
 
     Recommendation -->|ist verbunden mit|Tagespass
 
