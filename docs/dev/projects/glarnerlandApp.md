@@ -66,12 +66,11 @@ graph TD
 
 ``` mermaid
 erDiagram
-    Recommendation ||--o{ Place : itemReviewed
     Recommendation{
         array channel
     }
+    Recommendation ||--o{ Place : itemReviewed
     Recommendation ||--o{ Product : itemReviewed
-    
     Recommendation ||--o| Product : isRelatedTo
     Recommendation ||--o| Event : isRelatedTo
     Recommendation ||--o| Place : isRelatedTo
@@ -95,7 +94,7 @@ erDiagram
         uuid avs_acceptance_point_id
     }
 
-    Offer ||--o{ Product : itemOffered
+    Offer ||--|{ Product : itemOffered
     Offer ||--o{ Place : availableAtOrFrom
 
     Place{
