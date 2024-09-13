@@ -1,3 +1,8 @@
+---
+tags:
+  - property
+---
+
 # about
 
 https://schema.org/about

@@ -31,6 +31,7 @@ extra_css:
 
 plugin:
   - search
+  - tags
   - awesome-pages
   - git-revision-date-localized:
       enable_creation_date: false
@@ -62,7 +63,7 @@ nav:
 #    - Outdooractive: connect/outdooractive.md
   - Entwicklung:
     - Konzept: dev/concepts/index.md
-    - Projekte: dev/concepts/index.md
+    - Projekte: dev/projects/index.md
   - Schema: schema.md
 #      - Types: dev/dataschema/types.md
 #      - Typen: dev/dataschema/types/
