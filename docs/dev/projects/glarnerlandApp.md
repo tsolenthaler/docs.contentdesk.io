@@ -13,13 +13,17 @@ hide:
 graph TD
     Tagespass[Produkt - Tagespass]
     Tagespass -->|hat Leistungen/Angeobte|Offer
-    Offer[Leistung / Angebot]
-    Offer -->|ist erhältlich bei|Place
+    OfferA[Leistung / Angebot A]
+    OfferA -->|ist erhältlich bei|PlaceA
+    OfferB[Leistung / Angebot B]
+    OfferB -->|ist erhältlich bei|PlaceB
+    OfferC[Leistung / Angebot C]
+    OfferC -->|ist erhältlich bei|PlaceA
 
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Place
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Product
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Event
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Tour
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Place[POI]
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Product[Produkt]
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Event[Veranstaltung]
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Tour
     Recommendation -->|ist verbunden mit|Tagespass
     
 ```
