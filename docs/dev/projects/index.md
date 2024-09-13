@@ -1,4 +1,4 @@
 # Projekte
 
 
-[Glarnerland]
+[glarnerland]
