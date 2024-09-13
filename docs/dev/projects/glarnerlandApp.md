@@ -9,12 +9,21 @@ hide:
 
 ## Schema
 
+### Beispiel
+
 ``` mermaid
 graph TD
-    Tagespass[Produkt - Tagespass]
-    Tagespass -->|hat Leistungen/Angeobte|OfferA
-    Tagespass -->|hat Leistungen/Angeobte|OfferB
-    Tagespass -->|hat Leistungen/Angeobte|OfferC
+
+    Recommendation[Ausflugstipps - Empfehlung] -->|empfohlen|PlaceA
+    Recommendation -->|empfohlen|Product[Produkt]
+    Recommendation-->|empfohlen|Event[Veranstaltung]
+    Recommendation -->|empfohlen|Tour
+    Recommendation -->|ist verbunden mit|Tagespass
+
+    Tagespass[Tagespass - Produkt]
+    Tagespass -->|hat Leistungen/Angebot|OfferA
+    Tagespass -->|hat Leistungen/Angebot|OfferB
+    Tagespass -->|hat Leistungen/Angebot|OfferC
     OfferA[Leistung / Angebot A]
     OfferA -->|ist erhältlich bei|PlaceA[POI A]
     OfferB[Leistung / Angebot B]
@@ -22,15 +31,19 @@ graph TD
     OfferC[Leistung / Angebot C]
     OfferC -->|ist erhältlich bei|PlaceA
 
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|PlaceA
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Product[Produkt]
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Event[Veranstaltung]
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlen|Tour
-    Recommendation -->|ist verbunden mit|Tagespass
+    OfferA-->|angeboten von|OrganisationA[Organisation X]
+    OfferB-->|angeboten von|OrganisationA[Organisation Y]
+    OfferC-->|angeboten von|OrganisationA[Organisation Z]
+
+    OfferA -->|Angebot von Produkt| Tagespass
+    OfferB -->|Angebot von Produkt| Tagespass
+    OfferC -->|Angebot von Produkt| Tagespass
+
+
     
 ```
 
-### Schema.org / Discover.swiss
+### Schema.org
 ``` mermaid
 graph TD
     Recommendation -->|itemReviewed|Place
@@ -39,7 +52,11 @@ graph TD
     Recommendation -->|itemReviewed|Trail
     Recommendation -->|isRelatedTo|Product
     Product-->|offers|Offer
+    Offer-->|itemOffered|Product
     Offer-->|availableAtOrFrom|Place
+    Offer-->|offeredBy|Organization
+    Organization-->|areaServed|Place
+    Organization-->|makesOffer|Offer
 ```
 
 [Docs Discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
@@ -82,6 +99,10 @@ erDiagram
     EVENT{
         array channel
     }
+
+    TRAIL{
+        array channel
+    }
 ```
 
 ### Properties
@@ -95,6 +116,8 @@ erDiagram
 * [validThrough]
 * [offeredBy] ?
 * [makesOffer] ?
+* [areaServed] ?
+* [itemOffered] ?
 
 [availableAtOrFrom]: ../../schema/availableAtOrFrom.md
 [itemReviewed]: ../../schema/itemReviewed.md
