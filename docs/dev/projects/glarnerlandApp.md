@@ -12,23 +12,25 @@ hide:
 ``` mermaid
 graph TD
     Product[Produkt - Tagespass]-->|erhältlich bei oder von|Place[Place - POI/Ort]
+    Product -->|hat Leistungen/Angeobte|Offer
+    Offer[Leistung / Angebot]
+    Offer -->|ist erhältlich bei|Place
 
     Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene Orte|Place
     Recommendation -->|ist verbunden mit|Product
-    Product -->|hat Leistungen/Angeobte|Offer
-    Offer[Leistung / Angebot]
+    
 ```
 
 ### Schema.org / Discover.swiss
 ``` mermaid
 graph TD
-    Product-->|availableAtOrFrom|Place
     Recommendation -->|itemReviewed|Place
     Recommendation -->|itemReviewed|Product
     Recommendation -->|itemReviewed|Event
     Recommendation -->|itemReviewed|Tour
     Recommendation -->|isRelatedTo|Product
     Product-->|offers|Offer
+    Offer-->|availableAtOrFrom|Place
 ```
 
 https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
