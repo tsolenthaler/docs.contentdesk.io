@@ -54,8 +54,8 @@ erDiagram
 * [channel]
 * [avs_acceptance_point_id]
 
-[availableAtOrFrom]: ../schema/availableAtOrFrom.md
-[itemReviewed]: ../schema/itemReviewed.md
-[isRelatedTo]: ../schema/isRelatedTo.md
-[channel]: ../schema/channel.md
-[avs_acceptance_point_id]: ../schema/avs_acceptance_point_id.md
+[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
+[itemReviewed]: ../../schema/itemReviewed.md
+[isRelatedTo]: ../../schema/isRelatedTo.md
+[channel]: ../../schema/channel.md
+[avs_acceptance_point_id]: ../../schema/avs_acceptance_point_id.md
