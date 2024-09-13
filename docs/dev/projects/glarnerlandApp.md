@@ -12,11 +12,13 @@ hide:
 ``` mermaid
 graph TD
     Tagespass[Produkt - Tagespass]
-    Tagespass -->|hat Leistungen/Angeobte|Offer
+    Tagespass -->|hat Leistungen/Angeobte|OfferA
+    Tagespass -->|hat Leistungen/Angeobte|OfferB
+    Tagespass -->|hat Leistungen/Angeobte|OfferC
     OfferA[Leistung / Angebot A]
-    OfferA -->|ist erhältlich bei|PlaceA
+    OfferA -->|ist erhältlich bei|PlaceA[POI A]
     OfferB[Leistung / Angebot B]
-    OfferB -->|ist erhältlich bei|PlaceB
+    OfferB -->|ist erhältlich bei|PlaceB[POI B]
     OfferC[Leistung / Angebot C]
     OfferC -->|ist erhältlich bei|PlaceA
 
