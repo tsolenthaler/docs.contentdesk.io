@@ -63,6 +63,8 @@ erDiagram
         uuid avs_acceptance_point_id
     }
 
+    OFFER ||--o{ PLACE : availableAtOrFrom
+
     PLACE{
         array channel
     }
