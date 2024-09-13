@@ -1,6 +1,8 @@
 ---
 tags:
   - property
+hide:
+  - navigation
 ---
 
 # about
