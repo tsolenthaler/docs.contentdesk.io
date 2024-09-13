@@ -49,13 +49,17 @@ erDiagram
 
     PRODUCT{
         array channel
+        uuid avs_acceptance_point_id
     }
 
     PRODUCT ||--o{ OFFER : offers
 
+    OFFER{
+        uuid avs_acceptance_point_id
+    }
+
     PLACE{
         array channel
-        uuid avs_acceptance_point_id
     }
 
     EVENT{
@@ -66,9 +70,15 @@ erDiagram
 
 ### Types
 
-* Place
-* Produkt / Offer
-* Recommendation
+* [Place]
+* [Product]
+* [Offer]
+* [Recommendation]
+
+[Place]: ../../schema/Place.md
+[Product]: ../../schema/Product.md
+[Offer]: ../../schema/Offer.md
+[Recommendation]: ../../schema/Recommendation.md
 
 ### Properties
 
