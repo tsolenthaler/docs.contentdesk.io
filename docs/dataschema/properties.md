@@ -1,1 +1,0 @@
-# Properties / Attribute und Verknüpfungen

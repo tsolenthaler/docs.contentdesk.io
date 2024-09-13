@@ -48,7 +48,7 @@ erDiagram
 
 ### Properties
 
-* availableAtOrFrom 0..n - erhältlich bei oder von
+* [`schema` availableAtOrFrom] 0..n - erhältlich bei oder von
 * itemReviewed 0..n - empfohlene Orte
 * isRelatedTo 0...1 - ist verbunden mit 
 * channel
