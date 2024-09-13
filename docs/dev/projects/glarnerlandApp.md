@@ -59,7 +59,8 @@ graph TD
     Organization-->|makesOffer|Offer
 ```
 
-[Docs Discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
+#### discover.swiss
+[Docs discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
 
 ### ER Model
 
