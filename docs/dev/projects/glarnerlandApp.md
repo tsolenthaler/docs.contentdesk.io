@@ -11,13 +11,16 @@ hide:
 
 ``` mermaid
 graph TD
-    Product[Produkt - Tagespass]
-    Product -->|hat Leistungen/Angeobte|Offer
+    Tagespass[Produkt - Tagespass]
+    Tagespass -->|hat Leistungen/Angeobte|Offer
     Offer[Leistung / Angebot]
     Offer -->|ist erhältlich bei|Place
 
-    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene Orte|Place
-    Recommendation -->|ist verbunden mit|Product
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Place
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Product
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Event
+    Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene|Tour
+    Recommendation -->|ist verbunden mit|Tagespass
     
 ```
 
