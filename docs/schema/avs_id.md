@@ -1,3 +1,10 @@
+---
+tags:
+  - property
+hide:
+  - navigation
+---
+
 # avs_id
 
 Akzepttanzstelle ID für die Platform AVS Abrechnungs- und Verwaltungs-Systeme GmbH.
