@@ -1,4 +1,4 @@
-# Glanerland App
+# Glarnerland App
 
 
 ## Schema
