@@ -1,5 +1,12 @@
+---
+tags:
+  - type
+hide:
+  - navigation
+---
+
 # TouristTrip
-https://schema.org/TouristTrip
+[https://schema.org/TouristTrip](https://schema.org/TouristTrip)
 
 Thing > Intangible > Trip > TouristTrip
 

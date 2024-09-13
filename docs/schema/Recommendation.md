@@ -7,7 +7,7 @@ hide:
 
 # Recommendation
 
-https://schema.org/Recommendation
+[https://schema.org/Recommendation](https://schema.org/Recommendation)
 
 
 ## Conectps

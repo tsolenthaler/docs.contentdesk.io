@@ -1,5 +1,12 @@
+---
+tags:
+  - type
+hide:
+  - navigation
+---
+
 # Trip
-https://schema.org/Trip
+[https://schema.org/Trip](https://schema.org/Trip)
 
 Thing > Intangible > Trip
 
