@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  #- toc
+---
+
 # Glarnerland App
 
 
@@ -9,6 +15,8 @@ graph TD
 
     Recommendation[Empfehlung - Ausflugstipps] -->|empfohlene Orte|Place
     Recommendation -->|ist verbunden mit|Product
+    Product -->|hat Leistungen/Angeobte|Offer
+    Offer[Leistung / Angebot]
 ```
 
 ### Schema.org / Discover.swiss
@@ -20,6 +28,7 @@ graph TD
     Recommendation -->|itemReviewed|Event
     Recommendation -->|itemReviewed|Tour
     Recommendation -->|isRelatedTo|Product
+    Product-->|offers|Offer
 ```
 
 https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
