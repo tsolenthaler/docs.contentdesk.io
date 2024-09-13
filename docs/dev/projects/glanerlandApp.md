@@ -11,6 +11,35 @@ graph TD
     Recommendation -->|ist verbunden mit|Product
 ```
 
+### ER Model
+
+``` mermaid
+erDiagram
+    RECOMMENDATION ||--o{ PLACE : itemReviewed
+    RECOMMENDATION{
+        array channel
+    }
+    RECOMMENDATION ||--o{ PRODUCT : itemReviewed
+    
+    RECOMMENDATION ||--o| PRODUCT : isRelatedTo
+    RECOMMENDATION ||--o| EVENT : isRelatedTo
+    RECOMMENDATION ||--o| PLACE : isRelatedTo
+
+    PRODUCT{
+        array channel
+    }
+
+    PLACE{
+        array channel
+        uuid avs_acceptance_point_id
+    }
+
+    EVENT{
+        array channel
+    }
+```
+
+
 ### Types
 
 * Place
