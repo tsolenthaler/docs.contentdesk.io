@@ -1,6 +1,12 @@
-# availableAtOrFrom
-https://schema.org/availableAtOrFrom
+---
+tags:
+  - property
+hide:
+  - navigation
+---
 
+# availableAtOrFrom
+[https://schema.org/availableAtOrFrom](https://schema.org/availableAtOrFrom)
 
 
 ## Beispiele

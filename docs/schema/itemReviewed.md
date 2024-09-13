@@ -6,4 +6,4 @@ hide:
 ---
 
 # itemReviewed
-https://schema.org/itemReviewed
+[https://schema.org/itemReviewed](https://schema.org/itemReviewed)

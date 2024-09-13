@@ -6,4 +6,4 @@ hide:
 ---
 
 # isRelatedTo
-https://schema.org/isRelatedTo
+[https://schema.org/isRelatedTo](https://schema.org/isRelatedTo)
