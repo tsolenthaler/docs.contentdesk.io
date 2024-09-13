@@ -11,7 +11,7 @@ hide:
 
 ``` mermaid
 graph TD
-    Product[Produkt - Tagespass]-->|erhältlich bei oder von|Place[Place - POI/Ort]
+    Product[Produkt - Tagespass]
     Product -->|hat Leistungen/Angeobte|Offer
     Offer[Leistung / Angebot]
     Offer -->|ist erhältlich bei|Place
@@ -85,7 +85,7 @@ erDiagram
 ### Properties
 
 * [availableAtOrFrom] 0..n - erhältlich bei oder von
-* [itemReviewed] 0..n - empfohlene Orte
+* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
 * [isRelatedTo] 0...1 - ist verbunden mit 
 * [channel]
 * [avs_acceptance_point_id]
