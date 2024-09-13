@@ -60,8 +60,8 @@ nav:
   - Schema: schema.md
   - Entwicklung: 
     - dev/index.md
-    - Konzept: dev/concepts/index.md
-    - Projekte: dev/projects/index.md
+    - Konzept: dev/concepts.md
+    - Projekte: dev/projects.md
 #  - Verbindungen: 
 #    - connect/index.md
 #    - discover.swiss: connect/discover.md
