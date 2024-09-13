@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  #- toc
+---
+
 # Artikel und Empfehlungen
 
 

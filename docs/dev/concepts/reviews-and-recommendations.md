@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  #- toc
+---
+
 # Reviews and recommendations
 
 Dokumentation bei discover.swiss
