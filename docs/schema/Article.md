@@ -1,6 +1,8 @@
 ---
 tags:
   - type
+hide:
+  - navigation
 ---
 
 # Article

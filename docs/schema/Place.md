@@ -1,3 +1,10 @@
+---
+tags:
+  - type
+hide:
+  - navigation
+---
+
 # Place
 
 https://schema.org/Place

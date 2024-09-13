@@ -1,3 +1,10 @@
+---
+tags:
+  - type
+hide:
+  - navigation
+---
+
 # Recommendation
 
 https://schema.org/Recommendation
