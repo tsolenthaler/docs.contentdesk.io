@@ -53,11 +53,15 @@ graph TD
     Recommendation -->|itemReviewed|Product
     Recommendation -->|itemReviewed|Event
     Recommendation -->|itemReviewed|Trail
+
     Recommendation -->|isRelatedTo|Product
+
     Product-->|offers|Offer
+
     Offer-->|itemOffered|Product
     Offer-->|availableAtOrFrom|Place
     Offer-->|offeredBy|Organization
+    
     Organization-->|areaServed|Place
     Organization-->|makesOffer|Offer
 ```
