@@ -16,11 +16,13 @@ flowchart LR
     Objekt-->Check
     Report-->|prüft mehrere|Objekt
     Report-->|wöchentlich / monatlich|Check
-    Check-->AssociationType[Verknüpfungen]
-    AssociationType[Verknüpfungen]-->Graph
+    Check-->Associations[Verknüpfungen]
+    Associations[Verknüpfungen]-->Graph
     Check-->Connect[Verbindungen]
     Check-->Compare[Vergleichen]
     Compare-->Place[Orts-Daten]
+    Place-->OpenStreetMap
+    Place-->Google Place
 ```
 
 ### Vision
@@ -52,11 +54,16 @@ Hat das Objekt eine Kategorie?
 
 ### Verknüpfung / AssociationType
 
-Ist es mit weiteren eigenen (internen) Objekten verknüpft.
+- [ ] Hat es überhaupt gepflegte Verknüpfungen?
+- [ ] Zeigen der internen verknüpfer Objekte
+  * [ ] als Liste
+  * [ ] als Graph / examples mermaid graph
+    * [ ] mit Verlinkung im Graph
 
 #### Graph
 
 Zeigt einen Graph mit den internen verknüpfungen von diesem Objekt zu den weiteren Objekten.
+https://mermaid.js.org/syntax/examples.html#basic-flowchart
 
 ### Attribut
 
