@@ -33,6 +33,14 @@ flowchart LR
     Objekt-->Compare[Vergleichen]
 ```
 
+### Ziel des Apps
+
+* Assistent der einzelne Objekte prüft und verbesserungen vorschlägt, die evlt. angepasst und per Klick übernommen werden können.
+* Expert Editor nach Schema.org JSON-LD
+* Speicherquelle ändern. Bspw. DB --> ObjectStorage
+* Import/Export erweitern bspw. JSON-D
+* Embedded Objekt via Widget
+
 ## Checks
 
 ### Objekt (Product)
