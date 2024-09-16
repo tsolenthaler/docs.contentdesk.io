@@ -92,10 +92,10 @@ erDiagram
     }
     Recommendation ||--o{ Place : itemReviewed
     Recommendation ||--o{ Product : itemReviewed
+    Recommendation ||--o{ Event : itemReviewed
+    Recommendation ||--o{ Place : itemReviewed
+    Recommendation ||--o{ Trail : itemReviewed
     Recommendation ||--o| Product : isRelatedTo
-    Recommendation ||--o| Event : isRelatedTo
-    Recommendation ||--o| Place : isRelatedTo
-    Recommendation ||--o| Trail : isRelatedTo
 
     Product{
         string name
