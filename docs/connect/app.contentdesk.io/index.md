@@ -79,7 +79,7 @@ Vergleichen der Attribute mit den verbunden Systemen / Plattformen.
 
 Bspw. sind die Daten gleich wie beim OpenStreetMap. Wenn nicht können diese übertragen oder übernommen werden.
 
-## Orts-Daten
+## Place / Orts-Daten
 
 * Abgleich der Koordinanten mit OpenStreetMap
 * * via ID
