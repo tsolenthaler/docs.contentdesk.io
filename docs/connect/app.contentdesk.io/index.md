@@ -50,7 +50,7 @@ flowchart LR
 
 Hat das Objekt eine Kategorie?
 
-### Verknüpfung
+### Verknüpfung / AssociationType
 
 Ist es mit weiteren eigenen (internen) Objekten verknüpft.
 
