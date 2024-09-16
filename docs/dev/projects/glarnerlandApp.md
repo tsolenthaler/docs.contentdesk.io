@@ -6,10 +6,9 @@ hide:
 
 # Glarnerland App - Empfehlung und Tagespass
 
-
 ## Schema
 
-### Beispiel Empfehlung
+### Empfehlung / Content / Storie
 
 ``` mermaid
 graph TD
@@ -27,13 +26,13 @@ graph TD
     Tagespass[Tagespass - Produkt]
 ```
 
-### Beispiel Tagespass
+### Tagespass
 ``` mermaid
 graph TD
     Recommendation[Ausflugstipps - Empfehlung]
     Recommendation -->|ist verbunden mit|Tagespass
 
-    Tagespass[Tagespass - Produkt]
+    Tagespass[Tagespass - Produkt?]
     Tagespass -->|hat Leistungen/Angebot|OfferA
     Tagespass -->|hat Leistungen/Angebot|OfferB
     Tagespass -->|hat Leistungen/Angebot|OfferC
