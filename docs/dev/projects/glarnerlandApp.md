@@ -55,6 +55,8 @@ graph TD
 ```
 
 ### Schema.org
+
+#### Empfehlung
 ``` mermaid
 graph TD
     Recommendation -->|itemReviewed|Place
@@ -63,7 +65,14 @@ graph TD
     Recommendation -->|itemReviewed|Trail
 
     Recommendation -->|isRelatedTo|Product
+```
 
+##### discover.swiss
+[Docs discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
+
+#### Tagespass
+``` mermaid
+graph TD
     Product-->|offers|Offer
 
     Offer-->|itemOffered|Product
@@ -73,9 +82,6 @@ graph TD
     Organization-->|areaServed|Place
     Organization-->|makesOffer|Offer
 ```
-
-#### discover.swiss
-[Docs discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
 
 ### ER Model
 
