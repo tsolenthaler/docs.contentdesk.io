@@ -67,13 +67,13 @@ Sind weitere ID's hinterlegt?
 Bspw. openstreetmap, googel Place ID, discover.swiss, etc.
 
 
-## Connect / Verbindungen
+## Verbindungen (Connect)
 
 Links zu den Verbundenen Systemen / Plattformen
 
 Bspw. openstreetamp Edit Link, Google Place Link, discover.swiss, Outdooractive, etc.
 
-## Compare
+## Vergleich (Compare)
 
 Vergleichen der Attribute mit den verbunden Systemen / Plattformen.
 
@@ -83,4 +83,4 @@ Bspw. sind die Daten gleich wie beim OpenStreetMap. Wenn nicht können diese üb
 
 * Abgleich der Koordinanten mit OpenStreetMap
 * * via ID --> Vergleich
-* * via Koordinanten
+* * via Koordinanten --> Vergleich
