@@ -20,6 +20,7 @@ flowchart LR
     AssociationType[Verknüpfungen]-->Graph
     Objekt-->Connect[Verbindungen]
     Objekt-->Compare[Vergleichen]
+    Objekt-->Place[Orts-Daten]
 ```
 
 ### Vision
@@ -77,3 +78,9 @@ Bspw. openstreetamp Edit Link, Google Place Link, discover.swiss, Outdooractive,
 Vergleichen der Attribute mit den verbunden Systemen / Plattformen.
 
 Bspw. sind die Daten gleich wie beim OpenStreetMap. Wenn nicht können diese übertragen oder übernommen werden.
+
+## Orts-Daten
+
+* Abgleich der Koordinanten mit OpenStreetMap
+* * via ID
+* * via Koordinanten
