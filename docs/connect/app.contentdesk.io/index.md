@@ -22,7 +22,7 @@ flowchart LR
     Check-->Compare[Vergleichen]
     Compare-->Place[Orts-Daten]
     Place-->OpenStreetMap
-    Place-->Google Place
+    Place-->GooglePlace
 ```
 
 ### Vision
