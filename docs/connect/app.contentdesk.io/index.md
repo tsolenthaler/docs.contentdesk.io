@@ -18,9 +18,9 @@ flowchart LR
     Report-->|wöchentlich / monatlich|Check
     Check-->AssociationType[Verknüpfungen]
     AssociationType[Verknüpfungen]-->Graph
-    Objekt-->Connect[Verbindungen]
-    Objekt-->Compare[Vergleichen]
-    Objekt-->Place[Orts-Daten]
+    Check-->Connect[Verbindungen]
+    Check-->Compare[Vergleichen]
+    Compare-->Place[Orts-Daten]
 ```
 
 ### Vision
@@ -79,8 +79,8 @@ Vergleichen der Attribute mit den verbunden Systemen / Plattformen.
 
 Bspw. sind die Daten gleich wie beim OpenStreetMap. Wenn nicht können diese übertragen oder übernommen werden.
 
-## Place / Orts-Daten
+### Place / Orts-Daten
 
 * Abgleich der Koordinanten mit OpenStreetMap
-* * via ID
+* * via ID --> Vergleich
 * * via Koordinanten
