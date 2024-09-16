@@ -4,24 +4,33 @@ hide:
   #- toc
 ---
 
-# Glarnerland App
+# Glarnerland App - Empfehlung und Tagespass
 
 
 ## Schema
 
-### Beispiel
+### Beispiel Empfehlung
 
 ``` mermaid
 graph TD
     Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|empfiehlt|PlaceA
-    Recommendation -->|empfiehlt|PlaceB
-    Recommendation -->|empfiehlt|PlaceC
+    Recommendation -->|empfiehlt|PlaceA[POI A]
+    Recommendation -->|empfiehlt|PlaceB[POI B]
+    Recommendation -->|empfiehlt|PlaceC[POI C]
 
     Recommendation -->|empfiehlt|Product[Produkt]
     Recommendation -->|empfiehlt|Event[Veranstaltung]
     Recommendation -->|empfiehlt|Tour
 
+    Recommendation -->|ist verbunden mit|Tagespass
+
+    Tagespass[Tagespass - Produkt]
+```
+
+### Beispiel Tagespass
+``` mermaid
+graph TD
+    Recommendation[Ausflugstipps - Empfehlung]
     Recommendation -->|ist verbunden mit|Tagespass
 
     Tagespass[Tagespass - Produkt]
