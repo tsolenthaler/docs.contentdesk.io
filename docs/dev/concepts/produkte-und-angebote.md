@@ -5,7 +5,6 @@
 
 ## Use-Case / Beispiele
 
-
 ### Führungen mit Varianten
 
 ### Tagespass mit Angeboten / Leistungen - Product offers
