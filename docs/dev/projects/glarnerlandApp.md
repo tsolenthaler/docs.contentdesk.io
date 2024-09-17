@@ -9,11 +9,11 @@ hide:
 
 ## Konzepte
 
-* Empfehlung ---> [Reviews and recommendations]
-* Tagespass --> [Produkte und Angebote]
+* Empfehlung - [Reviews and recommendations]
+* Tagespass - [Produkte und Angebote]
 
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations.md
-[Produkte]: ../concepts/produkte-und-angebote.md
+[Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
 ## Schema
 
