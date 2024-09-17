@@ -1,7 +1,3 @@
----
-icon: material/octicons-project-roadmap-16
----
-
 # Konzepte
 
 * [Produkte und Angebote]
