@@ -1,33 +1,52 @@
 # Produkte, Varianten und Angebote
 
 
+## Übersicht Typen
+
+- Einfaches Produkt [Product]
+
+    * mit Angeboten [offers]
+
+- Produkt mit Variante [ProductGroup]
+
+    * Bspw. nach Farbe
+    * nach Zeit
+    * etc.
+
+- Angebot [Offer]
+
+    * Ein zusätzliches Angebot, das nur in Kombination mit dem ersten Basisangebot erhältlich ist (z.B. Zuschläge und Verlängerungen, die gegen einen Aufpreis erhältlich sind). [addOn]
+
 
 
 ## Use-Case / Beispiele
 
 ### Führungen mit Varianten
 
-### Tagespass mit Angeboten / Leistungen - Product offers
+### Tagespass mit Angeboten / Leistungen
+
+Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 ### Produkte / Dienstleistungen mit Varianten
 
-## Contentdesk - Schema.org
+* Marketing zum Mitmachen
 
-| Contentdesk       | Schema.org     | Bemerkung                              |
-| -----------       | -------------- | ------------------------------------   |
-| Product-Model     | ProductGroup   | Produkt Variante                       |
-| Product           | Product        |                                        |
-|                   | ProductModel?  | Ähnlich wie Product mit weiteren spezifischen Properties wie isVariantOf, predecessorOf,successorOf |
-| Group             |                |                                        |
+## Contentdesk und Schema.org Typen
+
+| Contentdesk       | Schema.org         | Bemerkung                              |
+| -----------       | --------------     | ------------------------------------   |
+| Product-Model     | ProductGroup       | Produkt Variante                       |
+| Product           | Product            |                                        |
+|                   | ProductModel?      | Für Ähnlich wie Product mit weiteren spezifischen Properties wie isVariantOf, predecessorOf,successorOf |
+| Group             | ProductCollection? |                                        |
 
 ``` mermaid
 graph LR
     subgraph Contentdesk
         direction TB
-        ContentdeskProduct -->|offers association-type|Offer
+        ContentdeskProduct -->|offers|Offer
         ContentdeskProduct -->|
     end
-
 ```
 
 
@@ -47,3 +66,8 @@ https://schema.org/hasVariant
 
 ### offers
 
+
+
+## Offene Punkte 
+
+* [Service]
