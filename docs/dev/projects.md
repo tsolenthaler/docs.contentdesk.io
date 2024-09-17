@@ -1,3 +1,6 @@
+---
+icon: material/octicons-project-roadmap-16
+---
 # Projekte
 
 * [Glarnerland App]
