@@ -4,7 +4,16 @@ hide:
   #- toc
 ---
 
-# Glarnerland App - Empfehlung und Tagespass
+# Glarnerland App
+
+
+## Konzepte
+
+* Empfehlung ---> [Reviews and recommendations]
+* Tagespass --> [Produkte und Angebote]
+
+[Reviews and recommendations]: ../concepts/reviews-and-recommendations.md
+[Produkte]: ../concepts/produkte-und-angebote.md
 
 ## Schema
 
