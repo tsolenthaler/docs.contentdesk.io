@@ -1,4 +1,4 @@
-# Versionshinweise - Product Information Management - 3.4.0
+# Versionshinweise - Contentdesk.io - 3.4.0
 
 ### Verbesserung
 
