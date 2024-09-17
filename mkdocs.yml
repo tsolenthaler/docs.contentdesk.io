@@ -70,4 +70,4 @@ nav:
 #    - discover.swiss: connect/discover.md
 #    - Outdooractive: connect/outdooractive.md
 #  - API: api/index.md
-#  - Änderungen: changelog/index.md
+  - Änderungen: changelog/index.md
