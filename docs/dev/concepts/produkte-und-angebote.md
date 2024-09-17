@@ -5,7 +5,8 @@
 
 - Einfaches Produkt [Product]
 
-    * mit Angeboten [offers]
+    * ohne weitere Angebote
+    * mit weiteren Angeboten [offers]
 
 - Produkt mit Variante [ProductGroup]
 
@@ -44,6 +45,12 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 ``` mermaid
 graph LR
+    subgraph Contentdesk
+        direction TB
+        ContentdeskProduct -->|offers|Offer
+        Offer-->|addOn|Offer
+    end
+
     subgraph Contentdesk
         direction TB
         ContentdeskProduct -->|offers|Offer
