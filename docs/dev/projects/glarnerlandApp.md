@@ -16,7 +16,7 @@
 
 ## Schema
 
-### Empfehlung / Content / Storie
+### Beispiel Empfehlung / Content / Storie
 
 ``` mermaid
 graph TD
@@ -34,7 +34,7 @@ graph TD
     Tagespass[Tagespass - Produkt]
 ```
 
-### Tagespass
+### Beispiel Tagespass
 ``` mermaid
 graph TD
     Recommendation[Ausflugstipps - Empfehlung]
@@ -75,7 +75,6 @@ graph TD
     Recommendation -->|isRelatedTo|Product
 ```
 
-##### discover.swiss
 [Docs discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
 
 #### Tagespass

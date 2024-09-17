@@ -1,7 +1,7 @@
 # Konzepte
 
-* [Artikel und Empfehlungen]
+* [Produkte und Angebote]
 * [Reviews and recommendations]
 
-[Artikel und Empfehlungen]: ../concepts/article-recommendation
+[Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations
