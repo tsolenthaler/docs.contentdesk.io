@@ -9,15 +9,15 @@
 
 - Produkt mit Variante [ProductGroup]
 
-    * Bspw. nach Farbe
-    * nach Zeit
+    * nach Farbe [color]
+    * nach Material [material]
     * etc.
 
 - Angebot [Offer]
 
     * Ein zusätzliches Angebot, das nur in Kombination mit dem ersten Basisangebot erhältlich ist (z.B. Zuschläge und Verlängerungen, die gegen einen Aufpreis erhältlich sind). [addOn]
 
-
+- Service [Service]
 
 ## Use-Case / Beispiele
 
@@ -45,7 +45,7 @@ graph LR
     subgraph Contentdesk
         direction TB
         ContentdeskProduct -->|offers|Offer
-        ContentdeskProduct -->|
+        Offer-->|addOn|Offer
     end
 ```
 
