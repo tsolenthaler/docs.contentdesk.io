@@ -3,5 +3,5 @@
 * [Produkte und Angebote]
 * [Reviews and recommendations]
 
-[Produkte und Angebote]: ../concepts/produkte-und-angebote.md
+[Produkte und Angebote]: ../concepts/produkte-und-angebote
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations
