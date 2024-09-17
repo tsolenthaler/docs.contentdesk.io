@@ -10,9 +10,9 @@ hide:
 [https://schema.org/Recommendation](https://schema.org/Recommendation)
 
 
-## Conectps
+## Konzept
 
-[Review and Recommandtions](/dev/concepts/reviews-and-recommendations.md)
+[Review and Recommandtions](../dev/concepts/reviews-and-recommendations.md)
 
 ## Properties
 
