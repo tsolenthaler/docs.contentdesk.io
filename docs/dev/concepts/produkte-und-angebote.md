@@ -38,7 +38,7 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 | Contentdesk       | Schema.org         | Bemerkung                              |
 | -----------       | --------------     | ------------------------------------   |
-| Product-Model     | ProductGroup       | Produkt Variante                       |
+| Product-Model / Variante    | ProductGroup       | Produkt Variante                       |
 | Product           | Product            |                                        |
 |                   | ProductModel?      | Für Ähnlich wie Product mit weiteren spezifischen Properties wie isVariantOf, predecessorOf,successorOf |
 | Group             | ProductCollection? |                                        |
