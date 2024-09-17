@@ -11,18 +11,28 @@ hide:
 ### IST
 ``` mermaid
 flowchart LR
-    app.contentdesk.io-->Objekt
-    app.contentdesk.io-->Report
-    Objekt-->Check
-    Report-->|prüft mehrere|Objekt
-    Report-->|wöchentlich / monatlich|Check
-    Check-->Associations[Verknüpfungen]
-    Associations[Verknüpfungen]-->Graph
-    Check-->Connect[Verbindungen]
-    Check-->Compare[Vergleichen]
-    Compare-->Place[Orts-Daten]
-    Place-->OpenStreetMap
-    Place-->GooglePlace
+    app.contentdesk.io --> Objekt
+    app.contentdesk.io --> Report
+
+    Objekt --> Check
+    Objekt --> Export
+
+    Report -->|prüft mehrere|Objekt
+    Report -->|wöchentlich / monatlich|Check
+
+    Check -->Associations[Verknüpfungen]
+    Check -->Connect[Verbindungen]
+    Check -->Compare[Vergleichen]
+
+    Associations[Verknüpfungen] -->Graph
+    
+    Compare -->Place[Orts-Daten]
+
+    Place -->OpenStreetMap
+    Place -->GooglePlace
+
+    Export --> JSON-LD
+
 ```
 
 ### Vision

@@ -39,6 +39,9 @@ plugin:
       format: "%d.%m.%Y"
 
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
