@@ -5,4 +5,4 @@ icon: material/octicons-project-roadmap-16
 
 * [Glarnerland App]
 
-[Glarnerland App]: ../projects/glarnerlandApp
+[Glarnerland App]: ../projects/glarnerlandApp.md

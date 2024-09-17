@@ -102,7 +102,7 @@ erDiagram
         string name
         string description
         array channel
-        uuid avs_acceptance_point_id
+        uuid avs_id
     }
 
     Product ||--o{ Offer : offers
@@ -113,7 +113,7 @@ erDiagram
         date validFrom
         date validThrough
         array channel
-        uuid avs_acceptance_point_id
+        uuid avs_id
     }
 
     Offer ||--|{ Product : itemOffered
@@ -153,7 +153,7 @@ erDiagram
 [itemReviewed]: ../../schema/itemReviewed.md
 [isRelatedTo]: ../../schema/isRelatedTo.md
 [channel]: ../../schema/channel.md
-[avs_acceptance_point_id]: ../../schema/avs_acceptance_point_id.md
+[avs_id]: ../../schema/avs_id.md
 [validFrom]: ../../schema/validFrom.md
 [validThrough]: ../../schema/validThrough.md
 
