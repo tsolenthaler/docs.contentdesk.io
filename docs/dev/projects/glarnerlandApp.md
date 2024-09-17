@@ -1,11 +1,10 @@
 ---
 hide:
-  - navigation
+  #- navigation
   #- toc
 ---
 
 # Glarnerland App
-
 
 ## Konzepte
 
