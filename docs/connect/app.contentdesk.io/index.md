@@ -18,6 +18,7 @@ flowchart LR
 
     Organization --> Report
     Organization --> Objekt
+    Organization --> Config
 
     Objekt --> Check
     Objekt --> Export
