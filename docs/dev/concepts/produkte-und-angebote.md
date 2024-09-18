@@ -24,9 +24,7 @@
 
 ## Use-Case / Beispiele
 
-### Führungen mit Varianten
-
-### Tagespass mit Angeboten / Leistungen
+### Produkt Tagespass mit Angeboten / Leistungen
 
 Die Angebote / Leistungen sind von anderen Leistungsträgern
 

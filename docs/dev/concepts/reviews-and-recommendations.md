@@ -4,7 +4,7 @@
   #- toc
 ---
 
-# Reviews and recommendations
+# Reviews and recommendations / Empfehlungen
 
 Dokumentation bei discover.swiss
 
