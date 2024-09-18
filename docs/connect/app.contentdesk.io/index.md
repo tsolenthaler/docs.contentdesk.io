@@ -13,6 +13,13 @@ hide:
 flowchart LR
     app.contentdesk.io --> Objekt
     app.contentdesk.io --> Report
+    app.contentdesk.io --> User
+    app.contentdesk.io --> Organization
+
+    User --> Organization
+
+    Organization --> Report
+    Organization --> Check
 
     Objekt --> Check
     Objekt --> Export
