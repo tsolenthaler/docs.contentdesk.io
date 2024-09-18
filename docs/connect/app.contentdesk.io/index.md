@@ -11,15 +11,13 @@ hide:
 ### IST
 ``` mermaid
 flowchart LR
-    app.contentdesk.io --> Objekt
-    app.contentdesk.io --> Report
     app.contentdesk.io --> User
     app.contentdesk.io --> Organization
 
     User --> Organization
 
     Organization --> Report
-    Organization --> Check
+    Organization --> Objekt
 
     Objekt --> Check
     Objekt --> Export
