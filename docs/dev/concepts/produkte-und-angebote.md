@@ -69,7 +69,6 @@ flowchart LR
     end
 
     Contentdesk.io --> discover.swiss
-    ContentdeskProduct --> discoverProduct
 ```
 
 
