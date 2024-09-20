@@ -121,7 +121,7 @@ classDiagram
     }
 
     Recommendations --> "0..1" Place["Place / Product / Event"] : isRelatedTo 
-    Recommendations --> "0..n" Product["Place / Produkt] : itemReviewed
+    Recommendations --> "0..n" Product["Place / Produkt"] : itemReviewed
     namespace app {
         class Tagespass {
 
