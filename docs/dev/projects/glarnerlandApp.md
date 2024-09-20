@@ -73,9 +73,9 @@ classDiagram
             string Name
             date Gültigkeit
         }
-
-        CardTyp --> "0..n" Akzeptanzstelle : hat
     }
+    CardTyp --> "0..n" Akzeptanzstelle : hat
+
     namespace contentdesk {
         class Produkt {
             uuid Id
@@ -93,11 +93,13 @@ classDiagram
             string Name
         }
 
-        Produkt --> "0..n" Angebot : offer
-        Empfehlung --> Angebot
-        Empfehlung --> POI
-        Empfehlung --> Produkt
+        class Ort["POI / Place"]
     }
+    Produkt --> "0..n" Angebot : offer
+    Empfehlung --> Angebot
+    Empfehlung --> Ort
+    Empfehlung --> Produkt
+
     namespace discover {
         class Product{
             uuid Id
