@@ -78,7 +78,7 @@ flowchart LR
 
 ### Schema
 ``` mermaid
-flowchart LR
+flowchart TB
     Product -->|offers| Offer
     Offer-->|addOn| Offer
     Offer-->|itemOffered| Product
