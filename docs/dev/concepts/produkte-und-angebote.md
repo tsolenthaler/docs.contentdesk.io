@@ -67,6 +67,10 @@ flowchart LR
         discoverOffer -->|itemOffered| discoverProduct
         discoverOffer -->|itemOffered| discoverService[Service?]
     end
+
+    ContentdeskProduct --> discoverProduct
+    ContentdeskOffer --> discoverOffer
+    ContentdeskService --> discoverService
 ```
 
 
