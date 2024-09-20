@@ -13,7 +13,7 @@ Bspw. Tagespass
 ## Beispiel Tagespass
 ``` mermaid
 graph TD
-    Product[Tagespass] -->|offers|Offer[Angebot]
+    Product[Tagespass] -->|offers[angebote]|Offer[Angebot]
 
     Offer -->|itemOffered| ProductA["Nusstange"]
     Offer -->|itemOffered| ServiceB["Sauna-Eintritt"]
@@ -60,7 +60,7 @@ graph TD
 
 ## Beispiele
 
-### Nach Schema.org als Offer
+### mit unterschiedlichen Preisen
 
 ``` json
 {
@@ -90,7 +90,7 @@ graph TD
   ]
 }
 ```
-
+### Mit mehrere Gratis Angebote
 ``` json
 {
   "@context": "https://schema.org",
@@ -114,3 +114,13 @@ graph TD
   }
 }
 ```
+
+
+
+## Contentdesk Demo Beispiele
+
+* [Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
+* * Angebote [Offers]
+* * * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
+* * * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
+* * * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
