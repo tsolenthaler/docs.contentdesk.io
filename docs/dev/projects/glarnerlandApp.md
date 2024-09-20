@@ -35,12 +35,12 @@ graph LR
 
 #### Übersicht
 
-| AVS                           | contentdesk.io    | discover.swiss    | App / Binarium            |
-| -----------                   | -------------     | -------------     | -------------             |   
+| AVS                           | contentdesk.io    | discover.swiss      | App / Binarium            |
+| -----------                   | -------------     | -------------       | -------------             |   
 | Card Typ                      | [TouristCard]       | TouristcardType?  | Tagespass                 |
-|                               | [Product]           | Product           | Produkt                   |
+|                               | [Product]           | [Product2]        | Produkt                   |
 | Akzeptanzstelle / Leistung?   | [Offer]             | Offer?            | Leistung                  |       
-|                               | [Recommendation]        | Recommendation    | Empfehlung                |
+|                               | [Recommendation]    | Recommendation    | Empfehlung                |
 |                               | [Place]             | Place             | Place                     |
 |                               | [Organization]      | Organization      | Organization              |
 
@@ -49,6 +49,9 @@ graph LR
 [Product]: ../../schema/Product.md
 [Offer]: ../../schema/Offer.md
 [Recommendation]: ../../schema/Recommendation.md
+[Organization]: ../../schema/Organization.md
+
+[PRoduct2]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
 
 #### Diagramm
 
