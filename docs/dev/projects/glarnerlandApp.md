@@ -118,10 +118,14 @@ classDiagram
             uuid Id
             string Name
         }
+
+        class Place["Place / Product / Event"]
+
+        class Product["Place / Produkt"]
     }
 
-    Recommendations --> "0..1" Place["Place / Product / Event"] : isRelatedTo 
-    Recommendations --> "0..n" Product["Place / Produkt"] : itemReviewed
+    Recommendations --> "0..1" Place : isRelatedTo 
+    Recommendations --> "0..n" Product : itemReviewed
     namespace app {
         class Tagespass {
 
