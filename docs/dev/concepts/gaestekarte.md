@@ -18,7 +18,7 @@ graph TD
     Offer -->|itemOffered| ProductA["Nusstange"]
     Offer -->|itemOffered| ServiceB["Sauna-Eintritt"]
     Offer -->|itemOffered| EventC["Eintritt ESAF"]
-    Offer -->|availableAtOrFrom 0 ... n| PlaceA
+    Offer -->|availableAtOrFrom 0 ... n| PlaceA[Tourist-Info]
 
     ProductA -->|offers| OfferA
     ServiceB -->|offers| OfferB
@@ -28,11 +28,14 @@ graph TD
     OfferC -->|offeredBy| OrganizationA
     OfferB -->|offeredBy| OrganizationB["ESAF Organisation"]
 
-    OfferA -->|availableAtOrFrom| PlaceA
+    OrganizationA -->|areaServed| PlaceA
+    OrganizationA -->|areaServed| PlaceA
+
     OfferA -->|availableAtOrFrom| PlaceB
     OfferA -->|availableAtOrFrom| PlaceC
+    OfferA -->|availableAtOrFrom| PlaceE
     OfferB -->|availableAtOrFrom| PlaceB
-    OfferC -->|availableAtOrFrom| PlaceA
+    OfferC -->|availableAtOrFrom| PlaceC
 ```
 
 ## Schema.org
@@ -45,10 +48,8 @@ graph TD
     Offer -->|itemOffered| Event
     Offer -->|availableAtOrFrom 0 ... n| Place
 
-    Product -->|offers| Offer
     Service -->|offers| Offer
     Event -->|offers| Offer
-
 
     Offer -->|offeredBy| Organization
     Offer -->|offeredBy| Person
