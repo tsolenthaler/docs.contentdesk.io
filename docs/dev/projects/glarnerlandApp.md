@@ -19,19 +19,43 @@ hide:
 
 ## Übersicht
 
-### Context 
+### Systeme 
 ``` mermaid
 graph LR
     SystemAVS[AVS]
     SystemCD[contentdesk.io]
     SystemDiscover[discover.swiss]
-    SystemApp[App]
+    SystemApp[App Binarium]
 
     SystemAVS -->|Manuel| SystemCD
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
-### 
+### Daten
+
+``` mermaid
+graph LR
+    SystemAVS[AVS]
+    subgraph avs
+        direction TB
+        CardTyp --> | hat 0..n| Akzeptanzstelle
+    end
+    subgraph contentdesk
+        direction TB
+        Product --> Offer
+        Recommendations
+    end
+    subgraph discover
+        direction TB
+        Product
+        Recommendations
+    end
+    subgraph app
+        direction TB
+        Tagespass
+        Content
+    end
+```
 
 ## Schema
 
