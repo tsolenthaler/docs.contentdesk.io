@@ -22,10 +22,15 @@ hide:
 ### Context Level 1 / Übersicht
 ``` mermaid
 C4Context
-    System(AVS)
-    System(Contentdesk.io)
-    System(discover.swiss)
-    System(App)
+    Boundary("b1","Übersicht"){
+        System(avs, "AVS")
+        System(cd, "Contentdesk.io")
+        System(discover, "discover.swiss")
+        System(app, "App")
+    }
+
+    Rel(cd, discover, "send")
+    Rel(discover, app, "send")
 ```
 ### 
 

@@ -49,7 +49,7 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 | Group             | ProductCollection? |                                        |
 
 
-###
+### Mapping
 ``` mermaid
 flowchart LR
     subgraph Contentdesk
@@ -58,14 +58,6 @@ flowchart LR
         ContentdeskOffer -->|addOn| ContentdeskOffer
         ContentdeskOffer -->|itemOffered| ContentdeskProduct
         ContentdeskOffer -->|itemOffered| ContentdeskService[Service]
-    end
-
-    subgraph Schema.org
-        direction TB
-        Product -->|offers| Offer
-        Offer-->|addOn| Offer
-        Offer-->|itemOffered| Product
-        Offer-->|itemOffered| Service
     end
 
     subgraph discover.swiss
@@ -79,6 +71,15 @@ flowchart LR
 
 
 ## Schema.org "Varianten"
+
+### Schema
+``` mermaid
+flowchart LR
+    Product -->|offers| Offer
+    Offer-->|addOn| Offer
+    Offer-->|itemOffered| Product
+    Offer-->|itemOffered| Service
+```
 
 * Product / ProductModel
 * Product with offers
