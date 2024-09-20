@@ -15,20 +15,20 @@ Bspw. Tagespass
 ``` mermaid
 graph TD
     Product -->|offers|Offer
-    Product -->|availableAtOrFrom 0 ... n|Place
 
-    Offer-->|itemOffered|ProductA
-    Offer-->|itemOffered|ServiceB
-    Offer-->|itemOffered|EventC
+    Offer -->|itemOffered| ProductA
+    Offer -->|itemOffered| ServiceB
+    Offer -->|itemOffered| EventC
+    Offer -->|availableAtOrFrom 0 ... n| Place
 
-    ProductA-->|offers|OfferA
-    ServiceB-->|offers|OfferB
-    EventC-->|offers|OfferC
+    ProductA -->|offers| OfferA
+    ServiceB -->|offers| OfferB
+    EventC -->|offers| OfferC
 
 
-    OfferA -->|offeredBy|Organization
-    OfferB -->|offeredBy|Person
-    OfferC -->|offeredBy|Organization
+    OfferA -->|offeredBy| Organization
+    OfferB -->|offeredBy| Person
+    OfferC -->|offeredBy| Organization
 ```
 
 
