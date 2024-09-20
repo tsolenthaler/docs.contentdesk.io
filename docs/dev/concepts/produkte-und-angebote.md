@@ -51,9 +51,9 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 ###
 ``` mermaid
-graph LR
+flowchart LR
     subgraph Contentdesk
-        direction TD
+        direction TB
         ContentdeskProduct[Product] -->|offers| ContentdeskOffer[Offer]
         ContentdeskOffer -->|addOn| ContentdeskOffer
         ContentdeskOffer -->|itemOffered| ContentdeskProduct
@@ -61,7 +61,7 @@ graph LR
     end
 
     subgraph Schema.org
-        direction TD
+        direction TB
         Product -->|offers| Offer
         Offer-->|addOn| Offer
         Offer-->|itemOffered| Product
@@ -69,7 +69,7 @@ graph LR
     end
 
     subgraph discover.swiss
-        direction TD
+        direction TB
         discoverProduct[Product] -->|offers| discoverOffer[Offer?]
         discoverOffer -->|addOn| discoverOffer
         discoverOffer -->|itemOffered| discoverProduct
