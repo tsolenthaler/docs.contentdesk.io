@@ -52,7 +52,7 @@ graph LR
     end
     subgraph app
         direction TB
-        Tagespass --> Angebot["Leistung"]
+        Tagespass --> Leistung
         Content["Empfehlung"]
     end
 
