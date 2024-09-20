@@ -104,12 +104,6 @@ classDiagram
     CardTyp --> "0..n" Akzeptanzstelle : hat
 
     namespace contentdesk {
-        class Produkt {
-            uuid Id
-            string Name
-            array channel
-            string disambiguatingDescription
-        }
         class Touristcard {
             uuid Id
             string Name
@@ -117,6 +111,12 @@ classDiagram
             string disambiguatingDescription
             date validFrom
             date validThrough
+        }
+        class Produkt {
+            uuid Id
+            string Name
+            array channel
+            string disambiguatingDescription
         }
         class Angebot {
             uuid Id
@@ -142,12 +142,12 @@ classDiagram
             string leisure
         }
     }
-    TouristCard --> "0..n" Angebot : offer
+    Touristcard --> "0..n" Angebot : offer
     Empfehlung --> Angebot : itemReviewed
     Empfehlung --> Ort : itemReviewed
     Empfehlung --> Produkt : itemReviewed
 
-    TouristCard --> "0..n" Ort : availableAtOrFrom
+    Touristcard --> "0..n" Ort : availableAtOrFrom
 
     namespace discover {
         class TouristcardType{
