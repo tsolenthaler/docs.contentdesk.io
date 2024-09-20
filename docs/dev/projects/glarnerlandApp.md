@@ -78,7 +78,7 @@ classDiagram
     }
     CardTyp --> "0..n" Akzeptanzstelle : hat
 
-    namespace contentdesk.io {
+    namespace contentdesk {
         class Produkt {
             uuid Id
             string Name
@@ -107,7 +107,7 @@ classDiagram
 
     Produkt --> "0..n" Ort : availableAtOrFrom
 
-    namespace discover.io {
+    namespace discover {
         class Product{
             uuid Id
             string Name
@@ -135,7 +135,9 @@ classDiagram
 
 ## Schema
 
-### Beispiel Empfehlung / Content / Storie
+### Beispiel 
+
+#### Empfehlung / Content / Storie
 
 ``` mermaid
 graph TD
@@ -153,7 +155,7 @@ graph TD
     Tagespass[Tagespass - Produkt]
 ```
 
-### Beispiel Tagespass
+#### Tagespass
 ``` mermaid
 graph TD
     Recommendation[Ausflugstipps - Empfehlung]
@@ -209,7 +211,7 @@ graph TD
     Organization-->|makesOffer|Offer
 ```
 
-### ER Model
+### Details / ER Model
 
 ``` mermaid
 erDiagram
@@ -260,13 +262,26 @@ erDiagram
     Organization||--o{ Place : areaServed
 ```
 
+### Types
+
+* [Place]
+* [Product]
+* [Offer]
+* [Recommendation]
+* [Organization] ?
+
+[Place]: ../../schema/Place.md
+[Product]: ../../schema/Product.md
+[Offer]: ../../schema/Offer.md
+[Recommendation]: ../../schema/Recommendation.md
+
 ### Properties
 
 * [availableAtOrFrom] 0..n - erhältlich bei oder von
 * [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
 * [isRelatedTo] 0...1 - ist verbunden mit 
 * [channel]
-* [avs_acceptance_point_id]
+* [avs_id]
 * [validFrom]
 * [validThrough]
 * [offeredBy] ?
@@ -281,16 +296,3 @@ erDiagram
 [avs_id]: ../../schema/avs_id.md
 [validFrom]: ../../schema/validFrom.md
 [validThrough]: ../../schema/validThrough.md
-
-### Types
-
-* [Place]
-* [Product]
-* [Offer]
-* [Recommendation]
-* [Organization] ?
-
-[Place]: ../../schema/Place.md
-[Product]: ../../schema/Product.md
-[Offer]: ../../schema/Offer.md
-[Recommendation]: ../../schema/Recommendation.md
