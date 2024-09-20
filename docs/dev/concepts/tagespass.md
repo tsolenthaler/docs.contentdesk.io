@@ -6,8 +6,29 @@ hide:
 ---
 # Tagespass
 
+Produkt mit Angeboten, Leistungen oder Produkten von anderen Leistungsträgern.
 
-Produkt mit Angeboten, Leistungen, Produkten von anderen Leistungsträgern.
+
+## Schema.org
+
+``` mermaid
+graph TD
+    Product -->|offers|Offer
+    Product -->|availableAtOrFrom 0 ... n|Place
+
+    Offer-->|itemOffered|ProductA
+    Offer-->|itemOffered|ServiceB
+    Offer-->|itemOffered|EventC
+
+    ProductA-->|offers|OfferA
+    ServiceB-->|offers|OfferB
+    EventC-->|offers|OfferC
+
+
+    OfferA -->|offeredBy|Organization
+    OfferB -->|offeredBy|Person
+    OfferC -->|offeredBy|Organization
+```
 
 
 ## Beispiel
