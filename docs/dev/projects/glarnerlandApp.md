@@ -33,26 +33,6 @@ graph LR
 ```
 ### Types
 
-#### Übersicht
-
-| AVS                           | contentdesk.io    | discover.swiss      | App / Binarium            |
-| -----------                   | -------------     | -------------       | -------------             |   
-| Card Typ                      | [TouristCard]       | TouristcardType?  | Tagespass                 |
-|                               | [Product]           | [Product2]        | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]             | Offer?            | Leistung                  |       
-|                               | [Recommendation]    | Recommendation    | Empfehlung                |
-|                               | [Place]             | Place             | Place                     |
-|                               | [Organization]      | Organization      | Organization              |
-
-[TouristCard]: ../../schema/TouristCard.md
-[Place]: ../../schema/Place.md
-[Product]: ../../schema/Product.md
-[Offer]: ../../schema/Offer.md
-[Recommendation]: ../../schema/Recommendation.md
-[Organization]: ../../schema/Organization.md
-
-[PRoduct2]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
-
 #### Diagramm
 
 ``` mermaid
@@ -82,6 +62,26 @@ graph LR
     contentdesk --> discover
     discover --> app
 ```
+
+#### Table
+
+| AVS                           | contentdesk.io    | discover.swiss      | App / Binarium            |
+| -----------                   | -------------     | -------------       | -------------             |   
+| Card Typ                      | [TouristCard]       | TouristcardType?  | Tagespass                 |
+|                               | [Product]           | [Product2]        | Produkt                   |
+| Akzeptanzstelle / Leistung?   | [Offer]             | Offer?            | Leistung                  |       
+|                               | [Recommendation]    | Recommendation    | Empfehlung                |
+|                               | [Place]             | Place             | Place                     |
+|                               | [Organization]      | Organization      | Organization              |
+
+[TouristCard]: ../../schema/TouristCard.md
+[Place]: ../../schema/Place.md
+[Product]: ../../schema/Product.md
+[Offer]: ../../schema/Offer.md
+[Recommendation]: ../../schema/Recommendation.md
+[Organization]: ../../schema/Organization.md
+
+[PRoduct2]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
 
 ### Properties
 
@@ -182,7 +182,7 @@ classDiagram
     }
 ```
 
-#### Übersicht
+#### List / Table
 
 * [availableAtOrFrom] 0..n - erhältlich bei oder von
 * [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
@@ -219,8 +219,6 @@ graph TD
     Recommendation -->|isRelatedTo|Product
 ```
 
-[Docs discover.swiss ](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
-
 #### Tagespass
 ``` mermaid
 graph TD
@@ -234,62 +232,11 @@ graph TD
     Organization-->|makesOffer|Offer
 ```
 
-### Details / ER Model
-
-``` mermaid
-erDiagram
-    Recommendation{
-        array channel
-    }
-    Recommendation ||--o{ Place : itemReviewed
-    Recommendation ||--o{ Product : itemReviewed
-    Recommendation ||--o{ Event : itemReviewed
-    Recommendation ||--o{ Place : itemReviewed
-    Recommendation ||--o{ Trail : itemReviewed
-    Recommendation ||--o| Product : isRelatedTo
-
-    Product{
-        string name
-        string description
-        array channel
-        uuid avs_id
-    }
-
-    Product ||--o{ Offer : offers
-
-    Offer{
-        string name
-        number price
-        date validFrom
-        date validThrough
-        array channel
-        uuid avs_id
-    }
-
-    Offer ||--|{ Product : itemOffered
-    Offer ||--o{ Place : availableAtOrFrom
-
-    Place{
-        array channel
-    }
-
-    Event{
-        array channel
-    }
-
-    Trail{
-        array channel
-    }
-
-    Organization||--o{ Offer : makesOffer
-    Organization||--o{ Place : areaServed
-```
-
 ## Offene Punkte
 
 - [ ] discover.swiss 
-    * [ ] Type TouristcardType?
-    * [ ] Offer? und Offers?
+    * [ ] Type [TouristCard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
+    * [ ] [Offer]? und [offers]?
 - [ ] 
 
 
