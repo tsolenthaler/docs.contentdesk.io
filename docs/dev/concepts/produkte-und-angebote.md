@@ -51,7 +51,7 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 ### Mapping
 ``` mermaid
-flowchart LR
+flowchart TB
     subgraph Contentdesk
         direction TB
         ContentdeskProduct[Product] -->|offers| ContentdeskOffer[Offer]
