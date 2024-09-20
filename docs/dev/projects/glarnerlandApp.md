@@ -66,14 +66,14 @@ graph LR
 
 #### Table
 
-| AVS                           | contentdesk.io        | discover.swiss          | App / Binarium            |
-| -----------                   | -------------         | -------------           | -------------             |   
-| Card Typ                      | [Touristcard]         | Touristcard?            | Tagespass                 |
-|                               | [Product]             | [Product DS]            | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]               | Offer?                  | Leistung                  |       
-|                               | [Recommendation]      | [Recommendation DS]     | Empfehlung                |
-|                               | [Place]               | Place                   | Place                     |
-|                               | [Organization]        | Organization            | Organization              |
+| AVS                           | contentdesk.io        | discover.swiss                | App / Binarium            |
+| -----------                   | -------------         | -------------                 | -------------             |   
+| Card Typ                      | [Touristcard]         | Touristcard?                  | Tagespass                 |
+|                               | [Product]             | [Product discover]            | Produkt                   |
+| Akzeptanzstelle / Leistung?   | [Offer]               | Offer?                        | Leistung                  |       
+|                               | [Recommendation]      | [Recommendation discover]     | Empfehlung                |
+|                               | [Place]               | [Place discover]              | Place                     |
+|                               | [Organization]        | [Organization discover]       | Organization              |
 
 [Touristcard]: ../../schema/Touristcard.md
 [Place]: ../../schema/Place.md
@@ -82,8 +82,10 @@ graph LR
 [Recommendation]: ../../schema/Recommendation.md
 [Organization]: ../../schema/Organization.md
 
-[Product DS]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
-[Recommendation DS]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Review/
+[Product discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
+[Recommendation discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Review/
+[Place discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Place/
+[Organization discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Organization/
 
 ### Properties
 
