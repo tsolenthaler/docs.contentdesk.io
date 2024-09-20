@@ -33,13 +33,24 @@ graph LR
 ```
 ### Types
 
+#### Übersicht
+
 | AVS                           | contentdesk.io    | discover.swiss    | App / Binarium            |
 | -----------                   | -------------     | -------------     | -------------             |   
-| Card Typ                      | TouristCard       | TouristcardType?  | Tagespass                 |
-|                               | Produkt           | Product           | Produkt                   |
-| Akzeptanzstelle / Leistung?   | Angebot           | ?                 | Leistung                  |       
-|                               | Empfehlung        | Recommendations   | Empfehlung                |
+| Card Typ                      | [TouristCard]       | TouristcardType?  | Tagespass                 |
+|                               | [Product]           | Product           | Produkt                   |
+| Akzeptanzstelle / Leistung?   | [Offer]             | Offer?            | Leistung                  |       
+|                               | [Recommendation]        | Recommendation    | Empfehlung                |
+|                               | [Place]             | Place             | Place                     |
+|                               | [Organization]      | Organization      | Organization              |
 
+[TouristCard]: ../../schema/TouristCard.md
+[Place]: ../../schema/Place.md
+[Product]: ../../schema/Product.md
+[Offer]: ../../schema/Offer.md
+[Recommendation]: ../../schema/Recommendation.md
+
+#### Diagramm
 
 ``` mermaid
 graph LR
@@ -70,6 +81,8 @@ graph LR
 ```
 
 ### Properties
+
+#### Diagramm
 ``` mermaid
 classDiagram
     direction TB
@@ -247,19 +260,6 @@ erDiagram
     Organization||--o{ Offer : makesOffer
     Organization||--o{ Place : areaServed
 ```
-
-### Types
-
-* [Place]
-* [Product]
-* [Offer]
-* [Recommendation]
-* [Organization] ?
-
-[Place]: ../../schema/Place.md
-[Product]: ../../schema/Product.md
-[Offer]: ../../schema/Offer.md
-[Recommendation]: ../../schema/Recommendation.md
 
 ### Properties
 
