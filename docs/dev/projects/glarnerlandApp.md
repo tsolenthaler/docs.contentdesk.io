@@ -31,7 +31,7 @@ graph LR
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
-### Daten
+### Typen
 
 ``` mermaid
 graph LR
@@ -55,7 +55,41 @@ graph LR
         Tagespass
         Content
     end
+
+    avs --> contentdesk
+    contentdesk --> discover
+    discover --> app
 ```
+
+### Details / Properties
+``` mermaid
+graph LR
+    SystemAVS[AVS]
+    subgraph avs
+        direction TB
+        CardTyp --> | hat 0..n| Akzeptanzstelle
+    end
+    subgraph contentdesk
+        direction TB
+        Product --> Offer
+        Recommendations
+    end
+    subgraph discover
+        direction TB
+        Product
+        Recommendations
+    end
+    subgraph app
+        direction TB
+        Tagespass
+        Content
+    end
+
+    avs --> contentdesk
+    contentdesk --> discover
+    discover --> app
+```
+
 
 ## Schema
 
