@@ -54,24 +54,24 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 graph LR
     subgraph Contentdesk
         direction TB
-        ContentdeskProduct[Product] -->|offers|ContentdeskOffer[Offer]
-        ContentdeskOffer -->|addOn|Offer
+        ContentdeskProduct[Product] -->|offers| ContentdeskOffer[Offer]
+        ContentdeskOffer -->|addOn| ContentdeskOffer
         ContentdeskOffer -->|itemOffered| ContentdeskProduct
         ContentdeskOffer -->|itemOffered| ContentdeskService[Service]
     end
 
     subgraph Schema.org
         direction TB
-        Product -->|offers|Offer
-        Offer-->|addOn|Offer
-        Offer-->|itemOffered|Product
-        Offer-->|itemOffered|Service
+        Product -->|offers| Offer
+        Offer-->|addOn| Offer
+        Offer-->|itemOffered| Product
+        Offer-->|itemOffered| Service
     end
 
     subgraph discover.swiss
         direction TB
         discoverProduct[Product] -->|offers| discoverOffer[Offer?]
-        discoverOffer -->|addOn| Offer
+        discoverOffer -->|addOn| discoverOffer
         discoverOffer -->|itemOffered| discoverProduct
         discoverOffer -->|itemOffered| discoverService[Service?]
     end
