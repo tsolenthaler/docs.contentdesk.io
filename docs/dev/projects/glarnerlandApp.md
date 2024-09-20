@@ -133,7 +133,7 @@ classDiagram
     TouristCard --> "0..n" Ort : availableAtOrFrom
 
     namespace discover {
-        class TouristcardType?{
+        class TouristcardType{
             uuid Id
             string Name
             uuid sourceID
@@ -168,54 +168,6 @@ classDiagram
 
 
 ## Schema
-
-### Beispiel 
-
-#### Empfehlung
-
-``` mermaid
-graph TD
-    Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|empfiehlt|PlaceA[POI A]
-    Recommendation -->|empfiehlt|PlaceB[POI B]
-    Recommendation -->|empfiehlt|PlaceC[POI C]
-
-    Recommendation -->|empfiehlt|Product[Produkt]
-    Recommendation -->|empfiehlt|Event[Veranstaltung]
-    Recommendation -->|empfiehlt|Tour
-
-    Recommendation -->|ist verbunden mit|Tagespass
-
-    Tagespass[Tagespass - Produkt]
-```
-
-#### Tagespass
-``` mermaid
-graph TD
-    Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|ist verbunden mit|Tagespass
-
-    Tagespass[Tagespass - Produkt]
-    Tagespass -->|hat Leistungen/Angebot|OfferA
-    Tagespass -->|hat Leistungen/Angebot|OfferB
-    Tagespass -->|hat Leistungen/Angebot|OfferC
-    
-    OfferA[Leistung / Angebot A]
-    OfferB[Leistung / Angebot B]
-    OfferC[Leistung / Angebot C]
-
-    OfferA -->|ist erhältlich bei|PlaceA[POI A]
-    OfferB -->|ist erhältlich bei|PlaceB[POI B]
-    OfferC -->|ist erhältlich bei|PlaceA
-
-    OfferA -->|angeboten von|OrganisationA[Organisation X]
-    OfferB -->|angeboten von|OrganisationA[Organisation Y]
-    OfferC -->|angeboten von|OrganisationA[Organisation Z]
-
-    OfferA -->|Angebot von Produkt| Tagespass
-    OfferB -->|Angebot von Produkt| Tagespass
-    OfferC -->|Angebot von Produkt| Tagespass
-```
 
 ### Schema.org
 
@@ -330,3 +282,61 @@ erDiagram
 [avs_id]: ../../schema/avs_id.md
 [validFrom]: ../../schema/validFrom.md
 [validThrough]: ../../schema/validThrough.md
+
+
+## Offene Punkte
+
+- [ ] discover.swiss 
+- [ ] discover.swiss 
+    * [ ] Type TouristcardType?
+    * [ ] Praesent sed risus massa
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+
+### Beispiele
+
+#### Empfehlung
+
+``` mermaid
+graph TD
+    Recommendation[Ausflugstipps - Empfehlung]
+    Recommendation -->|empfiehlt|PlaceA[POI A]
+    Recommendation -->|empfiehlt|PlaceB[POI B]
+    Recommendation -->|empfiehlt|PlaceC[POI C]
+
+    Recommendation -->|empfiehlt|Product[Produkt]
+    Recommendation -->|empfiehlt|Event[Veranstaltung]
+    Recommendation -->|empfiehlt|Tour
+
+    Recommendation -->|ist verbunden mit|Tagespass
+
+    Tagespass[Tagespass - Produkt]
+```
+
+#### Tagespass
+``` mermaid
+graph TD
+    Recommendation[Ausflugstipps - Empfehlung]
+    Recommendation -->|ist verbunden mit|Tagespass
+
+    Tagespass[Tagespass - Produkt]
+    Tagespass -->|hat Leistungen/Angebot|OfferA
+    Tagespass -->|hat Leistungen/Angebot|OfferB
+    Tagespass -->|hat Leistungen/Angebot|OfferC
+    
+    OfferA[Leistung / Angebot A]
+    OfferB[Leistung / Angebot B]
+    OfferC[Leistung / Angebot C]
+
+    OfferA -->|ist erhältlich bei|PlaceA[POI A]
+    OfferB -->|ist erhältlich bei|PlaceB[POI B]
+    OfferC -->|ist erhältlich bei|PlaceA
+
+    OfferA -->|angeboten von|OrganisationA[Organisation X]
+    OfferB -->|angeboten von|OrganisationA[Organisation Y]
+    OfferC -->|angeboten von|OrganisationA[Organisation Z]
+
+    OfferA -->|Angebot von Produkt| Tagespass
+    OfferB -->|Angebot von Produkt| Tagespass
+    OfferC -->|Angebot von Produkt| Tagespass
+```
