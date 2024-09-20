@@ -1,6 +1,8 @@
 ---
-#hide:
-  #- navigation
+tags:
+  - concept
+hide:
+  - navigation
   #- toc
 ---
 

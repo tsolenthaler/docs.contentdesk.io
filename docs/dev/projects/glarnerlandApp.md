@@ -43,7 +43,7 @@ graph LR
         direction TB
         Produkt --> |offers| Angebot
         Produkt --> |availableAtOrFrom| Ort["POI / Place"]
-        Empfehlung
+        Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
     end
     subgraph discover
         direction TB
