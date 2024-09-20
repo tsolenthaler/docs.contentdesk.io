@@ -1,12 +1,12 @@
 # Produkte, Varianten und Angebote
 
 
-## Übersicht Typen
+## Übersicht von Möglichkeiten
 
 - Einfaches Produkt [Product]
 
     * ohne weitere Angebote
-    * mit weiteren Angeboten [offers]
+    * mit weiteren Angeboten - via Verknüpfung [offers]
 
 - Produkt mit Variante [ProductGroup]
 
@@ -18,7 +18,7 @@
 
     * Ein zusätzliches Angebot, das nur in Kombination mit dem ersten Basisangebot erhältlich ist (z.B. Zuschläge und Verlängerungen, die gegen einen Aufpreis erhältlich sind). [addOn]
 
-- Service [Service]
+- *Service [Service]
 
     * 
 
@@ -41,18 +41,24 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 |                   | ProductModel?      | Für Ähnlich wie Product mit weiteren spezifischen Properties wie isVariantOf, predecessorOf,successorOf |
 | Group             | ProductCollection? |                                        |
 
+
+###
 ``` mermaid
 graph LR
     subgraph Contentdesk
         direction TB
-        ContentdeskProduct -->|offers|Offer
+        Product -->|offers|Offer
         Offer-->|addOn|Offer
+        Offer-->|itemOffered|Product
+        Offer-->|itemOffered|Service
     end
 
-    subgraph Contentdesk
+    subgraph Schema.org
         direction TB
-        ContentdeskProduct -->|offers|Offer
+        Product -->|offers|Offer
         Offer-->|addOn|Offer
+        Offer-->|itemOffered|Product
+        Offer-->|itemOffered|Service
     end
 ```
 
