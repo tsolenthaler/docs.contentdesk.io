@@ -17,6 +17,18 @@ hide:
 [Gästekarte]: ../concepts/gaestekarte.md
 [Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
+## C4 Model
+
+### Context Level 1 / Übersicht
+``` mermaid
+C4Context
+    System(AVS)
+    System(Contentdesk.io)
+    System(discover.swiss)
+    System(App)
+```
+### 
+
 ## Schema
 
 ### Beispiel Empfehlung / Content / Storie
