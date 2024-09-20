@@ -4,10 +4,11 @@ tags:
 hide:
   - navigation
 ---
-# Tagespass
+# Gästekarte
 
 Produkt mit Angeboten, Leistungen oder Produkten von anderen Leistungsträgern.
 
+Bspw. Tagespass
 
 ## Schema.org
 
