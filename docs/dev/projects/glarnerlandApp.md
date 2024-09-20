@@ -52,8 +52,8 @@ graph LR
     end
     subgraph app
         direction TB
-        Tagespass
-        Content
+        Tagespass --> Angebot["Leistung"]
+        Content["Empfehlung"]
     end
 
     avs --> contentdesk
