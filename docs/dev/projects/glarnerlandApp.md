@@ -21,16 +21,14 @@ hide:
 
 ### Context 
 ``` mermaid
-C4Context
-    Boundary("b1","Übersicht"){
-        System(avs, "AVS")
-        System(cd, "Contentdesk.io")
-        System(discover, "discover.swiss")
-        System(app, "App")
-    }
+graph LR
+    SystemAVS[AVS]
+    SystemCD[contentdesk.io]
+    SystemDiscover[discover.swiss]
+    SystemApp[App]
 
-    Rel(cd, discover, "API")
-    Rel(discover, app, "API")
+    SystemCD -->|API| SystemDiscover
+    SystemDiscover -->|API| SystemApp
 ```
 ### 
 
