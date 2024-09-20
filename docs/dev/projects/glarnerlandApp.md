@@ -10,9 +10,11 @@ hide:
 ## Konzepte
 
 * Empfehlung - [Reviews and recommendations]
-* Tagespass - [Produkte und Angebote]
+* Tagespass - [Gästekarte]
+* [Produkte und Angebote]
 
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations.md
+[Gästekarte]: ../concepts/gasestekarte.md
 [Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
 ## Schema
