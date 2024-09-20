@@ -13,29 +13,38 @@ Bspw. Tagespass
 ## Beispiel Tagespass
 ``` mermaid
 graph TD
-    Product[Tagespass] -->|offers|Offer[Angebot]
+    Product[Tagespass] -->|bietet|OfferGratis[Angebot Gratis]
+    Product[Tagespass] -->|bietet|Offer20Rabatt[Angebot 20% Rabatt]
+    Product[Tagespass] -->|bietet|OfferSauna[Angebot Gratis Sauna Eintritt]
 
-    Offer -->|itemOffered| ProductA["Nusstange"]
-    Offer -->|itemOffered| ServiceB["Sauna-Eintritt"]
-    Offer -->|itemOffered| EventC["Eintritt ESAF"]
-    Offer -->|availableAtOrFrom 0 ... n| PlaceA[Tourist-Info]
+    OfferGratis -->|Angebote| OfferDinoPark["Einritt Dino Park"]
+    OfferGratis -->|Angebote| ProductKaffee["Kaffee"]
+    OfferGratis -->|Angebote| ProductNusstange["Nusstange"]
 
-    ProductA -->|offers| OfferA
-    ServiceB -->|offers| OfferB
-    EventC -->|offers| OfferC
+    OfferGratis -->|erhältlich bei| PlaceVegi[Restaurant Vegi]
+    OfferGratis -->|erhältlich bei| PlaceItaly[Pizzaria Italy]
+    OfferGratis -->|erhältlich bei| PlaceGourment[Restaurant Gourment]
+    OfferGratis -->|erhältlich bei| PlaceBeck[Bäckerei Beck]
+    OfferGratis -->|erhältlich bei| PlaceDinoPark[Park Dino]
+    OfferGratis -->|erhältlich bei| PlaceCreme[Café Créme]
+    OfferGratis -->|erhältlich bei| PlaceEis[Eiscafé Eiskalt]
 
-    OfferA -->|offeredBy| OrganizationA[Glanerland Tourismus]
-    OfferC -->|offeredBy| OrganizationA
-    OfferB -->|offeredBy| OrganizationB["ESAF Organisation"]
+    OfferDinoPark -->|erhältlich bei| PlaceDinoPark[Park Dino]
 
-    OrganizationA -->|areaServed| PlaceA
-    OrganizationA -->|areaServed| PlaceA
+    ProductKaffee -->|erhältlich bei|PlaceVegi
+    ProductKaffee -->|erhältlich bei|PlaceItaly
+    ProductKaffee -->|erhältlich bei|PlaceGourment
+    ProductKaffee -->|erhältlich bei|PlaceBeck
+    ProductKaffee -->|erhältlich bei|PlaceCreme
+    ProductKaffee -->|erhältlich bei|PlaceEis
 
-    OfferA -->|availableAtOrFrom| PlaceB
-    OfferA -->|availableAtOrFrom| PlaceC
-    OfferA -->|availableAtOrFrom| PlaceE
-    OfferB -->|availableAtOrFrom| PlaceB
-    OfferC -->|availableAtOrFrom| PlaceC
+    ProductNusstange -->|erhältlich bei|PlaceBeck
+
+    Offer20Rabatt -->|Angebote| ServiceB["Sauna-Eintritt"]
+
+    Offer20Rabatt -->|erhältlich bei| PlaceOstPark[Alpine Abenteuerpark Ostschweiz]
+    Offer20Rabatt -->|erhältlich bei| PlaceHipo[Nationalpark Hipo]
+    Offer20Rabatt -->|erhältlich bei| PlaceSuperland[Superland Park]
 ```
 
 ## Schema.org

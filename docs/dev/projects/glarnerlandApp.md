@@ -43,7 +43,7 @@ graph TD
     Recommendation[Ausflugstipps - Empfehlung]
     Recommendation -->|ist verbunden mit|Tagespass
 
-    Tagespass[Tagespass - Produkt?]
+    Tagespass[Tagespass - Produkt]
     Tagespass -->|hat Leistungen/Angebot|OfferA
     Tagespass -->|hat Leistungen/Angebot|OfferB
     Tagespass -->|hat Leistungen/Angebot|OfferC
