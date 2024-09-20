@@ -19,7 +19,7 @@ graph TD
     Offer -->|itemOffered| ProductA
     Offer -->|itemOffered| ServiceB
     Offer -->|itemOffered| EventC
-    Offer -->|availableAtOrFrom 0 ... n| Place
+    Offer -->|availableAtOrFrom 0 ... n| PlaceA
 
     ProductA -->|offers| OfferA
     ServiceB -->|offers| OfferB
@@ -29,6 +29,12 @@ graph TD
     OfferA -->|offeredBy| Organization
     OfferB -->|offeredBy| Person
     OfferC -->|offeredBy| Organization
+
+    OfferA -->|availableAtOrFrom| PlaceA
+    OfferA -->|availableAtOrFrom| PlaceB
+    OfferA -->|availableAtOrFrom| PlaceC
+    OfferB -->|availableAtOrFrom| PlaceB
+    OfferC -->|availableAtOrFrom| PlaceA
 ```
 
 
