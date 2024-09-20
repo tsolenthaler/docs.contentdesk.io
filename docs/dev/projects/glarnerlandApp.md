@@ -64,8 +64,8 @@ graph LR
 ### Properties
 ``` mermaid
 classDiagram
+    direction TB
     namespace Avs {
-        direction TB
         class CardTyp {
             uuid Id
             string Name
