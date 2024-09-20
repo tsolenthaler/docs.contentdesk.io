@@ -179,6 +179,27 @@ classDiagram
     }
 ```
 
+#### Übersicht
+
+* [availableAtOrFrom] 0..n - erhältlich bei oder von
+* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
+* [isRelatedTo] 0...1 - ist verbunden mit 
+* [channel]
+* [avs_id]
+* [validFrom]
+* [validThrough]
+* [offeredBy] ?
+* [makesOffer] ?
+* [areaServed] ?
+* [itemOffered] ?
+
+[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
+[itemReviewed]: ../../schema/itemReviewed.md
+[isRelatedTo]: ../../schema/isRelatedTo.md
+[channel]: ../../schema/channel.md
+[avs_id]: ../../schema/avs_id.md
+[validFrom]: ../../schema/validFrom.md
+[validThrough]: ../../schema/validThrough.md
 
 ## Schema
 
@@ -261,36 +282,12 @@ erDiagram
     Organization||--o{ Place : areaServed
 ```
 
-### Properties
-
-* [availableAtOrFrom] 0..n - erhältlich bei oder von
-* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
-* [isRelatedTo] 0...1 - ist verbunden mit 
-* [channel]
-* [avs_id]
-* [validFrom]
-* [validThrough]
-* [offeredBy] ?
-* [makesOffer] ?
-* [areaServed] ?
-* [itemOffered] ?
-
-[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
-[itemReviewed]: ../../schema/itemReviewed.md
-[isRelatedTo]: ../../schema/isRelatedTo.md
-[channel]: ../../schema/channel.md
-[avs_id]: ../../schema/avs_id.md
-[validFrom]: ../../schema/validFrom.md
-[validThrough]: ../../schema/validThrough.md
-
-
 ## Offene Punkte
 
 - [ ] discover.swiss 
-- [ ] discover.swiss 
     * [ ] Type TouristcardType?
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+    * [ ] Offer? und Offers?
+- [ ] 
 
 
 ### Beispiele
