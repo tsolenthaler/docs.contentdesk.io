@@ -35,7 +35,6 @@ graph LR
 
 ``` mermaid
 graph LR
-    SystemAVS[AVS]
     subgraph avs
         direction TB
         CardTyp --> | hat 0..n| Akzeptanzstelle
@@ -64,7 +63,6 @@ graph LR
 ### Details / Properties
 ``` mermaid
 graph LR
-    SystemAVS[AVS]
     subgraph avs
         direction TB
         CardTyp --> | hat 0..n| Akzeptanzstelle
