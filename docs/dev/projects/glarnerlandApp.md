@@ -118,10 +118,6 @@ classDiagram
 
         }
     }
-
-    avs --> contentdesk
-    contentdesk --> discover
-    discover --> app
 ```
 
 
