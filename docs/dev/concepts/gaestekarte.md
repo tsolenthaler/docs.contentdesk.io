@@ -31,8 +31,8 @@ graph TD
     Offer20Rabatt -->|erhältlich bei| PlaceHipo[Nationalpark Hipo]
     Offer20Rabatt -->|erhältlich bei| PlaceSuperland[Superland Park]
 
-    OfferSauna -->|erhältlich bei| Sternenhotel
-    OfferSauna -->|erhältlich bei| Hotel Zweistein
+    OfferSauna -->|erhältlich bei| PlaceHotelC[Sternenhotel]
+    OfferSauna -->|erhältlich bei| PlaceHotelB[Hotel Zweistein]
 ```
 
 ## Schema.org
