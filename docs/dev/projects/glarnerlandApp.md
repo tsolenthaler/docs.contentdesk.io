@@ -95,12 +95,17 @@ classDiagram
             string Name
         }
 
-        class Ort["POI / Place"]
+        class Ort["POI / Place"] {
+            uuid Id
+            string Name
+        }
     }
     Produkt --> "0..n" Angebot : offer
-    Empfehlung --> Angebot
-    Empfehlung --> Ort
-    Empfehlung --> Produkt
+    Empfehlung --> Angebot : itemReviewed
+    Empfehlung --> Ort : itemReviewed
+    Empfehlung --> Produkt : itemReviewed
+
+    Produkt --> "0..n" Ort : availableAtOrFrom
 
     namespace discover {
         class Product{
@@ -109,11 +114,14 @@ classDiagram
             uuid sourceID
             uuid avs_id
         }
-        class Recommendations{
+        class Recommendations {
             uuid Id
             string Name
         }
     }
+
+    Recommendations --> "0..1" Place["Place / Product / Event"] : isRelatedTo 
+    Recommendations --> "0..n" Product["Place / Produkt] : itemReviewed
     namespace app {
         class Tagespass {
 
