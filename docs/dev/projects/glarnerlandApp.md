@@ -78,7 +78,7 @@ classDiagram
     }
     CardTyp --> "0..n" Akzeptanzstelle : hat
 
-    namespace contentdesk {
+    namespace contentdesk.io {
         class Produkt {
             uuid Id
             string Name
@@ -107,7 +107,7 @@ classDiagram
 
     Produkt --> "0..n" Ort : availableAtOrFrom
 
-    namespace discover {
+    namespace discover.io {
         class Product{
             uuid Id
             string Name
