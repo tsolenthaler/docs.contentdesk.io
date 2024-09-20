@@ -6,16 +6,16 @@ hide:
 ---
 # Gästekarte
 
-Produkt mit Angeboten, Leistungen oder Produkten von anderen Leistungsträgern.
+Eine Gästekarte ist ein Dokument oder eine Karte, die Gäste in bestimmten Urlaubsregionen erhalten, wenn sie dort übernachten. Diese Karte bietet verschiedene Vergünstigungen und kostenlose Angebote, wie z.B. ermäßigte Eintrittspreise für Sehenswürdigkeiten, kostenlose Nutzung öffentlicher Verkehrsmittel oder Rabatte bei Freizeitaktivitäten.
 
-Bspw. Tagespass
+Bspw. Tagespass Glarnerland
 
 ## Beispiel Gästekarte
 ``` mermaid
 graph TD
-    Product[Tagespass] -->|bietet|OfferGratis[Angebot Gratis]
-    Product[Tagespass] -->|bietet|Offer20Rabatt[Angebot 20% Rabatt]
-    Product[Tagespass] -->|bietet|OfferSauna[Angebot Gratis Sauna Eintritt]
+    Product[Gästekarte] -->|bietet|OfferGratis[Angebot Gratis]
+    Product -->|bietet|Offer20Rabatt[Angebot 20% Rabatt]
+    Product -->|bietet|OfferSauna[Angebot Gratis Sauna Eintritt]
 
     OfferGratis -->|Angebote| OfferDinoPark["Einritt Dino Park"]
     OfferGratis -->|Angebote| ProductKaffee["Kaffee"]
