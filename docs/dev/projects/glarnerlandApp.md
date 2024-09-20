@@ -27,6 +27,7 @@ graph LR
     SystemDiscover[discover.swiss]
     SystemApp[App]
 
+    SystemAVS -->|Manuel| SystemCD
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
