@@ -43,8 +43,8 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        TouristCard --> |offers| Angebot
-        TouristCard --> |availableAtOrFrom| Ort["POI / Place"]
+        Touristcard --> |offers| Angebot
+        Touristcard --> |availableAtOrFrom| Ort["POI / Place"]
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
         Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
     end
