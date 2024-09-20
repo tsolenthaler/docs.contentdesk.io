@@ -41,7 +41,8 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Produkt --> Angebot
+        Produkt --> |offers| Angebot
+        Produkt --> |availableAtOrFrom| Ort["POI / Place"]
         Empfehlung
     end
     subgraph discover
@@ -64,6 +65,7 @@ graph LR
 ``` mermaid
 classDiagram
     namespace Avs {
+        direction TB
         class CardTyp {
             uuid Id
             string Name
