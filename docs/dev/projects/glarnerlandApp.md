@@ -62,26 +62,62 @@ graph LR
 
 ### Properties
 ``` mermaid
-graph LR
-    subgraph avs
-        direction TB
-        CardTyp --> | hat 0..n| Akzeptanzstelle
-    end
-    subgraph contentdesk
-        direction TB
-        Product --> Offer
-        Recommendations
-    end
-    subgraph discover
-        direction TB
-        Product
-        Recommendations
-    end
-    subgraph app
-        direction TB
-        Tagespass
-        Content
-    end
+classDiagram
+    namespace Avs {
+        class CardTyp {
+            uuid Id
+            string Name
+        }
+        class Akzeptanzstelle {
+            uuid Id
+            string Name
+            date Gültigkeit
+        }
+
+        CardTyp --> "0..n" Akzeptanzstelle : hat
+    }
+    namespace contentdesk {
+        class Produkt {
+            uuid Id
+            string Name
+            uuid avs_id
+        }
+        class Angebot {
+            uuid Id
+            string Name
+            uuid avs_id
+
+        }
+        class Empfehlung {
+            uuid Id
+            string Name
+        }
+
+        Produkt --> "0..n" Angebot : offer
+        Empfehlung --> Angebot
+        Empfehlung --> POI
+        Empfehlung --> Produkt
+    }
+    namespace discover {
+        class Product{
+            uuid Id
+            string Name
+            uuid sourceID
+            uuid avs_id
+        }
+        class Recommendations{
+            uuid Id
+            string Name
+        }
+    }
+    namespace app {
+        class Tagespass {
+
+        }
+        class Content {
+
+        }
+    }
 
     avs --> contentdesk
     contentdesk --> discover
