@@ -33,6 +33,13 @@ graph LR
 ```
 ### Typen
 
+| AVS                           | contentdesk.io    | discover.swiss    | App / Binarium            |
+| -----------                   | -------------     | -------------     | -------------             |   
+| Card Typ                      | Produkt           | Prodcut           | Produkt z.B. Tagespass    |
+| Akzeptanzstelle / Leistung?   | Angebot           | ?                 | Leistung                  |       
+|                               | Empfehlung        | Recommendations   | Empfehlung                |
+
+
 ``` mermaid
 graph LR
     subgraph avs
