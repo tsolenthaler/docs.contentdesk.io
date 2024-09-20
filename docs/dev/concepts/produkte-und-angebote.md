@@ -51,7 +51,7 @@ Die Angebote / Leistungen sind von anderen Leistungsträgern
 
 ### Mapping
 ``` mermaid
-flowchart TB
+flowchart LR
     subgraph Contentdesk
         direction TB
         ContentdeskProduct[Product] -->|offers| ContentdeskOffer[Offer]
@@ -60,7 +60,7 @@ flowchart TB
         ContentdeskOffer -->|itemOffered| ContentdeskService[Service]
     end
 
-    subgraph discover.swiss
+    subgraph discover
         direction TB
         discoverProduct[Product] -->|offers| discoverOffer[Offer?]
         discoverOffer -->|addOn| discoverOffer
@@ -68,9 +68,7 @@ flowchart TB
         discoverOffer -->|itemOffered| discoverService[Service?]
     end
 
-    ContentdeskProduct --> discoverProduct
-    ContentdeskOffer --> discoverOffer
-    ContentdeskService --> discoverService
+    Contentdesk --> discover
 ```
 
 
