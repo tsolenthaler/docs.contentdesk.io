@@ -67,14 +67,14 @@ graph LR
 
 | AVS                           | contentdesk.io    | discover.swiss      | App / Binarium            |
 | -----------                   | -------------     | -------------       | -------------             |   
-| Card Typ                      | [TouristCard]       | TouristcardType?  | Tagespass                 |
+| Card Typ                      | [Touristcard]       | Touristcard?      | Tagespass                 |
 |                               | [Product]           | [Product2]        | Produkt                   |
 | Akzeptanzstelle / Leistung?   | [Offer]             | Offer?            | Leistung                  |       
 |                               | [Recommendation]    | Recommendation    | Empfehlung                |
 |                               | [Place]             | Place             | Place                     |
 |                               | [Organization]      | Organization      | Organization              |
 
-[TouristCard]: ../../schema/TouristCard.md
+[Touristcard]: ../../schema/Touristcard.md
 [Place]: ../../schema/Place.md
 [Product]: ../../schema/Product.md
 [Offer]: ../../schema/Offer.md
@@ -109,7 +109,7 @@ classDiagram
             array channel
             string disambiguatingDescription
         }
-        class TouristCard {
+        class Touristcard {
             uuid Id
             string Name
             uuid avs_id
@@ -235,7 +235,7 @@ graph TD
 ## Offene Punkte
 
 - [ ] discover.swiss 
-    * [ ] Type [TouristCard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
+    * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
     * [ ] [Offer]? und [offers]?
 - [ ] 
 
