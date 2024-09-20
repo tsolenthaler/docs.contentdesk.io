@@ -41,8 +41,8 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Product --> Offer
-        Recommendations
+        Produkt --> Angebot
+        Empfehlung
     end
     subgraph discover
         direction TB
@@ -60,7 +60,7 @@ graph LR
     discover --> app
 ```
 
-### Details / Properties
+### Properties
 ``` mermaid
 graph LR
     subgraph avs
