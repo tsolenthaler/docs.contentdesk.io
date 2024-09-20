@@ -17,9 +17,9 @@ hide:
 [Gästekarte]: ../concepts/gaestekarte.md
 [Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
-## C4 Model
+## Übersicht
 
-### Context Level 1 / Übersicht
+### Context 
 ``` mermaid
 C4Context
     Boundary("b1","Übersicht"){
@@ -29,8 +29,8 @@ C4Context
         System(app, "App")
     }
 
-    Rel(cd, discover, "send")
-    Rel(discover, app, "send")
+    Rel(cd, discover, "API")
+    Rel(discover, app, "API")
 ```
 ### 
 
