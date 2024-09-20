@@ -13,7 +13,7 @@ Bspw. Tagespass
 ## Beispiel Tagespass
 ``` mermaid
 graph TD
-    Product[Tagespass] -->|offers[angebote]|Offer[Angebot]
+    Product[Tagespass] -->|offers|Offer[Angebot]
 
     Offer -->|itemOffered| ProductA["Nusstange"]
     Offer -->|itemOffered| ServiceB["Sauna-Eintritt"]
