@@ -14,7 +14,7 @@ hide:
 * [Produkte und Angebote]
 
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations.md
-[Gästekarte]: ../concepts/gasestekarte.md
+[Gästekarte]: ../concepts/gaestekarte.md
 [Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
 ## Schema
