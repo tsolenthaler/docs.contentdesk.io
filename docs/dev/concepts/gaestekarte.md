@@ -10,25 +10,23 @@ Produkt mit Angeboten, Leistungen oder Produkten von anderen Leistungsträgern.
 
 Bspw. Tagespass
 
-## Schema.org
-
+## Beispiel Tagespass
 ``` mermaid
 graph TD
-    Product -->|offers|Offer
+    Product[Tagespass] -->|offers|Offer[Angebot]
 
-    Offer -->|itemOffered| ProductA
-    Offer -->|itemOffered| ServiceB
-    Offer -->|itemOffered| EventC
+    Offer -->|itemOffered| ProductA["Nusstange"]
+    Offer -->|itemOffered| ServiceB["Sauna-Eintritt"]
+    Offer -->|itemOffered| EventC["Eintritt ESAF"]
     Offer -->|availableAtOrFrom 0 ... n| PlaceA
 
     ProductA -->|offers| OfferA
     ServiceB -->|offers| OfferB
     EventC -->|offers| OfferC
 
-
-    OfferA -->|offeredBy| Organization
-    OfferB -->|offeredBy| Person
-    OfferC -->|offeredBy| Organization
+    OfferA -->|offeredBy| OrganizationA[Glanerland Tourismus]
+    OfferC -->|offeredBy| OrganizationA
+    OfferB -->|offeredBy| OrganizationB["ESAF Organisation"]
 
     OfferA -->|availableAtOrFrom| PlaceA
     OfferA -->|availableAtOrFrom| PlaceB
@@ -37,15 +35,36 @@ graph TD
     OfferC -->|availableAtOrFrom| PlaceA
 ```
 
+## Schema.org
+``` mermaid
+graph TD
+    Product -->|offers|Offer
 
-## Beispiel
+    Offer -->|itemOffered| Product
+    Offer -->|itemOffered| Service
+    Offer -->|itemOffered| Event
+    Offer -->|availableAtOrFrom 0 ... n| Place
+
+    Product -->|offers| Offer
+    Service -->|offers| Offer
+    Event -->|offers| Offer
+
+
+    Offer -->|offeredBy| Organization
+    Offer -->|offeredBy| Person
+
+    Offer -->|availableAtOrFrom| Place
+```
+
+
+## Beispiele
 
 ### Nach Schema.org als Offer
 
 ``` json
 {
   "@context": "https://schema.org",
-  "@type": "Offer",
+  "@type": "Product",
   "name": "Tagespass",
   "description": "Ein Tagespass mit verschiedenen Angeboten und Produkten von Partnerorganisationen.",
   "offers": [
