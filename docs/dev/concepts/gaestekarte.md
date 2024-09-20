@@ -54,7 +54,17 @@ graph TD
     Offer -->|availableAtOrFrom| Place
 ```
 
+### Types
 
+* [Product](../../schema/Place.md)
+* [Offer](../../schema/Offer.md)
+
+### Properties
+
+* [offers](../../schema/offers.md)
+* [itemOffered](../../schema/itemOffered.md)
+* [availableAtOrFrom](../../schema/availableAtOrFrom.md)
+* *[offeredBy](../../schema/offeredBy.md)
 
 ## Beispiele
 
