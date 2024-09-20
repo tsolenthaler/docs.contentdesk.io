@@ -1,3 +1,10 @@
+---
+tags:
+  - projects
+hide:
+  - navigation
+---
+
 # Glarnerland App
 
 ## Konzepte

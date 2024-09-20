@@ -1,3 +1,10 @@
+---
+tags:
+  - concept
+hide:
+  - navigation
+---
+
 # Produkte, Varianten und Angebote
 
 

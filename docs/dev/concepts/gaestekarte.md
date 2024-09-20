@@ -1,6 +1,6 @@
 ---
 tags:
-  - property
+  - concept
 hide:
   - navigation
 ---
