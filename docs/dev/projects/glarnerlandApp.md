@@ -19,7 +19,7 @@ hide:
 
 ## Übersicht
 
-### Systeme 
+### Systems
 ``` mermaid
 graph LR
     SystemAVS[AVS]
@@ -31,11 +31,12 @@ graph LR
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
-### Typen
+### Types
 
 | AVS                           | contentdesk.io    | discover.swiss    | App / Binarium            |
 | -----------                   | -------------     | -------------     | -------------             |   
-| Card Typ                      | Produkt           | Prodcut           | Produkt z.B. Tagespass    |
+| Card Typ                      | TouristCard       | TouristcardType?  | Tagespass                 |
+|                               | Produkt           | Product           | Produkt                   |
 | Akzeptanzstelle / Leistung?   | Angebot           | ?                 | Leistung                  |       
 |                               | Empfehlung        | Recommendations   | Empfehlung                |
 
@@ -48,8 +49,8 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Produkt --> |offers| Angebot
-        Produkt --> |availableAtOrFrom| Ort["POI / Place"]
+        TouristCard --> |offers| Angebot
+        TouristCard --> |availableAtOrFrom| Ort["POI / Place"]
         Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
     end
     subgraph discover
@@ -89,37 +90,59 @@ classDiagram
         class Produkt {
             uuid Id
             string Name
+            array channel
+            string disambiguatingDescription
+        }
+        class TouristCard {
+            uuid Id
+            string Name
             uuid avs_id
+            string disambiguatingDescription
+            date validFrom
+            date validThrough
         }
         class Angebot {
             uuid Id
             string Name
             uuid avs_id
-
+            array channel
+            string disambiguatingDescription
         }
         class Empfehlung {
             uuid Id
             string Name
+            array channel
+            string disambiguatingDescription
         }
-
         class Ort["POI / Place"] {
             uuid Id
             string Name
+            array channel
+            string disambiguatingDescription
+            string HowToDirection
+            string publicTransport
+            string parking
+            string leisure
         }
     }
-    Produkt --> "0..n" Angebot : offer
+    TouristCard --> "0..n" Angebot : offer
     Empfehlung --> Angebot : itemReviewed
     Empfehlung --> Ort : itemReviewed
     Empfehlung --> Produkt : itemReviewed
 
-    Produkt --> "0..n" Ort : availableAtOrFrom
+    TouristCard --> "0..n" Ort : availableAtOrFrom
 
     namespace discover {
-        class Product{
+        class TouristcardType?{
             uuid Id
             string Name
             uuid sourceID
             uuid avs_id
+        }
+        class Product{
+            uuid Id
+            string Name
+            uuid sourceID
         }
         class Recommendations {
             uuid Id
@@ -148,7 +171,7 @@ classDiagram
 
 ### Beispiel 
 
-#### Empfehlung / Content / Storie
+#### Empfehlung
 
 ``` mermaid
 graph TD
