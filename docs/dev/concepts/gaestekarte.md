@@ -21,22 +21,7 @@ graph TD
     OfferGratis -->|Angebote| ProductKaffee["Kaffee"]
     OfferGratis -->|Angebote| ProductNusstange["Nusstange"]
 
-    OfferGratis -->|erhältlich bei| PlaceVegi[Restaurant Vegi]
-    OfferGratis -->|erhältlich bei| PlaceItaly[Pizzaria Italy]
-    OfferGratis -->|erhältlich bei| PlaceGourment[Restaurant Gourment]
-    OfferGratis -->|erhältlich bei| PlaceBeck[Bäckerei Beck]
-    OfferGratis -->|erhältlich bei| PlaceDinoPark[Park Dino]
-    OfferGratis -->|erhältlich bei| PlaceCreme[Café Créme]
-    OfferGratis -->|erhältlich bei| PlaceEis[Eiscafé Eiskalt]
-
     OfferDinoPark -->|erhältlich bei| PlaceDinoPark[Park Dino]
-
-    ProductKaffee -->|erhältlich bei|PlaceVegi
-    ProductKaffee -->|erhältlich bei|PlaceItaly
-    ProductKaffee -->|erhältlich bei|PlaceGourment
-    ProductKaffee -->|erhältlich bei|PlaceBeck
-    ProductKaffee -->|erhältlich bei|PlaceCreme
-    ProductKaffee -->|erhältlich bei|PlaceEis
 
     ProductNusstange -->|erhältlich bei|PlaceBeck
 
@@ -45,6 +30,9 @@ graph TD
     Offer20Rabatt -->|erhältlich bei| PlaceOstPark[Alpine Abenteuerpark Ostschweiz]
     Offer20Rabatt -->|erhältlich bei| PlaceHipo[Nationalpark Hipo]
     Offer20Rabatt -->|erhältlich bei| PlaceSuperland[Superland Park]
+
+    OfferSauna -->|erhältlich bei| Sternenhotel
+    OfferSauna -->|erhältlich bei| Hotel Zweistein
 ```
 
 ## Schema.org
