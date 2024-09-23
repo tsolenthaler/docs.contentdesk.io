@@ -64,10 +64,10 @@ markdown_extensions:
 nav:
   - Home: index.md
 #  - Erste Schritte: getting-started.md
-  - Schema: schema.md
-  - Entwicklung: dev/index.md
   - Konzepte: concepts.md
   - Projekte: projects.md
+  - Schema: schema.md
+  - Entwicklung: dev/index.md
 #  - Verbindungen: 
 #    - connect/index.md
 #    - discover.swiss: connect/discover.md
