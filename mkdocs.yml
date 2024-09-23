@@ -64,8 +64,8 @@ markdown_extensions:
 nav:
   - Home: index.md
 #  - Erste Schritte: getting-started.md
-  - Konzepte: concepts.md
   - Projekte: projects.md
+  - Konzepte: concepts.md
   - Schema: schema.md
   - Entwicklung: dev/index.md
 #  - Verbindungen: 
