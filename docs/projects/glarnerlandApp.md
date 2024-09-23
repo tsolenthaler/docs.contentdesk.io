@@ -83,7 +83,7 @@ graph LR
 | Akzeptanzstelle / Leistung?   | [Offer]               | Offer? --> Product            | Leistung                  |       
 |                               | [Recommendation]      | [Recommendation discover]     | Empfehlung                |
 |                               | [Place]               | [Place discover]              | Place                     |
-|                               | [Organization]        | [Organization discover]       | Organization              |
+|                               | [Organization]        | [Organization discover]       | -                         |
 
 [Touristcard]: ../../schema/Touristcard
 [Place]: ../../schema/Place
