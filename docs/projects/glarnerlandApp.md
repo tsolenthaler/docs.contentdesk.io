@@ -159,12 +159,13 @@ classDiagram
         }
     }
     Touristcard --> "0..n" Angebot : offers
-    Empfehlung --> Angebot : itemReviewed
-    Empfehlung --> Ort : itemReviewed
-    Empfehlung --> Produkt : itemReviewed
-    Angebot --> Produkt: itemOffered
-
     Touristcard --> "0..n" Ort : availableAtOrFrom
+
+    Empfehlung --> "0..n" Angebot : itemReviewed
+    Empfehlung --> "0..n" Ort : itemReviewed
+    Empfehlung --> "0..n" Produkt : itemReviewed
+
+    Angebot --> "0..n" Produkt : itemOffered
 
     namespace discover {
         class TouristcardType{
