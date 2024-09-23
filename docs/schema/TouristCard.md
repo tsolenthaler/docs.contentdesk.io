@@ -5,5 +5,5 @@ hide:
   - navigation
 ---
 
-# TouristCard
+# Touristcard
 Typ
