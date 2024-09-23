@@ -31,6 +31,15 @@ graph LR
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
+#### AVS -> contentdesk.io
+Manueller übertrag der AVS ID
+
+#### contentdesk.io -> discover.swiss
+Ein mal Täglich um ca. 04:00 Uhr
+
+#### discover.swiss -> App Binarium
+?
+
 ### Types
 
 #### Diagramm
