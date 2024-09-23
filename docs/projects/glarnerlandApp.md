@@ -74,7 +74,7 @@ graph LR
     discover --> app
 ```
 
-#### Table
+#### Table Types
 
 | AVS                           | contentdesk.io        | discover.swiss                | App / Binarium            |
 | -----------                   | -------------         | -------------                 | -------------             |   
@@ -229,14 +229,22 @@ classDiagram
 * [areaServed] ?
 * [itemOffered] ?
 
+[offers]: ../../schema/offers
 [availableAtOrFrom]: ../../schema/availableAtOrFrom
 [itemOffered]: ../../schema/itemOffered
 [itemReviewed]: ../../schema/itemReviewed
 [isRelatedTo]: ../../schema/isRelatedTo
-[channel]: ../../schema/channel
+
 [avs_id]: ../../schema/avs_id
 [validFrom]: ../../schema/validFrom
 [validThrough]: ../../schema/validThrough
+[HowToDirection]: ../../schema/HowToDirection
+[publicTransport]: ../../schema/publicTransport
+[parking]: ../../schema/parking
+[name]: ../../schema/name
+[disambiguatingDescription]: ../../schema/name
+[description]: ../../schema/description
+[channel]: ../../schema/channel
 
 [additionalProperty discover]: https://docs.discover.swiss/dev/quickstarts/how-to-work-with-traveler-and-itemField/#example-special-additionalproperty
 [Place discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Place/
