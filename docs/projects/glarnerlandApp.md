@@ -42,7 +42,7 @@ Ein mal täglich um ca. 04:00 Uhr
 
 ### Types
 
-#### Diagramm
+#### Diagramm Types
 
 ``` mermaid
 graph LR
@@ -52,15 +52,16 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Touristcard --> |offers| Angebot
-        Touristcard --> |availableAtOrFrom| Ort["POI / Place"]
+        Gaestekarte["Gästekarte"] --> |offers| Angebot
+        Gaestekarte --> |availableAtOrFrom| Ort["POI / Place"]
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
         Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
     end
     subgraph discover
         direction TB
-        Product
-        Recommendations -->|itemOffered|Place["Place (POI / PRoduct)"]
+        Touristcard["Touristcard?/Product? mit Angebot"] -->|itemOffered| Product
+        Touristcard -->|availableAtOrFrom|Place
+        Recommendations -->|itemReviewed|Place["Place (POI / Product)"]
         Recommendations -->|isRelatedTo|Place2["Place / Product / Event"]
     end
     subgraph app
@@ -100,7 +101,7 @@ graph LR
 
 ### Properties
 
-#### Diagramm
+#### Diagramm Properties
 ``` mermaid
 classDiagram
     direction TB
@@ -285,6 +286,7 @@ graph TD
     * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
     * [ ] [Offer]? und [offers]?
     * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
+    * [ ] [availableAtOrFrom]?
 - [ ] 
 
 
