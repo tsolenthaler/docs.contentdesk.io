@@ -8,7 +8,9 @@ hide:
 
 Eine Gästekarte ist ein Dokument oder eine Karte, die Gäste in bestimmten Urlaubsregionen erhalten, wenn sie dort übernachten. Diese Karte bietet verschiedene Vergünstigungen und kostenlose Angebote, wie z.B. ermäßigte Eintrittspreise für Sehenswürdigkeiten, kostenlose Nutzung öffentlicher Verkehrsmittel oder Rabatte bei Freizeitaktivitäten.
 
-Bspw. Tagespass Glarnerland
+Bspw. 
+* Tagespass Glarnerland
+* ZüriCard
 
 ## Beispiel Gästekarte
 ``` mermaid
