@@ -201,7 +201,7 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                 | -------------             |   |
-|             | Type **[Touristcard]**                  | Type **TouristcardTyp**?      | -                         |   |
+|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**?      | -                         |   |
 |             | -                                       | [ID discover]                 | -                         |
 | -           | [identifier]                            | [sourceId discover]           | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] | -                         |   |
