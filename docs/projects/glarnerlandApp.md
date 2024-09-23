@@ -71,7 +71,7 @@ graph LR
 | -----------                   | -------------         | -------------                 | -------------             |   
 | Card Typ                      | [Touristcard]         | Touristcard?                  | Tagespass                 |
 |                               | [Product]             | [Product discover]            | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]               | Offer?                        | Leistung                  |       
+| Akzeptanzstelle / Leistung?   | [Offer]               | Offer? --> Product            | Leistung                  |       
 |                               | [Recommendation]      | [Recommendation discover]     | Empfehlung                |
 |                               | [Place]               | [Place discover]              | Place                     |
 |                               | [Organization]        | [Organization discover]       | Organization              |
