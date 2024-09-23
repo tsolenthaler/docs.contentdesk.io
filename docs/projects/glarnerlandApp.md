@@ -197,7 +197,7 @@ classDiagram
     }
 ```
 
-#### List / Table Properties
+#### Table Properties
 
 | AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                 | -------------             |   |

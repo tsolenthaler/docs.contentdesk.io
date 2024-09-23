@@ -6,5 +6,6 @@ hide:
 ---
 
 # Touristcard
-Typ
+Type
 
+discover.swiss spezifischer Type
