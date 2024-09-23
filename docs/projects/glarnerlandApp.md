@@ -76,12 +76,12 @@ graph LR
 |                               | [Place]               | [Place discover]              | Place                     |
 |                               | [Organization]        | [Organization discover]       | Organization              |
 
-[Touristcard]: ../../schema/Touristcard.md
-[Place]: ../../schema/Place.md
-[Product]: ../../schema/Product.md
-[Offer]: ../../schema/Offer.md
-[Recommendation]: ../../schema/Recommendation.md
-[Organization]: ../../schema/Organization.md
+[Touristcard]: ../../schema/Touristcard
+[Place]: ../../schema/Place
+[Product]: ../../schema/Product
+[Offer]: ../../schema/Offer
+[Recommendation]: ../../schema/Recommendation
+[Organization]: ../../schema/Organization
 
 [Product discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Product/
 [Recommendation discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Review/
