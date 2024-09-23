@@ -56,15 +56,15 @@ graph TD
 
 ### Types
 
-* [Product](../../schema/Place.md)
-* [Offer](../../schema/Offer.md)
+* [Product](../../schema/Place)
+* [Offer](../../schema/Offer)
 
 ### Properties
 
-* [offers](../../schema/offers.md)
-* [itemOffered](../../schema/itemOffered.md)
-* [availableAtOrFrom](../../schema/availableAtOrFrom.md)
-* *[offeredBy](../../schema/offeredBy.md)
+* [offers](../../schema/offers)
+* [itemOffered](../../schema/itemOffered)
+* [availableAtOrFrom](../../schema/availableAtOrFrom)
+* *[offeredBy](../../schema/offeredBy)
 
 ## Beispiele
 
