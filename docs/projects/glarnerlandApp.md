@@ -35,7 +35,7 @@ graph LR
 Manueller übertrag der AVS ID
 
 #### contentdesk.io -> discover.swiss
-Ein mal Täglich um ca. 04:00 Uhr
+Ein mal täglich um ca. 04:00 Uhr
 
 #### discover.swiss -> App Binarium
 ?
@@ -201,11 +201,11 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                 | -------------             |   |
-|             | **[Touristcard]**                       | **TouristcardTyp?**           | -                         |   |
+|             | Typ **[Touristcard]**                       | **TouristcardTyp?**           | -                         |   |
 | avs_id      | [avs_id]                                | [additionalProperty discover] | -                         |   |
 |             | [validFrom]                             | [validFrom discover]          | -                         |          
 |             | [validThrough]                          | [validThrough discover]       | -                         |
-|             | **[Place]**                             | **[Place discover]**          | -                         |
+|             | Typ **[Place]**                         | **[Place discover]**          | -                         |
 |             | [HowToDirection]                        | [gettingThere]                | -                         |
 |             | [publicTransport]                       | [publicTransport]             | -                         |
 |             | [parking]                               | [parking]                     | -                         |
