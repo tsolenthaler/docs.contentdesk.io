@@ -3,6 +3,7 @@ tags:
   - projects
 hide:
   - navigation
+  - toc
 ---
 
 # Glarnerland App
