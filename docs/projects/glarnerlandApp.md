@@ -201,11 +201,13 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                 | -------------             |   |
-|             | Typ **[Touristcard]**                       | **TouristcardTyp?**       | -                         |   |
-| avs_id      | [avs_id]                                | [additionalProperty discover] | -                         |   |
+|             | Type **[Touristcard]**                  | Type **TouristcardTyp**?      | -                         |   |
+|             | -                                       | [ID discover]                 | -                         |
+| -           | [identifier]                            | [sourceId discover]           | -                         |
+| ID          | [avs_id]                                | [additionalProperty discover] | -                         |   |
 |             | [validFrom]                             | [validFrom discover]          | -                         |          
 |             | [validThrough]                          | [validThrough discover]       | -                         |
-|             | Typ **[Place]**                         | **[Place discover]**          | -                         |
+|             | Type **[Place]**                        | Type **[Place discover]**     | -                         |
 |             | [HowToDirection]                        | [gettingThere]                | -                         |
 |             | [publicTransport]                       | [publicTransport]             | -                         |
 |             | [parking]                               | [parking]                     | -                         |
@@ -214,7 +216,7 @@ classDiagram
 |             | [disambiguatingDescription] Scope App   | [mobileDescription]           | -                         |
 |             | [description]                           | [description]                 | -                         |  
 |             | [channel]                               | [additionalProperty]?         | -                         |
-|             | **Association-type** - Verknüfpungen    | **All Types**                 | -                         |
+|             | **Association type** - Verknüfpungen    |                               | -                         |
 |             | [offers]                                | [offers discover]?            | -                         |
 |             | [availableAtOrFrom]                     | [availableAtOrFrom discover]? | -                         |
 |             | [itemOffered]                           | [itemOffered discover]?       | -                         |
