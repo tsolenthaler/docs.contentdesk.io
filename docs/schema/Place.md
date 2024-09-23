@@ -25,7 +25,7 @@ https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-class
 
 ### Empfehlungen (Recommandation)
 
-### Akeneo API
+### contentdesk.io API
 
 ```json
 {
