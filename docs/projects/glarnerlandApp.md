@@ -57,6 +57,8 @@ graph LR
         Gaestekarte --> |availableAtOrFrom| Ort["POI / Place"]
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
         Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
+        Angebot --> |offeredBy| Organization
+        Organization -->|location| Ort
     end
     subgraph discover
         direction TB
