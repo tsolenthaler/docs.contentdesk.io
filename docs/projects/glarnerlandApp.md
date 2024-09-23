@@ -56,7 +56,8 @@ graph LR
     subgraph app
         direction TB
         Tagespass --> Leistung
-        Content["Empfehlung"]
+        EmpfehlungApp["Empfehlung"]
+        EmpfehlungApp --> ItemApp["POI, Event, Produkt"]
     end
 
     avs --> contentdesk
