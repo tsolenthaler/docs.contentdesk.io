@@ -146,10 +146,11 @@ classDiagram
             string leisure
         }
     }
-    Touristcard --> "0..n" Angebot : offer
+    Touristcard --> "0..n" Angebot : offers
     Empfehlung --> Angebot : itemReviewed
     Empfehlung --> Ort : itemReviewed
     Empfehlung --> Produkt : itemReviewed
+    Angebot --> Produkt: itemOffered
 
     Touristcard --> "0..n" Ort : availableAtOrFrom
 
@@ -187,27 +188,51 @@ classDiagram
     }
 ```
 
-#### List / Table
+#### List / Table Properties
+
+| AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
+| ----------- | -------------                           | -------------                 | -------------             |   |
+|             | **[Touristcard]**                       | **TouristcardTyp?**           | -                         |   |
+| avs_id      | [avs_id]                                | [additionalProperty discover] | -                         |   |
+|             | [validFrom]                             | [validFrom discover]          | -                         |          
+|             | [validThrough]                          | [validThrough discover]       | -                         |
+|             | **[Place]**                             | **[Place discover]**          | -                         |
+|             | [HowToDirection]                        | [gettingThere]                | -                         |
+|             | [publicTransport]                       | [publicTransport]             | -                         |
+|             | [parking]                               | [parking]                     | -                         |
+|             | **All Types** - Attributes              | **All Types**                 | -                         |
+|             | [name]                                  | name                          | -                         |
+|             | [disambiguatingDescription] Scope App   | [mobileDescription]           | -                         |
+|             | [description]                           | [description]                 | -                         |  
+|             | [channel]                               | [additionalProperty]?         | -                         |
+|             | **Types** - Verknüfpungen               | **All Types**                 | -                         |
+|             | [offers]                                | [offers discover]?            | -                         |
+|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]? | -                         |
+|             | [itemOffered]                           | [itemOffered discover]?       | -                         |
+|             | [itemReviewed]                          | [itemReviewed discover]       | -                         |
+|             | [isRelatedTo]                           | [isRelatedTo discover]?       | -                         |
 
 * [availableAtOrFrom] 0..n - erhältlich bei oder von
 * [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
 * [isRelatedTo] 0...1 - ist verbunden mit 
-* [channel]
-* [avs_id]
-* [validFrom]
-* [validThrough]
 * [offeredBy] ?
 * [makesOffer] ?
 * [areaServed] ?
 * [itemOffered] ?
 
-[availableAtOrFrom]: ../../schema/availableAtOrFrom.md
-[itemReviewed]: ../../schema/itemReviewed.md
-[isRelatedTo]: ../../schema/isRelatedTo.md
-[channel]: ../../schema/channel.md
-[avs_id]: ../../schema/avs_id.md
-[validFrom]: ../../schema/validFrom.md
-[validThrough]: ../../schema/validThrough.md
+[availableAtOrFrom]: ../../schema/availableAtOrFrom
+[itemOffered]: ../../schema/itemOffered
+[itemReviewed]: ../../schema/itemReviewed
+[isRelatedTo]: ../../schema/isRelatedTo
+[channel]: ../../schema/channel
+[avs_id]: ../../schema/avs_id
+[validFrom]: ../../schema/validFrom
+[validThrough]: ../../schema/validThrough
+
+[additionalProperty discover]: https://docs.discover.swiss/dev/quickstarts/how-to-work-with-traveler-and-itemField/#example-special-additionalproperty
+[Place discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Place/
+
+[itemReviewed discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Review/#properties
 
 ## Schema
 
@@ -242,6 +267,7 @@ graph TD
 - [ ] discover.swiss 
     * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
     * [ ] [Offer]? und [offers]?
+    * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
 - [ ] 
 
 
