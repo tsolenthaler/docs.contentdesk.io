@@ -60,7 +60,8 @@ graph LR
     subgraph discover
         direction TB
         Product
-        Recommendations
+        Recommendations -->|itemOffered|Place["Place (POI / PRoduct)"]
+        Recommendations -->|isRelatedTo|Place2["Place / Product / Event"]
     end
     subgraph app
         direction TB
