@@ -237,6 +237,7 @@ classDiagram
 [itemReviewed]: ../../schema/itemReviewed
 [isRelatedTo]: ../../schema/isRelatedTo
 
+[identifier]: ../../schema/identifier
 [avs_id]: ../../schema/avs_id
 [validFrom]: ../../schema/validFrom
 [validThrough]: ../../schema/validThrough
