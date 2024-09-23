@@ -201,7 +201,7 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                 | -------------             |   |
-|             | Typ **[Touristcard]**                       | **TouristcardTyp?**           | -                         |   |
+|             | Typ **[Touristcard]**                       | **TouristcardTyp?**       | -                         |   |
 | avs_id      | [avs_id]                                | [additionalProperty discover] | -                         |   |
 |             | [validFrom]                             | [validFrom discover]          | -                         |          
 |             | [validThrough]                          | [validThrough discover]       | -                         |
@@ -209,21 +209,18 @@ classDiagram
 |             | [HowToDirection]                        | [gettingThere]                | -                         |
 |             | [publicTransport]                       | [publicTransport]             | -                         |
 |             | [parking]                               | [parking]                     | -                         |
-|             | **All Types** - Attributes              | **All Types**                 | -                         |
+|             | **All Types - Attributes**              | **All Types**                 | -                         |
 |             | [name]                                  | name                          | -                         |
 |             | [disambiguatingDescription] Scope App   | [mobileDescription]           | -                         |
 |             | [description]                           | [description]                 | -                         |  
 |             | [channel]                               | [additionalProperty]?         | -                         |
-|             | **Types** - Verknüfpungen               | **All Types**                 | -                         |
+|             | **Association-type** - Verknüfpungen    | **All Types**                 | -                         |
 |             | [offers]                                | [offers discover]?            | -                         |
 |             | [availableAtOrFrom]                     | [availableAtOrFrom discover]? | -                         |
 |             | [itemOffered]                           | [itemOffered discover]?       | -                         |
 |             | [itemReviewed]                          | [itemReviewed discover]       | -                         |
 |             | [isRelatedTo]                           | [isRelatedTo discover]?       | -                         |
 
-* [availableAtOrFrom] 0..n - erhältlich bei oder von
-* [itemReviewed] 0..n - empfohlene Objekte (Produkt, Event, Place, etc.)
-* [isRelatedTo] 0...1 - ist verbunden mit 
 * [offeredBy] ?
 * [makesOffer] ?
 * [areaServed] ?
