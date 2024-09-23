@@ -206,7 +206,7 @@ classDiagram
 | ----------- | -------------                           | -------------                 | -------------             |   |
 |             | Type **[Touristcard]**?                 | Type **TouristcardTyp**?      | -                         |   |
 |             | -                                       | [ID discover]                 | -                         |
-| -           | [identifier]                            | [sourceId discover]           | -                         |
+| -           | [identifier] (ID)                       | [sourceId discover]           | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] | -                         |   |
 |             | [validFrom]                             | [validFrom discover]          | -                         |          
 |             | [validThrough]                          | [validThrough discover]       | -                         |
@@ -229,7 +229,6 @@ classDiagram
 * [offeredBy] ?
 * [makesOffer] ?
 * [areaServed] ?
-* [itemOffered] ?
 
 [offers]: ../../schema/offers
 [availableAtOrFrom]: ../../schema/availableAtOrFrom
