@@ -116,7 +116,6 @@ classDiagram
             date validFrom
             date validThrough
         }
-        link Touristcard "../schema/Touristcard.md" "Touristcard Link"
         class Produkt {
             uuid Id
             string Name
