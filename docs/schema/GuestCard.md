@@ -5,7 +5,7 @@ hide:
   - navigation
 ---
 
-# Touristcard
+# GuestCard
 Type
 
 discover.swiss spezifischer Type

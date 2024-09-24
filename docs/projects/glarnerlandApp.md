@@ -79,15 +79,15 @@ graph LR
 
 #### Table Types
 
-| AVS                           | contentdesk.io        | discover.swiss                                | App / Binarium            |
-| -----------                   | -------------         | -------------                                 | -------------             |   
-| Card Typ                      | [GuestCard]         | [Product discover] additonalType GuestCard         | Tagespass                 |
-|                               | [Product]             | [Product discover]                            | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]                             | Leistung                  |       
-|                               | -                     | [Review discover] additonalType GuestCardService                     | Empfehlung                |
-|                               | [Place]               | [Place discover]                              | Place                     |
+| AVS                           | contentdesk.io        | discover.swiss                                        | App / Binarium            |
+| -----------                   | -------------         | -------------                                         | -------------             |   
+| Card Typ                      | [GuestCard]           | [Product discover] additonalType GuestCard            | Tagespass                 |
+|                               | [Product]             | [Product discover]                                    | Produkt                   |
+| Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]                                      | Leistung                  |       
+|                               | -                     | [Review discover] additonalType GuestCardService      | Empfehlung                |
+|                               | [Place]               | [Place discover]                                      | Place                     |
 
-[Touristcard]: ../../schema/Touristcard
+[GuestCard]: ../../schema/GuestCard
 [Place]: ../../schema/Place
 [Product]: ../../schema/Product
 [Offer]: ../../schema/Offer
@@ -210,7 +210,7 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                            | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                             | -------------             |   |
-|             | Type **[Touristcard]**                  | Type **TouristcardTyp**❓                 | -                         |   |
+|             | Type **[GuestCard]**                    | Type **TouristcardTyp**❓                 | -                         |   |
 |             | -                                       | [ID discover]                             | -                         |
 | -           | [identifier] (ID)                       | [sourceId discover]                       | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] avs_id      | -                         |   |
@@ -290,15 +290,15 @@ graph TD
 ## Offene Punkte / ToDo
 
 - [ ] discover.swiss 
-    * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte - AdditonalTypes Touristcard
-    * [ ] [Offer]? und [offers]?
-    * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
+    * [x] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
+    * [x] [Offer] und [offers]
+    * [x] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
     * [ ] [availableAtOrFrom]?
     * [ ] [offeredBy]?
 - [ ] contentdesk.io
-    * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!
-    * [ ] offeredBy direkt zu Place!
-    * [ ] 
+    * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
+    * [x] offeredBy direkt zu Place! keine Organization dazwischen
+    * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
 
 
 
