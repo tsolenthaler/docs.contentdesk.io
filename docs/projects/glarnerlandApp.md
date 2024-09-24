@@ -54,10 +54,9 @@ graph LR
     subgraph contentdesk
         direction TB
         Gaestekarte["Gästekarte"] --> |offers| Angebot
-        Gaestekarte --> |availableAtOrFrom| Ort["POI / Place"]
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
         Empfehlung --> |itemReviewed| item["Place, Event oder Produkt"]
-        Angebot --> |offeredBy| Ort
+        Angebot --> |areaServed| Ort
     end
     subgraph discover
         direction TB
