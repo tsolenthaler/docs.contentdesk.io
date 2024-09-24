@@ -159,6 +159,10 @@ classDiagram
             string parking
             string leisure
         }
+        class Organisation{
+            uuid Id
+            string Name
+        }
     }
     Touristcard --> "0..n" Angebot : offers
     Touristcard --> "0..n" Ort : availableAtOrFrom
@@ -166,8 +170,10 @@ classDiagram
     Empfehlung --> "0..n" Angebot : itemReviewed
     Empfehlung --> "0..n" Ort : itemReviewed
     Empfehlung --> "0..n" Produkt : itemReviewed
+    Empfehlung --> "0..1" Ort : isRelatedTo
 
     Angebot --> "0..n" Produkt : itemOffered
+    Angebot --> "0..n" Organisation : offeredBy
 
     namespace discover {
         class TouristcardType{
