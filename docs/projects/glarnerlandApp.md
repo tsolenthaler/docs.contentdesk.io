@@ -81,14 +81,14 @@ graph LR
 
 #### Table Types
 
-| AVS                           | contentdesk.io        | discover.swiss                | App / Binarium            |
-| -----------                   | -------------         | -------------                 | -------------             |   
-| Card Typ                      | [Touristcard]         | [Touristcard discover]❓       | Tagespass                 |
-|                               | [Product]             | [Product discover]            | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]              | Leistung                  |       
-|                               | [Recommendation]      | [Recommendation discover]     | Empfehlung                |
-|                               | [Place]               | [Place discover]              | Place                     |
-|                               | [Organization]        | [Organization discover]       | -                         |
+| AVS                           | contentdesk.io        | discover.swiss                                | App / Binarium            |
+| -----------                   | -------------         | -------------                                 | -------------             |   
+| Card Typ                      | [Touristcard]         | [Product discover] additonalType Guestcard         | Tagespass                 |
+|                               | [Product]             | [Product discover]                            | Produkt                   |
+| Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]                             | Leistung                  |       
+|                               | [Recommendation]      | [Review discover] additonalType GuestcardService                     | Empfehlung                |
+|                               | [Place]               | [Place discover]                              | Place                     |
+|                               | [Organization]        | -                     | -                         |
 
 [Touristcard]: ../../schema/Touristcard
 [Place]: ../../schema/Place
@@ -290,15 +290,19 @@ graph TD
     Organization-->|makesOffer|Offer
 ```
 
-## Offene Punkte
+## Offene Punkte / ToDo
 
 - [ ] discover.swiss 
-    * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte
+    * [ ] Type [Touristcard]? --> Ansonsten Propertie zum identifizieren der Gästekarte - AdditonalTypes Touristcard
     * [ ] [Offer]? und [offers]?
     * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
     * [ ] [availableAtOrFrom]?
     * [ ] [offeredBy]?
-- [ ] 
+- [ ] contentdesk.io
+    * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!
+    * [ ] offeredBy direkt zu Place!
+    * [ ] 
+
 
 
 ## Beispiele
