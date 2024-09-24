@@ -201,7 +201,7 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                            | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                             | -------------             |   |
-|             | Type **[GuestCard]**                    | Type **TouristcardTyp**❓                 | -                         |   |
+|             | Type **[GuestCard]**                    | Type **GuestCard**                        | -                         |   |
 |             | -                                       | [ID discover]                             | -                         |
 | -           | [identifier] (ID)                       | [sourceId discover]                       | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] avs_id      | -                         |   |
@@ -217,17 +217,15 @@ classDiagram
 |             | [description]                           | [description]                             | -                         |  
 |             | [channel]                               | [additionalProperty]❓channel            | -                         |
 |             | **Association type** - Verknüfpungen    |                                           | -                         |
-|             | [offers]                                | [offers discover]❓                       | -                         |
-|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]❓            | -                         |
-|             | [itemOffered]                           | [itemOffered discover]❓                  | -                         |
-|             | [itemReviewed]                          | [itemReviewed discover]                   | -                         |
-|             | [isRelatedTo]                           | [isRelatedTo discover]                    | -                         |
-|             | [offeredBy]                             | [offeredBy discover]❓                    | -                         |
-|             | [location]                              | [location discover]❓                     | -                         |
+|             | [offers]                                | [offers discover]                         | -                         |
+|             | [itemOffered]                           | [itemOffered discover]                  | -                         |
+|             | [areaServed]                            | [areaServed discover]                   | -                         |
 
 [offers]: ../../schema/offers
-[availableAtOrFrom]: ../../schema/availableAtOrFrom
 [itemOffered]: ../../schema/itemOffered
+[areaServed]: ../../schema/areaServed
+
+[availableAtOrFrom]: ../../schema/availableAtOrFrom
 [itemReviewed]: ../../schema/itemReviewed
 [isRelatedTo]: ../../schema/
 [offeredBy]: ../../schema/offeredBy
