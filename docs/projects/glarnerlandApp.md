@@ -178,12 +178,15 @@ classDiagram
         class Leistung {
 
         }
-        class Ort
-        class Produkt
+        class OrtApp
+        class ProduktApp
+
+        class OrtApp["Place"]
+        class ProduktApp["Produkt"]
 
         Tagespass --> "0..n" Leistung : offers
-        Leistung --> "0..n" Produkt : itemOffered
-        Leistung --> "0..n" Ort : areaServed
+        Leistung --> "0..n" ProduktApp : itemOffered
+        Leistung --> "0..n" OrtApp : areaServed
     }
 ```
 
