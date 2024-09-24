@@ -213,7 +213,7 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                            | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                             | -------------             |   |
-|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**❓                 | -                         |   |
+|             | Type **[Touristcard]**                  | Type **TouristcardTyp**❓                 | -                         |   |
 |             | -                                       | [ID discover]                             | -                         |
 | -           | [identifier] (ID)                       | [sourceId discover]                       | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] avs_id      | -                         |   |
@@ -355,7 +355,7 @@ graph TD
 
 - [Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
   
-    * Angebote [Offers]
+    * Angebote via [offers]
     
         * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
         * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
