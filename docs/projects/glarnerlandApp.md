@@ -82,12 +82,11 @@ graph LR
 
 | AVS                           | contentdesk.io        | discover.swiss                                | App / Binarium            |
 | -----------                   | -------------         | -------------                                 | -------------             |   
-| Card Typ                      | [Touristcard]         | [Product discover] additonalType Guestcard         | Tagespass                 |
+| Card Typ                      | [GuestCard]         | [Product discover] additonalType GuestCard         | Tagespass                 |
 |                               | [Product]             | [Product discover]                            | Produkt                   |
 | Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]                             | Leistung                  |       
-|                               | [Recommendation]      | [Review discover] additonalType GuestcardService                     | Empfehlung                |
+|                               | -                     | [Review discover] additonalType GuestCardService                     | Empfehlung                |
 |                               | [Place]               | [Place discover]                              | Place                     |
-|                               | [Organization]        | -                     | -                         |
 
 [Touristcard]: ../../schema/Touristcard
 [Place]: ../../schema/Place
