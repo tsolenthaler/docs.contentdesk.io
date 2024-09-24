@@ -211,31 +211,31 @@ classDiagram
 
 #### Table Properties
 
-| AVS         | contentdesk.io                          | discover.swiss                    | App / Binarium            | Comment |
-| ----------- | -------------                           | -------------                     | -------------             |   |
-|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**❓         | -                         |   |
-|             | -                                       | [ID discover]                     | -                         |
-| -           | [identifier] (ID)                       | [sourceId discover]               | -                         |
-| ID          | [avs_id]                                | [additionalProperty discover]     | -                         |   |
-|             | [validFrom]                             | [validFrom discover]              | -                         |          
-|             | [validThrough]                          | [validThrough discover]           | -                         |
-|             | Type **[Place]**                        | Type **[Place discover]**         | -                         |
-|             | [HowToDirection]                        | [gettingThere]                    | -                         |
-|             | [publicTransport]                       | [publicTransport]                 | -                         |
-|             | [parking]                               | [parking]                         | -                         |
-|             | **All Types - Attributes**              | **All Types**                     | -                         |
-|             | [name]                                  | name                              | -                         |
-|             | [disambiguatingDescription] Scope App   | [mobileDescription]               | -                         |
-|             | [description]                           | [description]                     | -                         |  
-|             | [channel]                               | [additionalProperty]❓            | -                         |
-|             | **Association type** - Verknüfpungen    |                                   | -                         |
-|             | [offers]                                | [offers discover]❓               | -                         |
-|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]❓    | -                         |
-|             | [itemOffered]                           | [itemOffered discover]❓          | -                         |
-|             | [itemReviewed]                          | [itemReviewed discover]           | -                         |
-|             | [isRelatedTo]                           | [isRelatedTo discover]            | -                         |
-|             | [offeredBy]                             | [offeredBy discover]❓            | -                         |
-|             | [location]                              | [location discover]❓            | -                         |
+| AVS         | contentdesk.io                          | discover.swiss                            | App / Binarium            | Comment |
+| ----------- | -------------                           | -------------                             | -------------             |   |
+|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**❓                 | -                         |   |
+|             | -                                       | [ID discover]                             | -                         |
+| -           | [identifier] (ID)                       | [sourceId discover]                       | -                         |
+| ID          | [avs_id]                                | [additionalProperty discover] avs_id      | -                         |   |
+|             | [validFrom]                             | [validFrom discover]                      | -                         |          
+|             | [validThrough]                          | [validThrough discover]                   | -                         |
+|             | Type **[Place]**                        | Type **[Place discover]**                 | -                         |
+|             | [HowToDirection]                        | [gettingThere]                            | -                         |
+|             | [publicTransport]                       | [publicTransport]                         | -                         |
+|             | [parking]                               | [parking]                                 | -                         |
+|             | **All Types - Attributes**              | **All Types**                             | -                         |
+|             | [name]                                  | name                                      | -                         |
+|             | [disambiguatingDescription] Scope App   | [mobileDescription]                       | -                         |
+|             | [description]                           | [description]                             | -                         |  
+|             | [channel]                               | [additionalProperty]❓channel            | -                         |
+|             | **Association type** - Verknüfpungen    |                                           | -                         |
+|             | [offers]                                | [offers discover]❓                       | -                         |
+|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]❓            | -                         |
+|             | [itemOffered]                           | [itemOffered discover]❓                  | -                         |
+|             | [itemReviewed]                          | [itemReviewed discover]                   | -                         |
+|             | [isRelatedTo]                           | [isRelatedTo discover]                    | -                         |
+|             | [offeredBy]                             | [offeredBy discover]❓                    | -                         |
+|             | [location]                              | [location discover]❓                     | -                         |
 
 [offers]: ../../schema/offers
 [availableAtOrFrom]: ../../schema/availableAtOrFrom
