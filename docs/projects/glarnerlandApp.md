@@ -116,7 +116,7 @@ classDiagram
     CardTyp --> "0..n" Akzeptanzstelle : hat
 
     namespace contentdesk {
-        class Touristcard {
+        class GuestCard {
             uuid Id
             string Name
             uuid avs_id
@@ -147,24 +147,14 @@ classDiagram
             string parking
             string leisure
         }
-        class Organisation{
-            uuid Id
-            string Name
-        }
     }
-    Touristcard --> "0..n" Angebot : offers
-    Touristcard --> "0..n" Ort : availableAtOrFrom
-
-    Empfehlung --> "0..n" Angebot : itemReviewed
-    Empfehlung --> "0..n" Ort : itemReviewed
-    Empfehlung --> "0..n" Produkt : itemReviewed
-    Empfehlung --> "0..1" Ort : isRelatedTo
+    GuestCard --> "0..n" Angebot : offers
 
     Angebot --> "0..n" Produkt : itemOffered
-    Angebot --> "0..n" Organisation : offeredBy
+    Angebot --> "0..n" Ort : areaServed
 
     namespace discover {
-        class TouristcardType{
+        class GuestCardType{
             uuid Id
             string Name
             uuid sourceID
@@ -175,25 +165,25 @@ classDiagram
             string Name
             uuid sourceID
         }
-        class Recommendations {
-            uuid Id
-            string Name
-        }
 
         class Place["Place / Product / Event"]
 
         class Product["Place / Produkt"]
     }
 
-    Recommendations --> "0..1" Place : isRelatedTo 
-    Recommendations --> "0..n" Product : itemReviewed
     namespace app {
         class Tagespass {
 
         }
-        class Content {
+        class Leistung {
 
         }
+        class Ort
+        class Produkt
+
+        Tagespass --> "0..n" Leistung : offers
+        Leistung --> "0..n" Produkt : itemOffered
+        Leistung --> "0..n" Ort : areaServed
     }
 ```
 
