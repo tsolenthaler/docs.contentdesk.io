@@ -349,23 +349,23 @@ graph TD
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
     * Angebote via [offers]
         * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
-                * Einlöse Ort [areaServed]
-                        * [Alpine Abenteuerpark Ostschweiz](https://demo.pim.tso.ch/#/enrich/product/48bc12d8-19e8-4635-bd89-3ec3773adf0b)
-                        * [Nationalpark Hipo](https://demo.pim.tso.ch/#/enrich/product/8a0eeb47-ec60-418c-bbc7-d0ee425f23ef)
-                        * [Superland Park](https://demo.pim.tso.ch/#/enrich/product/c1f51a34-4c8b-4309-aa19-3d262ab62a49)
+            * Einlöse Ort [areaServed]
+                * [Alpine Abenteuerpark Ostschweiz](https://demo.pim.tso.ch/#/enrich/product/48bc12d8-19e8-4635-bd89-3ec3773adf0b)
+                * [Nationalpark Hipo](https://demo.pim.tso.ch/#/enrich/product/8a0eeb47-ec60-418c-bbc7-d0ee425f23ef)
+                * [Superland Park](https://demo.pim.tso.ch/#/enrich/product/c1f51a34-4c8b-4309-aa19-3d262ab62a49)
         * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
-                * Einlöse Ort [areaServed]
-                        * [Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/12387058-735d-48b2-86fc-068ce39efa0d)
-                        * [Pizzeria Italy](https://demo.pim.tso.ch/#/enrich/product/2b328cda-3751-4721-b69c-684deedad423)
-                        * [Eiscafé Eiskalt](https://demo.pim.tso.ch/#/enrich/product/4754b82d-2728-44b4-84cf-625075af671a)
-                        * [Park Dino](https://demo.pim.tso.ch/#/enrich/product/57bba700-bac4-4b83-8038-74efd93032ca)
-                        * [Café Crème](https://demo.pim.tso.ch/#/enrich/product/5c2589a6-0284-46f0-b975-b2840ab958aa)
-                        * [Restaurant Gourmet](https://demo.pim.tso.ch/#/enrich/product/bf9a69a3-134c-46bf-b3cf-bbb1e1442676)
-                        * [Bäckerei Beck](https://demo.pim.tso.ch/#/enrich/product/dab66e16-f9de-4fb0-ab7c-d96853174712)
+            * Einlöse Ort [areaServed]
+                * [Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/12387058-735d-48b2-86fc-068ce39efa0d)
+                * [Pizzeria Italy](https://demo.pim.tso.ch/#/enrich/product/2b328cda-3751-4721-b69c-684deedad423)
+                * [Eiscafé Eiskalt](https://demo.pim.tso.ch/#/enrich/product/4754b82d-2728-44b4-84cf-625075af671a)
+                * [Park Dino](https://demo.pim.tso.ch/#/enrich/product/57bba700-bac4-4b83-8038-74efd93032ca)
+                * [Café Crème](https://demo.pim.tso.ch/#/enrich/product/5c2589a6-0284-46f0-b975-b2840ab958aa)
+                * [Restaurant Gourmet](https://demo.pim.tso.ch/#/enrich/product/bf9a69a3-134c-46bf-b3cf-bbb1e1442676)
+                * [Bäckerei Beck](https://demo.pim.tso.ch/#/enrich/product/dab66e16-f9de-4fb0-ab7c-d96853174712)
         * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
-                * Einlöse Ort [areaServed]
-                        * [Sternenhotel](https://demo.pim.tso.ch/#/enrich/product/628bb476-3626-44d2-9e1b-ba7eff6aef10)
-                        * [Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/631b73f9-15dd-461e-a3f6-e706c9f30630)
+            * Einlöse Ort [areaServed]
+                * [Sternenhotel](https://demo.pim.tso.ch/#/enrich/product/628bb476-3626-44d2-9e1b-ba7eff6aef10)
+                * [Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/631b73f9-15dd-461e-a3f6-e706c9f30630)
 
 #### Empfehlung
 - [Empfehlung](https://demo.pim.tso.ch/#/enrich/product/5838235b-62f6-4901-9f1c-1435293051c1)
