@@ -55,19 +55,19 @@ graph LR
         direction TB
         Gaestekarte["Gästekarte"] --> |offers| Angebot
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
-        Angebot --> |areaServed| Ort
+        Angebot --> |areaServed| Ort["Place (POI)"]
     end
     subgraph discover
         direction TB
-        Touristcard["Touristcard"] -->|itemOffered| Offer["Produkt mit Angebot"]
+        Touristcard["Touristcard"] -->|offers| Offer["Produkt mit Angebot"]
         Offer -->|itemOffered| Product["Produkt / Service"]
-        Offer -->|areaServed| Place["Place (POI / Product)"]
+        Offer -->|areaServed| Place["Place (POI)"]
     end
     subgraph app
         direction TB
         Tagespass --> Leistung
-        Leistung --> ProduktApp["Produkt"]
-        Leistung --> OrtApp["Ort"]
+        Leistung --> ProduktApp["Produkt / Service"]
+        Leistung --> OrtApp["Place (POI)"]
     end
 
     avs --> contentdesk
