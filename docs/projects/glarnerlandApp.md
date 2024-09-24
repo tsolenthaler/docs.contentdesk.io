@@ -83,9 +83,9 @@ graph LR
 
 | AVS                           | contentdesk.io        | discover.swiss                | App / Binarium            |
 | -----------                   | -------------         | -------------                 | -------------             |   
-| Card Typ                      | [Touristcard]         | Touristcard?                  | Tagespass                 |
+| Card Typ                      | [Touristcard]         | [Touristcard discover]❓       | Tagespass                 |
 |                               | [Product]             | [Product discover]            | Produkt                   |
-| Akzeptanzstelle / Leistung?   | [Offer]               | Offer? --> Product            | Leistung                  |       
+| Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]              | Leistung                  |       
 |                               | [Recommendation]      | [Recommendation discover]     | Empfehlung                |
 |                               | [Place]               | [Place discover]              | Place                     |
 |                               | [Organization]        | [Organization discover]       | -                         |
@@ -205,39 +205,39 @@ classDiagram
 
 #### Table Properties
 
-| AVS         | contentdesk.io                          | discover.swiss                | App / Binarium            | Comment |
-| ----------- | -------------                           | -------------                 | -------------             |   |
-|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**?      | -                         |   |
-|             | -                                       | [ID discover]                 | -                         |
-| -           | [identifier] (ID)                       | [sourceId discover]           | -                         |
-| ID          | [avs_id]                                | [additionalProperty discover] | -                         |   |
-|             | [validFrom]                             | [validFrom discover]          | -                         |          
-|             | [validThrough]                          | [validThrough discover]       | -                         |
-|             | Type **[Place]**                        | Type **[Place discover]**     | -                         |
-|             | [HowToDirection]                        | [gettingThere]                | -                         |
-|             | [publicTransport]                       | [publicTransport]             | -                         |
-|             | [parking]                               | [parking]                     | -                         |
-|             | **All Types - Attributes**              | **All Types**                 | -                         |
-|             | [name]                                  | name                          | -                         |
-|             | [disambiguatingDescription] Scope App   | [mobileDescription]           | -                         |
-|             | [description]                           | [description]                 | -                         |  
-|             | [channel]                               | [additionalProperty]?         | -                         |
-|             | **Association type** - Verknüfpungen    |                               | -                         |
-|             | [offers]                                | [offers discover]?            | -                         |
-|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]? | -                         |
-|             | [itemOffered]                           | [itemOffered discover]?       | -                         |
-|             | [itemReviewed]                          | [itemReviewed discover]       | -                         |
-|             | [isRelatedTo]                           | [isRelatedTo discover]?       | -                         |
-
-* [offeredBy] ?
-* [makesOffer] ?
-* [areaServed] ?
+| AVS         | contentdesk.io                          | discover.swiss                    | App / Binarium            | Comment |
+| ----------- | -------------                           | -------------                     | -------------             |   |
+|             | Type **[Touristcard]**?                 | Type **TouristcardTyp**❓         | -                         |   |
+|             | -                                       | [ID discover]                     | -                         |
+| -           | [identifier] (ID)                       | [sourceId discover]               | -                         |
+| ID          | [avs_id]                                | [additionalProperty discover]     | -                         |   |
+|             | [validFrom]                             | [validFrom discover]              | -                         |          
+|             | [validThrough]                          | [validThrough discover]           | -                         |
+|             | Type **[Place]**                        | Type **[Place discover]**         | -                         |
+|             | [HowToDirection]                        | [gettingThere]                    | -                         |
+|             | [publicTransport]                       | [publicTransport]                 | -                         |
+|             | [parking]                               | [parking]                         | -                         |
+|             | **All Types - Attributes**              | **All Types**                     | -                         |
+|             | [name]                                  | name                              | -                         |
+|             | [disambiguatingDescription] Scope App   | [mobileDescription]               | -                         |
+|             | [description]                           | [description]                     | -                         |  
+|             | [channel]                               | [additionalProperty]❓            | -                         |
+|             | **Association type** - Verknüfpungen    |                                   | -                         |
+|             | [offers]                                | [offers discover]❓               | -                         |
+|             | [availableAtOrFrom]                     | [availableAtOrFrom discover]❓    | -                         |
+|             | [itemOffered]                           | [itemOffered discover]❓          | -                         |
+|             | [itemReviewed]                          | [itemReviewed discover]           | -                         |
+|             | [isRelatedTo]                           | [isRelatedTo discover]            | -                         |
+|             | [offeredBy]                             | [offeredBy discover]❓            | -                         |
+|             | [location]                              | [location discover]❓            | -                         |
 
 [offers]: ../../schema/offers
 [availableAtOrFrom]: ../../schema/availableAtOrFrom
 [itemOffered]: ../../schema/itemOffered
 [itemReviewed]: ../../schema/itemReviewed
-[isRelatedTo]: ../../schema/isRelatedTo
+[isRelatedTo]: ../../schema/
+[offeredBy]: ../../schema/offeredBy
+[location]: ../../schema/location
 
 [identifier]: ../../schema/identifier
 [avs_id]: ../../schema/avs_id
@@ -291,10 +291,11 @@ graph TD
     * [ ] [Offer]? und [offers]?
     * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
     * [ ] [availableAtOrFrom]?
+    * [ ] [offeredBy]?
 - [ ] 
 
 
-### Beispiele
+## Beispiele
 
 #### Empfehlung
 
@@ -341,3 +342,25 @@ graph TD
     OfferB -->|Angebot von Produkt| Tagespass
     OfferC -->|Angebot von Produkt| Tagespass
 ```
+
+## Demo Inhalt
+
+## Contentdesk.io Demo
+
+- [Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
+  
+    * Angebote [Offers]
+    
+        * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
+        * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
+        * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
+
+## discover.swiss
+
+- [Tagespass](https://partner-test.discover.swiss/infocenter/details/Product/ctd_74589a84-bfb9-4fcb-a086-a349ba10205d?tab=0)
+    
+    * Beziehnung?
+    
+        * [20% Rabatt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_07314839-1d34-4205-bee2-8615d8e44fa8?tab=0)
+        * [Gratis](https://partner-test.discover.swiss/infocenter/details/Product/ctd_562d0dd4-8c33-462b-b166-2242e5779bc8?tab=0)
+        * [Gratis Sauna Eintritt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_1e370b67-57ed-4f55-99f5-f7f962aa176c?tab=0)
