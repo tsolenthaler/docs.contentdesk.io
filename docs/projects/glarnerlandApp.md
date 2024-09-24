@@ -361,6 +361,9 @@ graph TD
         * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
         * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
 
+
+- [Empfehlung](https://demo.pim.tso.ch/#/enrich/product/5838235b-62f6-4901-9f1c-1435293051c1)
+
 ## discover.swiss
 
 - [Tagespass](https://partner-test.discover.swiss/infocenter/details/Product/ctd_74589a84-bfb9-4fcb-a086-a349ba10205d?tab=0)
