@@ -3,6 +3,6 @@
 Liste / Baum der Typen 
 
 Suchen nach einem Type oder Property
-[search.suggest type]
+[Suchefeld nach Typ]
 
-[search.suggest type]: ?q=Type
+[Suchefeld nach Typ]: ?q=Type
