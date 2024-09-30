@@ -39,5 +39,6 @@ Attribute und Verknüpfungen (Association Type) welche zu Outdooractive übertra
 | [image]  ✅                           | [images][image]                       | Hauptbild                                 | 
 | [image_01_scope]  ✅                  | [images][image]                       | Galerie-Bild 01-10                        | 
 | [action_button] ❗                    | [attributes][context][link]           | Call-To-Acton (alte Version)              |
+| [target] ❌                           | [attributes][context][link]           | Call-To-Acton (neue Version)              |
 | [openingHours] ❌                     |                                       | Öffnungszeiten Text                       | 
 | [OpeningHoursSpecification] ❌        |                                       | Öffnungszeiten (maschinenlesbar)          | 
