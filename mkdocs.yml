@@ -75,4 +75,4 @@ nav:
 #  - API: api/index.md
   - Änderungen: 
     - System: changelog/system.md
-    - Schema: changelog/schema.md
+    - Schema/Datenmodell: changelog/schema.md
