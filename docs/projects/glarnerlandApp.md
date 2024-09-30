@@ -283,55 +283,6 @@ graph TD
     * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
 
 
-
-## Beispiele
-
-#### Empfehlung
-
-``` mermaid
-graph TD
-    Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|empfiehlt|PlaceA[POI A]
-    Recommendation -->|empfiehlt|PlaceB[POI B]
-    Recommendation -->|empfiehlt|PlaceC[POI C]
-
-    Recommendation -->|empfiehlt|Product[Produkt]
-    Recommendation -->|empfiehlt|Event[Veranstaltung]
-    Recommendation -->|empfiehlt|Tour
-
-    Recommendation -->|ist verbunden mit|Tagespass
-
-    Tagespass[Tagespass - Produkt]
-```
-
-#### Tagespass
-``` mermaid
-graph TD
-    Recommendation[Ausflugstipps - Empfehlung]
-    Recommendation -->|ist verbunden mit|Tagespass
-
-    Tagespass[Tagespass - Produkt]
-    Tagespass -->|hat Leistungen/Angebot|OfferA
-    Tagespass -->|hat Leistungen/Angebot|OfferB
-    Tagespass -->|hat Leistungen/Angebot|OfferC
-    
-    OfferA[Leistung / Angebot A]
-    OfferB[Leistung / Angebot B]
-    OfferC[Leistung / Angebot C]
-
-    OfferA -->|ist erhältlich bei|PlaceA[POI A]
-    OfferB -->|ist erhältlich bei|PlaceB[POI B]
-    OfferC -->|ist erhältlich bei|PlaceA
-
-    OfferA -->|angeboten von|OrganisationA[Organisation X]
-    OfferB -->|angeboten von|OrganisationA[Organisation Y]
-    OfferC -->|angeboten von|OrganisationA[Organisation Z]
-
-    OfferA -->|Angebot von Produkt| Tagespass
-    OfferB -->|Angebot von Produkt| Tagespass
-    OfferC -->|Angebot von Produkt| Tagespass
-```
-
 ## Demo Inhalt
 
 ## Contentdesk.io Demo
@@ -344,7 +295,8 @@ graph TD
     Tagespass -->|offers| OffeGratisKaffe["Gratis Kaffe von Restaurant Vegi"]
     Tagespass -->|offers| OffeGratisNusstange["Gratis Nusstange vom Beck"]
 
-    click Tagespass "https://www.github.com" 
+    OfferGratisDino -->|areaServed| PlaceDino["Park Dino]
+    OfferGratisDino -->|itemOffered| ProductDinoEintritt["Eintritt Dino Park"]
 ```
 
 
