@@ -42,3 +42,6 @@ Attribute und Verknüpfungen (Association Type) welche zu Outdooractive übertra
 | [target] ❌                           | [attributes][context][link]           | Call-To-Acton (neue Version)              |
 | [openingHours] ❌                     |                                       | Öffnungszeiten Text                       | 
 | [OpeningHoursSpecification] ❌        |                                       | Öffnungszeiten (maschinenlesbar)          | 
+
+
+[name]: ../schema/name.md
