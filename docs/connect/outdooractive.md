@@ -1,5 +1,8 @@
 # Outdooractive
 
+## Zyklus
+
+Um 12 Uhr und ca. ab 19 Uhr werden die Daten übertragen.
 
 ## Types
 

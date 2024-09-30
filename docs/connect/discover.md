@@ -1,7 +1,9 @@
 # discover.swiss
 
+## Zyklus
+Ein mal täglich um ca. 04:00 Uhr
 
-# Types
+##  Types
 
 | contentdesk.io      | discover.swiss                          |
 | -----------         | ------------------------------------    |
