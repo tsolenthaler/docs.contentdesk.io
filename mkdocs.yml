@@ -68,9 +68,12 @@ nav:
   - Konzepte: concepts.md
   - Schema: schema.md
   - Entwicklung: dev/index.md
-#  - Verbindungen: 
-#    - connect/index.md
-#    - discover.swiss: connect/discover.md
-#    - Outdooractive: connect/outdooractive.md
+  - Verbindungen: 
+    - connect.md
+    - discover.swiss: connect/discover.md
+    - Outdooractive: connect/outdooractive.md
 #  - API: api/index.md
-  - Änderungen: changelog/index.md
+  - Änderungen: 
+    - changelog/index.md
+    - System: changelog/system.md
+    - Schema: changelog/schema.md
