@@ -288,15 +288,17 @@ graph TD
 ## Contentdesk.io Demo
 ``` mermaid
 graph TD
-    Tagespass[Tagespass - GuestCard]
+    Tagespass[<a href='https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d'>Gästekarte Tagespass</a>]
     Tagespass -->|offers| OfferGratisDino["Gratis Dino Park Eintritt"]
     Tagespass -->|offers| OffeGartisSauna["Gratis Sauna Eintritt Hotel Zweistein"]
     Tagespass -->|offers| OffeBergbahn["20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg"]
     Tagespass -->|offers| OffeGratisKaffe["Gratis Kaffe von Restaurant Vegi"]
     Tagespass -->|offers| OffeGratisNusstange["Gratis Nusstange vom Beck"]
 
-    OfferGratisDino -->|areaServed| PlaceDino["Park Dino]
+    OfferGratisDino -->|areaServed| PlaceDino["Park Dino"]
     OfferGratisDino -->|itemOffered| ProductDinoEintritt["Eintritt Dino Park"]
+
+    click OfferGratisDino "https://www.github.com"
 ```
 
 
