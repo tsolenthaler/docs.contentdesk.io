@@ -288,7 +288,6 @@ graph TD
     OffeGartisSauna -->|itemOffered| ProductSaunaEintritt["Eintritt Sauna Hotel Zweistein"]
 ```
 
-
 ### Gästekarte
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
     * Angebote via [offers]
