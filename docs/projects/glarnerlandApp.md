@@ -245,21 +245,10 @@ classDiagram
 
 ### Schema.org
 
-#### Empfehlung
+#### Gästekarte Tagespass
 ``` mermaid
 graph TD
-    Recommendation -->|itemReviewed|Place
-    Recommendation -->|itemReviewed|Product
-    Recommendation -->|itemReviewed|Event
-    Recommendation -->|itemReviewed|Trail
-
-    Recommendation -->|isRelatedTo|Product
-```
-
-#### Tagespass
-``` mermaid
-graph TD
-    Product-->|offers|Offer
+    Product[Product GuestCard]-->|offers|Offer
 
     Offer-->|itemOffered|Product
     Offer-->|availableAtOrFrom|Place
@@ -288,7 +277,7 @@ graph TD
 ## Contentdesk.io Demo
 ``` mermaid
 graph TD
-    Tagespass[<a href='https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d'>Gästekarte Tagespass</a>]
+    Tagespass[<a href='https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d' target='_blank'>Gästekarte Tagespass</a>]
     Tagespass -->|offers| OfferGratisDino["Gratis Dino Park Eintritt"]
     Tagespass -->|offers| OffeGartisSauna["Gratis Sauna Eintritt Hotel Zweistein"]
     Tagespass -->|offers| OffeBergbahn["20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg"]
@@ -298,7 +287,8 @@ graph TD
     OfferGratisDino -->|areaServed| PlaceDino["Park Dino"]
     OfferGratisDino -->|itemOffered| ProductDinoEintritt["Eintritt Dino Park"]
 
-    click OfferGratisDino "https://www.github.com"
+    OffeGartisSauna -->|areaServed| PlaceHotelZweistein["Hotel Zweistein"]
+    OffeGartisSauna -->|itemOffered| ProductSaunaEintritt["Eintritt Sauna Hotel Zweistein"]
 ```
 
 
