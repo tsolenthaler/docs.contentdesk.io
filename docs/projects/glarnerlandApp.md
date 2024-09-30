@@ -261,16 +261,13 @@ graph TD
 ## Offene Punkte / ToDo
 
 - [ ] discover.swiss 
-    * [x] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
+    * [ ] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
     * [x] [Offer] und [offers]
-    * [x] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
-    * [ ] [availableAtOrFrom]?
-    * [ ] [offeredBy]?
+    * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
 - [ ] contentdesk.io
     * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
     * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
-
 
 ## Demo Inhalt
 
@@ -295,28 +292,31 @@ graph TD
 ### Gästekarte
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
     * Angebote via [offers]
-        * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
-            * Einlöse Ort [areaServed]
-                * [Alpine Abenteuerpark Ostschweiz](https://demo.pim.tso.ch/#/enrich/product/48bc12d8-19e8-4635-bd89-3ec3773adf0b)
-                * [Nationalpark Hipo](https://demo.pim.tso.ch/#/enrich/product/8a0eeb47-ec60-418c-bbc7-d0ee425f23ef)
-                * [Superland Park](https://demo.pim.tso.ch/#/enrich/product/c1f51a34-4c8b-4309-aa19-3d262ab62a49)
-        * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
-            * Einlöse Ort [areaServed]
-                * [Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/12387058-735d-48b2-86fc-068ce39efa0d)
-                * [Pizzeria Italy](https://demo.pim.tso.ch/#/enrich/product/2b328cda-3751-4721-b69c-684deedad423)
-                * [Eiscafé Eiskalt](https://demo.pim.tso.ch/#/enrich/product/4754b82d-2728-44b4-84cf-625075af671a)
+        * [Gratis Dino Park Eintritt](https://demo.pim.tso.ch/#/enrich/product/03274851-da78-4793-bf8d-3f6d7b85345a)
+            *  Angebot, wo es bezogen werden kann [areaServed]
                 * [Park Dino](https://demo.pim.tso.ch/#/enrich/product/57bba700-bac4-4b83-8038-74efd93032ca)
-                * [Café Crème](https://demo.pim.tso.ch/#/enrich/product/5c2589a6-0284-46f0-b975-b2840ab958aa)
-                * [Restaurant Gourmet](https://demo.pim.tso.ch/#/enrich/product/bf9a69a3-134c-46bf-b3cf-bbb1e1442676)
+            * Enthaltene Angebote [itemOffered]
+                * [Eintritt Dino Park](https://demo.pim.tso.ch/#/enrich/product/887a664e-4734-4a7e-aab7-5f30bfada107)
+        * [Gratis Sauna Eintritt Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
+            * Angebot, wo es bezogen werden kann  [areaServed]
+                * [Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/631b73f9-15dd-461e-a3f6-e706c9f30630)
+            * Enthaltene Angebote [itemOffered]
+                * [Sauna Eintritt Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/1afc2025-cb65-4b05-9297-ec9ee51a87f3)
+        * [20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
+            *  Angebot, wo es bezogen werden kann [areaServed]
+                * [Sitzberg](https://demo.pim.tso.ch/#/enrich/product/ed6a836c-943f-4ad9-a9bf-6cbe8021bf49)
+            * Enthaltene Angebote [itemOffered]
+                * [Bergfahrt auf den Sitzberg](https://demo.pim.tso.ch/#/enrich/product/291e6b23-3e43-4a78-a1d8-14be12e57249)
+        * [Gratis Kaffe von Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
+            *  Angebot, wo es bezogen werden kann [areaServed]
+                * [Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/12387058-735d-48b2-86fc-068ce39efa0d)
+            * Enthaltene Angebote [itemOffered]
+                * [Kaffe von Restaurant Vegi](https://demo.pim.tso.ch/#/enrich/product/8894485f-38ac-4f10-94d8-fd507801c1b5)
+        * [Gratis Nusstange vom Beck](https://demo.pim.tso.ch/#/enrich/product/e188459d-1260-4fe5-b538-7effedc46b68)
+            *  Angebot, wo es bezogen werden kann [areaServed]
                 * [Bäckerei Beck](https://demo.pim.tso.ch/#/enrich/product/dab66e16-f9de-4fb0-ab7c-d96853174712)
             * Enthaltene Angebote [itemOffered]
-        * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
-            * Einlöse Ort [areaServed]
-                * [Sternenhotel](https://demo.pim.tso.ch/#/enrich/product/628bb476-3626-44d2-9e1b-ba7eff6aef10)
-                * [Hotel Zweistein](https://demo.pim.tso.ch/#/enrich/product/631b73f9-15dd-461e-a3f6-e706c9f30630)
-
-#### Empfehlung
-- [Empfehlung](https://demo.pim.tso.ch/#/enrich/product/5838235b-62f6-4901-9f1c-1435293051c1)
+                * [Nussstange](https://demo.pim.tso.ch/#/enrich/product/a627ea92-fcf6-4bf7-9a44-1271bce41f3d)
 
 ## discover.swiss
 
