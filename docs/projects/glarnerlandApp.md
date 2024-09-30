@@ -261,12 +261,18 @@ graph TD
 
 - [ ] discover.swiss 
     * [ ] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
-    * [x] [Offer] und [offers]
-    * [ ] [itemOffered]? --> Verknüpfte Produkte / Service bei discover.swiss?
+    * [ ] [offers] --> Beziehung von GuestCard zu Offer
+    * [x] [Offer] - Angebote
+    * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
+    * [x] [areaServed] --> Verknüfpung von Offer zu Place
+    * [ ] Type [Recommendation] - Empfehulungen
+    * [ ] [itemReviewed] --> Beziehung 
+
 - [ ] contentdesk.io
     * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
     * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
+    * [ ] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
 
 ## Demo Inhalt
 
@@ -315,6 +321,13 @@ graph TD
                 * [Bäckerei Beck](https://demo.pim.tso.ch/#/enrich/product/dab66e16-f9de-4fb0-ab7c-d96853174712)
             * Enthaltene Angebote [itemOffered]
                 * [Nussstange](https://demo.pim.tso.ch/#/enrich/product/a627ea92-fcf6-4bf7-9a44-1271bce41f3d)
+
+### Empfehlung / 
+
+* [Ausflugstipps](https://demo.pim.tso.ch/#/enrich/product/5838235b-62f6-4901-9f1c-1435293051c1)
+    * Empfholene Artikel [itemReviewed]
+        * ..
+
 
 ## discover.swiss
 
