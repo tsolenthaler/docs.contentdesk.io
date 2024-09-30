@@ -74,6 +74,5 @@ nav:
     - Outdooractive: connect/outdooractive.md
 #  - API: api/index.md
   - Änderungen: 
-    - changelog/index.md
     - System: changelog/system.md
     - Schema: changelog/schema.md
