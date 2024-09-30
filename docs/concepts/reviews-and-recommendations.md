@@ -8,9 +8,7 @@ hide:
 
 # Reviews and recommendations / Empfehlungen
 
-Dokumentation bei discover.swiss
-
-https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/
+[Dokumentation bei discover.swiss](https://docs.discover.swiss/dev/concepts/reviews-and-recommendations/)
 
 
 ## Schema
