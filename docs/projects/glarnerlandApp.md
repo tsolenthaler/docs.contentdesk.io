@@ -335,6 +335,18 @@ graph TD
 ## Demo Inhalt
 
 ## Contentdesk.io Demo
+``` mermaid
+graph TD
+    Tagespass[Tagespass - GuestCard]
+    Tagespass -->|offers| OfferGratisDino["Gratis Dino Park Eintritt"]
+    Tagespass -->|offers| OffeGartisSauna["Gratis Sauna Eintritt Hotel Zweistein"]
+    Tagespass -->|offers| OffeBergbahn["20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg"]
+    Tagespass -->|offers| OffeGratisKaffe["Gratis Kaffe von Restaurant Vegi"]
+    Tagespass -->|offers| OffeGratisNusstange["Gratis Nusstange vom Beck"]
+
+    click Tagespass "https://www.github.com" 
+```
+
 
 ### Gästekarte
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
@@ -353,6 +365,7 @@ graph TD
                 * [Café Crème](https://demo.pim.tso.ch/#/enrich/product/5c2589a6-0284-46f0-b975-b2840ab958aa)
                 * [Restaurant Gourmet](https://demo.pim.tso.ch/#/enrich/product/bf9a69a3-134c-46bf-b3cf-bbb1e1442676)
                 * [Bäckerei Beck](https://demo.pim.tso.ch/#/enrich/product/dab66e16-f9de-4fb0-ab7c-d96853174712)
+            * Enthaltene Angebote [itemOffered]
         * [Gratis Sauna Eintritt](https://demo.pim.tso.ch/#/enrich/product/345c8f62-f583-4331-9523-af9ed65e0e54)
             * Einlöse Ort [areaServed]
                 * [Sternenhotel](https://demo.pim.tso.ch/#/enrich/product/628bb476-3626-44d2-9e1b-ba7eff6aef10)
