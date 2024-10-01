@@ -288,7 +288,7 @@ graph TD
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
     * [ ] Type [Recommendation] - Empfehlungen
     * [ ] [itemReviewed] --> Beziehung 
-    * [ ] Zuweistung an Projekt vgl_app und vlg_web (all in)
+    * [ ] Zuweistung an Projekt bspw. vgl_app und vlg_web (all in)
 
 - [ ] contentdesk.io
     * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
