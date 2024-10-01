@@ -288,12 +288,16 @@ graph TD
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
     * [ ] Type [Recommendation] - Empfehlungen
     * [ ] [itemReviewed] --> Beziehung 
+    * [ ] Zuweistung an Projekt vgl_app und vlg_web (all in)
 
 - [ ] contentdesk.io
     * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
     * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
     * [ ] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
+    * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags
+    * [ ] Channel --> entfernen
+    * [ ] Zugang Connect ---> discover.swiss
 
 ## Demo Inhalt
 
