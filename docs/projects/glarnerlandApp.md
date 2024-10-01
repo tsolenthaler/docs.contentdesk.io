@@ -180,14 +180,13 @@ classDiagram
 
         class Offer["Offer (Product)"]
 
-        class Prodcut["Produkt/Service (Product)"]
-
-        GuestCard --> "0..n" Offer : isRelatedTo
-
-        Offer --> "0..1" Produkt : itemOffered
-        Offer --> "0..1" Ort : areaServed
-        Produkt --> "0..1" Place : areaServed
+        class Product["Produkt/Service (Product)"]
     }
+    GuestCard --> "0..n" Offer : isRelatedTo
+
+    Offer --> "0..1" Product : itemOffered
+    Offer --> "0..1" Place : areaServed
+    Product --> "0..1" Place : areaServed
 
     namespace app {
         class Tagespass {
