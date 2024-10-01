@@ -286,8 +286,8 @@ graph TD
     * [x] [Offer] - Angebote
     * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
-    * [ ] Type [Recommendation] - Empfehlungen
-    * [ ] [itemReviewed] --> Beziehung 
+    * [x] Type [Recommendation] - Empfehlungen --> via Tags
+    * [x] [itemReviewed] --> Beziehung --> via Tags
     * [ ] Zuweistung an Projekt bspw. vgl_app und vlg_web (all in)
 
 - [ ] contentdesk.io
