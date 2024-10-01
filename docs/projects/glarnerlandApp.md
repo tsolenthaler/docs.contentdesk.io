@@ -52,13 +52,13 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Gaestekarte["Gästekarte"] --> |offers| Angebot
+        Gaestekarte["Gästekarte"] --> |isRelatedTo| Angebot
         Angebot --> |itemOffered| Angebot2["Produkt / Service"]
         Angebot --> |areaServed| Ort["Place (POI)"]
     end
     subgraph discover
         direction TB
-        Touristcard["Touristcard"] -->|offers| Offer["Produkt mit Angebot"]
+        Touristcard["Touristcard"] -->|isRelatedTo| Offer["Produkt mit Angebot"]
         Offer -->|itemOffered| Product["Produkt / Service"]
         Offer -->|areaServed| Place["Place (POI)"]
     end
@@ -147,10 +147,11 @@ classDiagram
             string leisure
         }
     }
-    GuestCard --> "0..n" Angebot : offers
 
-    Angebot --> "0..n" Produkt : itemOffered
-    Angebot --> "0..n" Ort : areaServed
+    GuestCard --> "0..n" Angebot : isRelatedTo
+
+    Angebot --> "0..1" Produkt : itemOffered
+    Angebot --> "0..1" Ort : areaServed
 
     namespace discover {
         class GuestCardType{
@@ -212,6 +213,7 @@ classDiagram
 |             | [offers]                                | [offers discover]                         | -                         |
 |             | [itemOffered]                           | [itemOffered discover]                  | -                         |
 |             | [areaServed]                            | [areaServed discover]                   | -                         |
+|             | [isRelatedTo]                           | [isRelatedTo discover]                   | -                         |
 
 [offers]: ../../schema/offers
 [itemOffered]: ../../schema/itemOffered
@@ -247,7 +249,7 @@ classDiagram
 #### Gästekarte Tagespass
 ``` mermaid
 graph TD
-    Product[Product GuestCard]-->|offers|Offer
+    Product[Product GuestCard]-->|isRelatedTo|Offer
 
     Offer-->|itemOffered|Product
     Offer-->|availableAtOrFrom|Place
@@ -338,3 +340,8 @@ graph TD
         * [20% Rabatt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_07314839-1d34-4205-bee2-8615d8e44fa8?tab=0)
         * [Gratis](https://partner-test.discover.swiss/infocenter/details/Product/ctd_562d0dd4-8c33-462b-b166-2242e5779bc8?tab=0)
         * [Gratis Sauna Eintritt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_1e370b67-57ed-4f55-99f5-f7f962aa176c?tab=0)
+
+
+### Inhalt App
+
+https://www.figma.com/design/OcvSQlgOO70u17wXhO8EJO/Glarnerland?node-id=1156-26321&node-type=frame
