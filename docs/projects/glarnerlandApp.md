@@ -342,6 +342,6 @@ graph TD
         * [Gratis Sauna Eintritt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_1e370b67-57ed-4f55-99f5-f7f962aa176c?tab=0)
 
 
-### Inhalt App
+### Design App
 
-https://www.figma.com/design/OcvSQlgOO70u17wXhO8EJO/Glarnerland?node-id=1156-26321&node-type=frame
+[Design figma](https://www.figma.com/design/OcvSQlgOO70u17wXhO8EJO/Glarnerland?node-id=1156-26321&node-type=frame)
