@@ -52,15 +52,17 @@ graph LR
     end
     subgraph contentdesk
         direction TB
-        Gaestekarte["Gästekarte"] --> |isRelatedTo| Angebot
-        Angebot --> |itemOffered| Angebot2["Produkt / Service"]
-        Angebot --> |areaServed| Ort["Place (POI)"]
+        Gaestekarte["Gästekarte (GuestCard)"] --> |isRelatedTo| Angebot["Angebot (Offer)"]
+        Angebot --> |itemOffered| Product2["Produkt / Service (Product)"]
+        Angebot --> |areaServed| Ort["POI (Place)"]
+        Product2 --> |areaServed| Ort
     end
     subgraph discover
         direction TB
-        Touristcard["Touristcard"] -->|isRelatedTo| Offer["Produkt mit Angebot"]
-        Offer -->|itemOffered| Product["Produkt / Service"]
-        Offer -->|areaServed| Place["Place (POI)"]
+        GuestCard["GuestCard (Product)"] -->|isRelatedTo| Offer["Offer(Product)"]
+        Offer -->|itemOffered| Product["Produkt / Service (Product)"]
+        Offer -->|areaServed| Place["POI (Place)"]
+        Product -->|areaServed| Place["POI (Place)"]
     end
     subgraph app
         direction TB
@@ -78,7 +80,7 @@ graph LR
 
 | AVS                           | contentdesk.io        | discover.swiss                                        | App / Binarium            |
 | -----------                   | -------------         | -------------                                         | -------------             |   
-| Card Typ                      | [GuestCard]           | [Product discover] additonalType GuestCard            | Tagespass                 |
+| Card Typ                      | [GuestCard]           | [GuestCard discover] (Product)                        | Tagespass                 |
 |                               | [Product]             | [Product discover]                                    | Produkt                   |
 | Akzeptanzstelle / Leistung?   | [Offer]               | [Offer discover]                                      | Leistung                  |       
 |                               | [Place]               | [Place discover]                                      | Place                     |
@@ -284,7 +286,7 @@ graph TD
     * [x] [Offer] - Angebote
     * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
-    * [ ] Type [Recommendation] - Empfehulungen
+    * [ ] Type [Recommendation] - Empfehlungen
     * [ ] [itemReviewed] --> Beziehung 
 
 - [ ] contentdesk.io
