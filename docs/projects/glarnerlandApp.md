@@ -212,13 +212,13 @@ classDiagram
 
 | AVS         | contentdesk.io                          | discover.swiss                            | App / Binarium            | Comment |
 | ----------- | -------------                           | -------------                             | -------------             |   |
-|             | Type **[GuestCard]**                    | Type **GuestCard**                        | -                         |   |
+|             | **Type [GuestCard]**                    | **Type GuestCard**                        | -                         |   |
 |             | -                                       | [ID discover]                             | -                         |
 | -           | [identifier] (ID)                       | [sourceId discover]                       | -                         |
 | ID          | [avs_id]                                | [additionalProperty discover] avs_id      | -                         |   |
 |             | [validFrom]                             | [validFrom discover]                      | -                         |          
 |             | [validThrough]                          | [validThrough discover]                   | -                         |
-|             | Type **[Place]**                        | Type **[Place discover]**                 | -                         |
+|             | **Type [Place]**                        | **Type [Place discover]**                 | -                         |
 |             | [HowToDirection]                        | [gettingThere]                            | -                         |
 |             | [publicTransport]                       | [publicTransport]                         | -                         |
 |             | [parking]                               | [parking]                                 | -                         |
