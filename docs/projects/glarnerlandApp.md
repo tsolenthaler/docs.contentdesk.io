@@ -282,22 +282,22 @@ graph TD
 
 - [ ] discover.swiss 
     * [ ] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
-    * [ ] [offers] --> Beziehung von GuestCard zu Offer
+    * [ ] [isRelatedTo] --> Beziehung von GuestCard zu Offer 
     * [x] [Offer] - Angebote
     * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
-    * [x] Type [Recommendation] - Empfehlungen --> via Tags
-    * [x] [itemReviewed] --> Beziehung --> via Tags
-    * [ ] Zuweistung an Projekt bspw. vgl_app und vlg_web (all in)
+    * [x] Empfehlungen --> via Tags - muss definiert werden welche genutzt werden sollen!
+    * [ ] Zuweistung an Projekt bspw. vgl_app und vlg_web
 
 - [ ] contentdesk.io
-    * [ ] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
+    * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
     * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
     * [ ] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
-    * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags
-    * [ ] Channel --> entfernen
+    * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig
+    * [x] Channel --> entfernen
     * [x] Zugang Connect ---> discover.swiss
+    * [x] [offers] mit [isRelatedTo] ersetzen
 
 ## Demo Inhalt
 
@@ -320,7 +320,7 @@ graph TD
 
 ### Gästekarte
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
-    * Angebote via [offers]
+    * [isRelatedTo]
         * [Gratis Dino Park Eintritt](https://demo.pim.tso.ch/#/enrich/product/03274851-da78-4793-bf8d-3f6d7b85345a)
             *  Angebot, wo es bezogen werden kann [areaServed]
                 * [Park Dino](https://demo.pim.tso.ch/#/enrich/product/57bba700-bac4-4b83-8038-74efd93032ca)
@@ -347,12 +347,11 @@ graph TD
             * Enthaltene Angebote [itemOffered]
                 * [Nussstange](https://demo.pim.tso.ch/#/enrich/product/a627ea92-fcf6-4bf7-9a44-1271bce41f3d)
 
-### Empfehlung / 
+### Empfehlung
 
-* [Ausflugstipps](https://demo.pim.tso.ch/#/enrich/product/5838235b-62f6-4901-9f1c-1435293051c1)
-    * Empfholene Artikel [itemReviewed]
-        * ..
-
+Via Tags in Discover.swiss pflegen.
+Definieren welche Tags für welche Empfehlungs-Liste genutzt wird.
+Eigene können im Interface erstellt werden.
 
 ## discover.swiss
 
