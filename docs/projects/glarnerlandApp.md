@@ -97,7 +97,9 @@ graph LR
 
 ### Properties
 
-#### Diagramm Properties
+#### Diagramm Properties 
+
+##### AVS  und Contentdesk
 ``` mermaid
 classDiagram
     direction TB
@@ -123,20 +125,20 @@ classDiagram
             date validFrom
             date validThrough
         }
-        class Produkt {
+        class Product {
             uuid Id
             string Name
             array channel
             string disambiguatingDescription
         }
-        class Angebot {
+        class Offer {
             uuid Id
             string Name
             uuid avs_id
             array channel
             string disambiguatingDescription
         }
-        class Ort["POI / Place"] {
+        class Place["POI (Place)"] {
             uuid Id
             string Name
             array channel
@@ -148,27 +150,43 @@ classDiagram
         }
     }
 
-    GuestCard --> "0..n" Angebot : isRelatedTo
+    GuestCard --> "0..n" Offer : isRelatedTo
 
-    Angebot --> "0..1" Produkt : itemOffered
-    Angebot --> "0..1" Ort : areaServed
+    Offer --> "0..1" Product : itemOffered
+    Offer --> "0..1" Place : areaServed
+    
+    Product --> "0..1" Place : areaServed
 
+```
+
+##### discover.swiss + App Binarium
+``` mermaid
+classDiagram
+    direction TB
     namespace discover {
-        class GuestCardType{
+        class GuestCard{
             uuid Id
             string Name
             uuid sourceID
             uuid avs_id
         }
-        class Product{
+        class Offer{
             uuid Id
             string Name
             uuid sourceID
         }
 
-        class Place["Place / Product / Event"]
+        class Place["POI (Place)"]
 
-        class Product["Place / Produkt"]
+        class Offer["Offer (Product)"]
+
+        class Prodcut["Produkt/Service (Product)"]
+
+        GuestCard --> "0..n" Offer : isRelatedTo
+
+        Offer --> "0..1" Produkt : itemOffered
+        Offer --> "0..1" Ort : areaServed
+        Produkt --> "0..1" Place : areaServed
     }
 
     namespace app {
