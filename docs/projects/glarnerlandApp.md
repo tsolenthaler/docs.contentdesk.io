@@ -297,7 +297,7 @@ graph TD
     * [ ] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
     * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags
     * [ ] Channel --> entfernen
-    * [ ] Zugang Connect ---> discover.swiss
+    * [x] Zugang Connect ---> discover.swiss
 
 ## Demo Inhalt
 
