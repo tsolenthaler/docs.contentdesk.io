@@ -32,9 +32,11 @@ graph TD
 
     Offer20RabattHipo --> |Angebot| ProductHipo[Eintritt Hipo Nationalpark]
     Offer20RabattHipo --> |erhältlich bei| PlaceHipo[Nationalpark Hipo]
+    ProductHipo --> |erhältlich bei| PlaceHipo[Nationalpark Hipo]
 
     OfferSauna --> |Angebot| ProductSauna[Eintritt Sauna Hotel Zweistein]
     OfferSauna --> |erhältlich bei| PlaceHotel[Hotel Zweistein]
+    ProductSauna --> |erhältlich bei| PlaceHotel[Hotel Zweistein]
 ```
 
 ## Schema.org
