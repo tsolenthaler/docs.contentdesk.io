@@ -16,13 +16,13 @@ Bspw:
 ## Beispiel Gästekarte
 ``` mermaid
 graph TD
-    GuestCard[Gästekarte] -->|bietet| OfferGratisDino[Angebot Gratis Dino Park]
+    GuestCard[Gästekarte] --> |bietet| OfferGratisDino[Angebot Gratis Dino Park]
     GuestCard -->|bietet| Offer20RabattHipo[Angebot 20% Rabatt Nationalpark Hipo]
     GuestCard -->|bietet| OfferSauna[Angebot Gratis Sauna Eintritt]
     GuestCard -->|bietet| OfferNusstange[Angebot Gratis Nussstange]
 
-    OfferGratisDino -->|Angebot| OfferDinoPark["Einritt Dino Park"]
-    OfferGratisDino -->|erhältlich bei| PlaceDinoPark
+    OfferGratisDino --> |Angebot| OfferDinoPark["Einritt Dino Park"]
+    OfferGratisDino --> |erhältlich bei| PlaceDinoPark
 
     OfferDinoPark -->|erhältlich bei| PlaceDinoPark[Park Dino]
 
@@ -42,18 +42,10 @@ graph TD
 graph TD
     GuestCard -->|isRelatedTo| Offer
 
-    Offer -->|itemOffered| Product
-    Offer -->|itemOffered| Service
-    Offer -->|itemOffered| Event
-    Offer -->|availableAtOrFrom 0 ... n| Place
+    Offer --> |itemOffered| Product[Product / Service / Event]
+    Offer --> |areaServed 0 ... n| Place
 
-    Service -->|offers| Offer
-    Event -->|offers| Offer
-
-    Offer -->|offeredBy| Organization
-    Offer -->|offeredBy| Person
-
-    Offer -->|availableAtOrFrom| Place
+    Product --> |areaServed| Place
 ```
 
 ### Types
@@ -67,6 +59,7 @@ graph TD
 * [offers](../../schema/offers) - Verknüpfung
 * [itemOffered](../../schema/itemOffered) - Verknüpfung
 * [isRelatedTo](../../schema/isRelatedTo) - Verknüpfung
+* [areaServed](../../schema/areaServed) - Verknüpfung
 
 !!! info "Hinweis"
 
