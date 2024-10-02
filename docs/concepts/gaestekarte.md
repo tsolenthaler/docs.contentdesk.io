@@ -10,7 +10,7 @@ Eine Gästekarte ist ein Dokument oder eine Karte, die Gäste in bestimmten Urla
 
 Bspw:
 
-* Tagespass Glarnerland
+* Glarnerland Pass 
 * ZüriCard
 
 ## Beispiel Gästekarte
@@ -65,9 +65,13 @@ graph TD
 
 ### Properties
 
-* [offers](../../schema/offers)
-* [itemOffered](../../schema/itemOffered)
-* [isRelatedTo](../../schema/isRelatedTo)
+* [offers](../../schema/offers) - Verknüpfung
+* [itemOffered](../../schema/itemOffered) - Verknüpfung
+* [isRelatedTo](../../schema/isRelatedTo) - Verknüpfung
+
+!!! info "Hinweis"
+
+    Diese Properties werdne im Contentdesk via Verknüpfungen gepflegt
 
 ## Beispiele
 
@@ -90,60 +94,3 @@ graph TD
         * [20% Rabatt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_07314839-1d34-4205-bee2-8615d8e44fa8?tab=0)
         * [Gratis](https://partner-test.discover.swiss/infocenter/details/Product/ctd_562d0dd4-8c33-462b-b166-2242e5779bc8?tab=0)
         * [Gratis Sauna Eintritt](https://partner-test.discover.swiss/infocenter/details/Product/ctd_1e370b67-57ed-4f55-99f5-f7f962aa176c?tab=0)
-
-## Schema.org
-
-### mit unterschiedlichen Preisen
-
-``` json
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Tagespass",
-  "description": "Ein Tagespass mit verschiedenen Angeboten und Produkten von Partnerorganisationen.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Gratis Sauna Eintritt"
-      },
-      "price": "0",
-      "priceCurrency": "CHF"
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Product",
-        "name": "Gratis Nussstange"
-      },
-      "price": "0",
-      "priceCurrency": "CHF"
-    }
-  ]
-}
-```
-### Mit mehrere Gratis Angebote
-``` json
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Tagespass",
-  "description": "Ein Tagespass mit verschiedenen Angeboten und Produkten von Partnerorganisationen.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "CHF",
-    "itemOffered": [
-      {
-        "@type": "Service",
-        "name": "Gratis Sauna Eintritt"
-      },
-      {
-        "@type": "Product",
-        "name": "Gratis Nussstange"
-      }
-    ]
-  }
-}
-```
