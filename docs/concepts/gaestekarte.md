@@ -82,3 +82,10 @@ graph TD
 ### discover.swiss
 
 - [Gästekarte Tagespass](https://partner-test.discover.swiss/infocenter/details/Product/ctd_74589a84-bfb9-4fcb-a086-a349ba10205d?tab=0)
+
+
+## Verwendet in Projekten
+
+* [Glarnerland App]
+
+[Glarnerland App]: projects/glarnerlandApp.md
