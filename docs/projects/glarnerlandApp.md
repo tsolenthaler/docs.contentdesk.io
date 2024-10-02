@@ -133,20 +133,17 @@ classDiagram
         class Product {
             uuid Id
             string Name
-            array channel
             string disambiguatingDescription
         }
         class Offer {
             uuid Id
             string Name
             uuid avs_id
-            array channel
             string disambiguatingDescription
         }
         class Place["POI (Place)"] {
             uuid Id
             string Name
-            array channel
             string disambiguatingDescription
             string HowToDirection
             string publicTransport
@@ -230,7 +227,6 @@ classDiagram
 |             | [name]                                  | name                                      | -                         |
 |             | [disambiguatingDescription] Scope App   | [mobileDescription]                       | -                         |
 |             | [description]                           | [description]                             | -                         |  
-|             | [channel]                               | [additionalProperty]❓channel            | -                         |
 |             | **Association type** - Verknüfpungen    |                                           | -                         |
 |             | [itemOffered]                           | [itemOffered discover]                  | -                         |
 |             | [areaServed]                            | [areaServed discover]                   | -                         |
