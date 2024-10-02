@@ -59,7 +59,6 @@ graph TD
 
 ### Properties
 
-* [offers](../../schema/offers) - Verknüpfung
 * [itemOffered](../../schema/itemOffered) - Verknüpfung
 * [isRelatedTo](../../schema/isRelatedTo) - Verknüpfung
 * [areaServed](../../schema/areaServed) - Verknüpfung
