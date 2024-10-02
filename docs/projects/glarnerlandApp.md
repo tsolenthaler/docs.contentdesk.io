@@ -29,19 +29,21 @@ graph LR
     SystemCD -->|API| SystemDiscover
     SystemDiscover -->|API| SystemApp
 ```
-#### AVS -> contentdesk.io
+
+### Schnittstellen
+
+#### AVS zu contentdesk.io
 Manueller übertrag der AVS ID
 
-#### contentdesk.io -> discover.swiss
+#### contentdesk.io zu discover.swiss
 Ein mal täglich um ca. 04:00 Uhr
 
-#### discover.swiss -> App Binarium
+#### discover.swiss zu App Binarium
 ?
 
 ### Types
 
 #### Diagramm Types
-
 ``` mermaid
 graph LR
     subgraph avs
@@ -99,23 +101,27 @@ graph LR
 
 #### Diagramm Properties 
 
-##### AVS  und Contentdesk
+##### AVS
 ``` mermaid
 classDiagram
     direction TB
-    namespace Avs {
-        class CardTyp {
-            uuid Id
-            string Name
-        }
-        class Akzeptanzstelle {
-            uuid Id
-            string Name
-            date Gültigkeit
-        }
+    class CardTyp {
+        uuid Id
+        string Name
+    }
+    class Akzeptanzstelle {
+        uuid Id
+        string Name
+        date Gültigkeit
     }
     CardTyp --> "0..n" Akzeptanzstelle : hat
 
+```
+
+##### Contentdesk
+``` mermaid
+classDiagram
+    direction TB
     namespace contentdesk {
         class GuestCard {
             uuid Id

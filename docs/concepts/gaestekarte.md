@@ -57,7 +57,6 @@ graph TD
 * [Product](../../schema/Product)
 * [Place](../../schema/Place)
 
-
 ### Properties
 
 * [offers](../../schema/offers) - Verknüpfung
@@ -69,7 +68,7 @@ graph TD
 
     Diese Properties werden im Contentdesk via Verknüpfungen gepflegt.
 
-!!! warning "Spezifische Properties / Attribut"
+!!! warning "Spezifische Properties / Attribute"
 
     Pro Gästekarte müssen spezifische Properties / Attribute gepflegt werden!
     Bspw. AVS ID, etc.
