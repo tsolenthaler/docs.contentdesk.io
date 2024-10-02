@@ -190,7 +190,7 @@ classDiagram
     Product --> "0..1" Place : areaServed
 ```
 
-##### discover.swiss + App Binarium
+##### App Binarium
 ``` mermaid
 classDiagram
     direction TB
@@ -209,6 +209,7 @@ classDiagram
     Tagespass --> "0..n" Leistung : isRelatedTo
     Leistung --> "0..n" ProduktApp : itemOffered
     Leistung --> "0..n" OrtApp : areaServed
+    ProduktApp --> "0..n" OrtApp : areaServed
 ```
 
 #### Table Properties
