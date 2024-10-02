@@ -53,8 +53,10 @@ graph TD
 ### Types
 
 * [GuestCard](../../schema/GuestCard)
-* [Product](../../schema/Place)
 * [Offer](../../schema/Offer)
+* [Product](../../schema/Product)
+* [Place](../../schema/Place)
+
 
 ### Properties
 
