@@ -35,7 +35,6 @@ graph TD
 
     OfferSauna --> |Angebot| ProductSauna[Eintritt Sauna Hotel Zweistein]
     OfferSauna --> |erhältlich bei| PlaceHotel[Hotel Zweistein]
-
 ```
 
 ## Schema.org
