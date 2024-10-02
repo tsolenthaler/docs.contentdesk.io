@@ -122,7 +122,6 @@ classDiagram
 ``` mermaid
 classDiagram
     direction TB
-    namespace contentdesk {
         class GuestCard {
             uuid Id
             string Name
@@ -154,61 +153,60 @@ classDiagram
             string parking
             string leisure
         }
-    }
-
     GuestCard --> "0..n" Offer : isRelatedTo
 
     Offer --> "0..1" Product : itemOffered
     Offer --> "0..1" Place : areaServed
     
     Product --> "0..1" Place : areaServed
+```
 
+##### discover.swiss
+``` mermaid
+classDiagram
+    direction TB
+    class GuestCard{
+        uuid Id
+        string Name
+        uuid sourceID
+        uuid avs_id
+    }
+    class Offer{
+        uuid Id
+        string Name
+        uid sourceID
+    }
+
+    class Place["POI (Place)"]
+
+    class Offer["Offer (Product)"]
+
+    class Product["Produkt/Service (Product)"]
+
+    GuestCard --> "0..n" Offer : isRelatedTo
+
+    Offer --> "0..1" Product : itemOffered
+    Offer --> "0..1" Place : areaServed
+    Product --> "0..1" Place : areaServed
 ```
 
 ##### discover.swiss + App Binarium
 ``` mermaid
 classDiagram
     direction TB
-    namespace discover {
-        class GuestCard{
-            uuid Id
-            string Name
-            uuid sourceID
-            uuid avs_id
-        }
-        class Offer{
-            uuid Id
-            string Name
-            uuid sourceID
-        }
+    class Tagespass {
 
-        class Place["POI (Place)"]
-
-        class Offer["Offer (Product)"]
-
-        class Product["Produkt/Service (Product)"]
     }
-    GuestCard --> "0..n" Offer : isRelatedTo
+    class Leistung {
 
-    Offer --> "0..1" Product : itemOffered
-    Offer --> "0..1" Place : areaServed
-    Product --> "0..1" Place : areaServed
-
-    namespace app {
-        class Tagespass {
-
-        }
-        class Leistung {
-
-        }
-        class OrtApp
-        class ProduktApp
-
-        class OrtApp["Place"]
-        class ProduktApp["Produkt"]
     }
+    class OrtApp
+    class ProduktApp
 
-    Tagespass --> "0..n" Leistung : offers
+    class OrtApp["Place"]
+    class ProduktApp["Produkt"]
+
+    Tagespass --> "0..n" Leistung : isRelatedTo
     Leistung --> "0..n" ProduktApp : itemOffered
     Leistung --> "0..n" OrtApp : areaServed
 ```
@@ -233,7 +231,6 @@ classDiagram
 |             | [description]                           | [description]                             | -                         |  
 |             | [channel]                               | [additionalProperty]❓channel            | -                         |
 |             | **Association type** - Verknüfpungen    |                                           | -                         |
-|             | [offers]                                | [offers discover]                         | -                         |
 |             | [itemOffered]                           | [itemOffered discover]                  | -                         |
 |             | [areaServed]                            | [areaServed discover]                   | -                         |
 |             | [isRelatedTo]                           | [isRelatedTo discover]                   | -                         |
