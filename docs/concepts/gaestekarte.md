@@ -27,7 +27,7 @@ graph TD
     OfferDinoPark -->|erhältlich bei| PlaceDinoPark[Park Dino]
 
     OfferNusstange --> |Angebot| ProductNusstange[Nusstange]
-    OfferNusstange --> |erhältlich bei| PlaceBeck
+    OfferNusstange --> |erhältlich bei| PlaceBeck[Bäckerei Beck]
     ProductNusstange --> |erhältlich bei| PlaceBeck
 
     Offer20RabattHipo --> |Angebot| ProductHipo[Eintritt Hipo Nationalpark]
