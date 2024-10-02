@@ -16,26 +16,26 @@ Bspw:
 ## Beispiel Gästekarte
 ``` mermaid
 graph TD
-    GuestCard[Gästekarte] -->|bietet| OfferGratis[Angebot Gratis]
-    GuestCard -->|bietet| Offer20Rabatt[Angebot 20% Rabatt]
+    GuestCard[Gästekarte] -->|bietet| OfferGratisDino[Angebot Gratis Dino Park]
+    GuestCard -->|bietet| Offer20RabattHipo[Angebot 20% Rabatt Nationalpark Hipo]
     GuestCard -->|bietet| OfferSauna[Angebot Gratis Sauna Eintritt]
+    GuestCard -->|bietet| OfferNusstange[Angebot Gratis Nussstange]
 
-    OfferGratis -->|Angebote| OfferDinoPark["Einritt Dino Park"]
-    OfferGratis -->|Angebote| ProductKaffee["Kaffee"]
-    OfferGratis -->|Angebote| ProductNusstange["Nusstange"]
+    OfferGratisDino -->|Angebot| OfferDinoPark["Einritt Dino Park"]
+    OfferGratisDino -->|erhältlich bei| PlaceDinoPark
 
     OfferDinoPark -->|erhältlich bei| PlaceDinoPark[Park Dino]
 
-    ProductNusstange -->|erhältlich bei|PlaceBeck
+    OfferNusstange --> |Angebot| ProductNusstange[Nusstange]
+    OfferNusstange --> |erhältlich bei| PlaceBeck
+    ProductNusstange --> |erhältlich bei| PlaceBeck
 
-    Offer20Rabatt -->|Angebote| ServiceB["Sauna-Eintritt"]
+    Offer20RabattHipo --> |Angebot| ProductHipo[Eintritt Hipo Nationalpark]
+    Offer20RabattHipo --> |erhältlich bei| PlaceHipo[Nationalpark Hipo]
 
-    Offer20Rabatt -->|erhältlich bei| PlaceOstPark[Alpine Abenteuerpark Ostschweiz]
-    Offer20Rabatt -->|erhältlich bei| PlaceHipo[Nationalpark Hipo]
-    Offer20Rabatt -->|erhältlich bei| PlaceSuperland[Superland Park]
+    OfferSauna --> |Angebot| ProductSauna[Eintritt Sauna Hotel Zweistein]
+    OfferSauna --> |erhältlich bei| PlaceHotel[Hotel Zweistein]
 
-    OfferSauna -->|erhältlich bei| PlaceHotelC[Sternenhotel]
-    OfferSauna -->|erhältlich bei| PlaceHotelB[Hotel Zweistein]
 ```
 
 ## Schema.org
@@ -71,12 +71,12 @@ graph TD
 
 !!! info "Hinweis"
 
-    Diese Properties werden im Contentdesk via Verknüpfungen gepflegt
+    Diese Properties werden im Contentdesk via Verknüpfungen gepflegt.
 
 !!! warning "Spezifische Properties / Attribut"
 
     Pro Gästekarte müssen spezifische Properties / Attribute gepflegt werden!
-    Bspw. AVS ID
+    Bspw. AVS ID, etc.
 
 ## Beispiele
 
