@@ -87,4 +87,4 @@ graph TD
 
 * [Glarnerland App]
 
-[Glarnerland App]: projects/glarnerlandApp.md
+[Glarnerland App]: ../projects/glarnerlandApp.md
