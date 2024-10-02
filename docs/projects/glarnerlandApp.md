@@ -262,23 +262,6 @@ classDiagram
 
 [itemReviewed discover]: https://docs.discover.swiss/dev/reference/dataschema/definition/infocenter-classes/Review/#properties
 
-## Schema
-
-### Schema.org
-
-#### Gästekarte Tagespass
-``` mermaid
-graph TD
-    Product[Product GuestCard]-->|isRelatedTo|Offer
-
-    Offer-->|itemOffered|Product
-    Offer-->|availableAtOrFrom|Place
-    Offer-->|offeredBy|Organization
-    
-    Organization-->|areaServed|Place
-    Organization-->|makesOffer|Offer
-```
-
 ## Offene Punkte / ToDo
 
 - [ ] discover.swiss 
