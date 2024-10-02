@@ -45,7 +45,7 @@ graph TD
     GuestCard -->|isRelatedTo| Offer
 
     Offer --> |itemOffered| Product[Product / Service / Event]
-    Offer --> |areaServed 0 ... n| Place
+    Offer --> |areaServed| Place
 
     Product --> |areaServed| Place
 ```
