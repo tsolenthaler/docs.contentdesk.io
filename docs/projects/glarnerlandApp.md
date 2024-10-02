@@ -9,13 +9,11 @@ hide:
 
 ## Konzepte
 
-* Empfehlung - [Reviews and recommendations]
 * Tagespass - [Gästekarte]
-* [Produkte und Angebote]
+* "Empfehlungen"-Liste bspw. Auflugstipps - via Tags bei discover.swiss
 
 [Reviews and recommendations]: ../concepts/reviews-and-recommendations.md
 [Gästekarte]: ../concepts/gaestekarte.md
-[Produkte und Angebote]: ../concepts/produkte-und-angebote.md
 
 ## Übersicht
 

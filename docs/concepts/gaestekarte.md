@@ -16,9 +16,9 @@ Bspw:
 ## Beispiel Gästekarte
 ``` mermaid
 graph TD
-    Product[Gästekarte] -->|bietet|OfferGratis[Angebot Gratis]
-    Product -->|bietet|Offer20Rabatt[Angebot 20% Rabatt]
-    Product -->|bietet|OfferSauna[Angebot Gratis Sauna Eintritt]
+    GuestCard[Gästekarte] -->|bietet| OfferGratis[Angebot Gratis]
+    GuestCard -->|bietet| Offer20Rabatt[Angebot 20% Rabatt]
+    GuestCard -->|bietet| OfferSauna[Angebot Gratis Sauna Eintritt]
 
     OfferGratis -->|Angebote| OfferDinoPark["Einritt Dino Park"]
     OfferGratis -->|Angebote| ProductKaffee["Kaffee"]
@@ -41,7 +41,7 @@ graph TD
 ## Schema.org
 ``` mermaid
 graph TD
-    Product -->|offers|Offer
+    GuestCard -->|isRelatedTo| Offer
 
     Offer -->|itemOffered| Product
     Offer -->|itemOffered| Service
@@ -59,6 +59,7 @@ graph TD
 
 ### Types
 
+* [GuestCard](../../schema/GuestCard)
 * [Product](../../schema/Place)
 * [Offer](../../schema/Offer)
 
@@ -66,8 +67,7 @@ graph TD
 
 * [offers](../../schema/offers)
 * [itemOffered](../../schema/itemOffered)
-* [availableAtOrFrom](../../schema/availableAtOrFrom)
-* *[offeredBy](../../schema/offeredBy)
+* [isRelatedTo](../../schema/isRelatedTo)
 
 ## Beispiele
 
@@ -75,7 +75,7 @@ graph TD
 
 - [Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
   
-    * Angebote [Offers]
+    * Angebote [isRelatedTo]
     
         * [20% Rabatt](https://demo.pim.tso.ch/#/enrich/product/856b935f-05e2-4f26-addc-33894f97b4f9)
         * [Gratis](https://demo.pim.tso.ch/#/enrich/product/8b42f340-85bb-4bd1-b9c5-d0e23887bd94)
