@@ -59,6 +59,9 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 # Page tree
 nav:
