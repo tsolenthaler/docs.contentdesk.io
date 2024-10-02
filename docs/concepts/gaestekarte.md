@@ -71,7 +71,12 @@ graph TD
 
 !!! info "Hinweis"
 
-    Diese Properties werdne im Contentdesk via Verknüpfungen gepflegt
+    Diese Properties werden im Contentdesk via Verknüpfungen gepflegt
+
+!!! warning "Spezifische Properties / Attribut"
+
+    Pro Gästekarte müssen spezifische Properties / Attribute gepflegt werden!
+    Bspw. AVS ID
 
 ## Beispiele
 
