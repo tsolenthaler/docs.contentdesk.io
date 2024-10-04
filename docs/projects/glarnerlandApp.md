@@ -282,15 +282,15 @@ classDiagram
 
 ## Demo Inhalt
 
-## Contentdesk.io Demo
+### Contentdesk.io Demo
 ``` mermaid
 graph TD
     Tagespass[<a href='https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d' target='_blank'>Gästekarte Tagespass</a>]
-    Tagespass -->|offers| OfferGratisDino["Gratis Dino Park Eintritt"]
-    Tagespass -->|offers| OffeGartisSauna["Gratis Sauna Eintritt Hotel Zweistein"]
-    Tagespass -->|offers| OffeBergbahn["20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg"]
-    Tagespass -->|offers| OffeGratisKaffe["Gratis Kaffe von Restaurant Vegi"]
-    Tagespass -->|offers| OffeGratisNusstange["Gratis Nusstange vom Beck"]
+    Tagespass -->|isRelatedTo| OfferGratisDino["Gratis Dino Park Eintritt"]
+    Tagespass -->|isRelatedTo| OffeGartisSauna["Gratis Sauna Eintritt Hotel Zweistein"]
+    Tagespass -->|isRelatedTo| OffeBergbahn["20% Rabatt auf Bergbahn-Fahrt auf den Sitzberg"]
+    Tagespass -->|isRelatedTo| OffeGratisKaffe["Gratis Kaffe von Restaurant Vegi"]
+    Tagespass -->|isRelatedTo| OffeGratisNusstange["Gratis Nusstange vom Beck"]
 
     OfferGratisDino -->|areaServed| PlaceDino["Park Dino"]
     OfferGratisDino -->|itemOffered| ProductDinoEintritt["Eintritt Dino Park"]
@@ -299,7 +299,7 @@ graph TD
     OffeGartisSauna -->|itemOffered| ProductSaunaEintritt["Eintritt Sauna Hotel Zweistein"]
 ```
 
-### Gästekarte
+#### Gästekarte
 - [Gästekarte Tagespass](https://demo.pim.tso.ch/#/enrich/product/74589a84-bfb9-4fcb-a086-a349ba10205d)
     * [isRelatedTo]
         * [Gratis Dino Park Eintritt](https://demo.pim.tso.ch/#/enrich/product/03274851-da78-4793-bf8d-3f6d7b85345a)
@@ -328,13 +328,13 @@ graph TD
             * Enthaltene Angebote [itemOffered]
                 * [Nussstange](https://demo.pim.tso.ch/#/enrich/product/a627ea92-fcf6-4bf7-9a44-1271bce41f3d)
 
-### Empfehlung
+#### Empfehlung
 
 Via Tags in Discover.swiss pflegen.
 Definieren welche Tags für welche Empfehlungs-Liste genutzt wird.
 Eigene können im Interface erstellt werden.
 
-## discover.swiss
+### discover.swiss
 
 - [Gästekarte Tagespass](https://partner-test.discover.swiss/infocenter/details/Product/ctd_74589a84-bfb9-4fcb-a086-a349ba10205d?tab=0)
     
