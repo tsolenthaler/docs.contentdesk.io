@@ -1,7 +1,7 @@
 
 # Project information
 site_name: Dokumentation
-site_url: https://docs.Contentdesk.io
+site_url: https://docs.contentdesk.io
 theme:
   name: material
   logo: assets/logo-contentdesk-blau.svg
