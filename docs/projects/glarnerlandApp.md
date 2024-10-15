@@ -391,7 +391,6 @@ Eigene können im Interface erstellt werden.
 
     * ???
 
-
 * Angebot
 
     * Tags für Bspw. Gratiseintritte (reduction-free) oder Reduktion mit Tourismuskarte (reduction-citycard)
