@@ -357,13 +357,13 @@ Eigene können im Interface erstellt werden.
 
 ## Datenpflege
 
-### Contentdesk.io
+### Bei Contentdesk.io
 
 * Gästekarte
 
     * AVS ID
     * Preis
-    * Freizeittyp (Discover.swiss Kategorie)
+    * Freizeittyp (Discover.swiss Kategorie) (leisure)
     * Gültig von 
     * Gültig bis
     * Verknüpfungen
@@ -374,7 +374,8 @@ Eigene können im Interface erstellt werden.
 
 * Angebot
 
-    * Freizeittyp (Discover.swiss Kategorie)
+    * AVS ID
+    * Freizeittyp (Discover.swiss Kategorie) (leisure)
     * Preis
     * Gültig von 
     * Gültig bis
@@ -384,7 +385,7 @@ Eigene können im Interface erstellt werden.
         * Angebot, wo es bezogen werden kann [areaServed]
 
 
-### discovers.swiss
+### Bei discovers.swiss
 
 * Gästekarte
 
@@ -398,4 +399,4 @@ Eigene können im Interface erstellt werden.
 
 * Empfehlungsliste
 
-    * definierte Tags setzten bei gewünschten Objekte (bspw. Place)
+    * definierte Tags setzten bei gewünschten Objekte (bspw. Place) - bspw. Tag Ausflugsziele (life-excursions)
