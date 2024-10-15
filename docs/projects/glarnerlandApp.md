@@ -367,6 +367,7 @@ Eigene können im Interface erstellt werden.
     * Freizeittyp (Discover.swiss Kategorie) (leisure)
     * Gültig von 
     * Gültig bis
+    * Preis-Informationen (offers) - (Bedingungen bei discover.swiss und im Beschreibungs-Text!)
     * Verknüpfungen
 
         * ist verbunden mit [isRelatedTo] (mehrere Angebot)
@@ -380,6 +381,7 @@ Eigene können im Interface erstellt werden.
     * Preis
     * Gültig von 
     * Gültig bis
+    * Preis-Informationen (offers) / (Bedingungen bei discover.swis)
     * Verknüpfungen
 
         * enthaltene Angebote [itemOffered] (nur 1 Angebot zu 1 Produkt)
