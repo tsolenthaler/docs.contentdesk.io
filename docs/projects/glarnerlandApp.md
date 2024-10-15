@@ -273,8 +273,8 @@ classDiagram
 - [ ] contentdesk.io
     * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
-    * [ ] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
-    * [ ] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
+    * [x] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
+    * [x] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
     * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig
     * [x] Channel --> entfernen
     * [x] Zugang Connect ---> discover.swiss
@@ -283,7 +283,7 @@ classDiagram
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
     * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org
-    * [ ] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
+    * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
 
 ## Demo Inhalt
 
@@ -353,3 +353,49 @@ Eigene können im Interface erstellt werden.
 ### Design App
 
 [Design figma](https://www.figma.com/design/OcvSQlgOO70u17wXhO8EJO/Glarnerland?node-id=1156-26321&node-type=frame)
+
+
+## Datenpflege
+
+### Contentdesk.io
+
+* Gästekarte
+
+    * AVS ID
+    * Preis
+    * Freizeittyp (Discover.swiss Kategorie)
+    * Gültig von 
+    * Gültig bis
+    * Verknüpfungen
+
+        * ist verbunden mit [isRelatedTo] (Angebot)
+        * Angebot, wo es bezogen werden kann [areaServed]
+
+
+* Angebot
+
+    * Freizeittyp (Discover.swiss Kategorie)
+    * Preis
+    * Gültig von 
+    * Gültig bis
+    * Verknüpfungen
+
+        * enthaltene Angebote [itemOffered] 
+        * Angebot, wo es bezogen werden kann [areaServed]
+
+
+### discovers.swiss
+
+* Gästekarte
+
+    * ???
+
+
+* Angebot
+
+    * Tags
+
+
+* Empfehlungsliste
+
+    * definierte Tags setzten bei gewünschten Objekte (bspw. Place)
