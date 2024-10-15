@@ -262,28 +262,27 @@ classDiagram
 ## Offene Punkte / ToDo
 
 - [ ] discover.swiss 
-    * [ ] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
-    * [ ] [isRelatedTo] --> Beziehung von GuestCard zu Offer 
+    * [x] Type [GuestCard] --> Product mit AdditonalTypes GuestCard
+    * [x] [isRelatedTo] --> Beziehung von GuestCard zu Offer 
     * [x] [Offer] - Angebote
-    * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
+    * [x] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
     * [x] Empfehlungen --> via Tags - muss definiert werden welche genutzt werden sollen!
     * [x] Zuweistung an Projekt bspw. vgl-app
     * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
+    * [x] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig (Bspw. Ausflugsziele (life-excursions))
 
 - [ ] contentdesk.io
     * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
     * [x] offeredBy direkt zu Place! keine Organization dazwischen
     * [x] Demo Inhalte erfassen 3 Tagespasse mit mehreren Angebote bei itemOffered und Place bei areaServed
     * [x] Demo Inhalte für 3 Empfehlungen (bspw. Ausflugstipps)
-    * [ ] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig
-    * [x] Channel --> entfernen
     * [x] Zugang Connect ---> discover.swiss
     * [x] [offers] mit [isRelatedTo] ersetzen
     * [x] Produtke und Angebote immer mit Datum gütlig von und gültig bis (Pflichtfelder)
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
-    * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org
+    * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
    
 
 ## Demo Inhalt
@@ -395,7 +394,7 @@ Eigene können im Interface erstellt werden.
 
 * Angebot
 
-    * Tags
+    * Tags für Bspw. Gratiseintritte (reduction-free) oder Reduktion mit Tourismuskarte (reduction-citycard)
 
 
 * Empfehlungsliste
