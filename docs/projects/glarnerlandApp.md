@@ -368,7 +368,7 @@ Eigene können im Interface erstellt werden.
     * Gültig bis
     * Verknüpfungen
 
-        * ist verbunden mit [isRelatedTo] (Angebot)
+        * ist verbunden mit [isRelatedTo] (mehrere Angebot)
         * Angebot, wo es bezogen werden kann [areaServed]
 
 
@@ -381,8 +381,8 @@ Eigene können im Interface erstellt werden.
     * Gültig bis
     * Verknüpfungen
 
-        * enthaltene Angebote [itemOffered] 
-        * Angebot, wo es bezogen werden kann [areaServed]
+        * enthaltene Angebote [itemOffered] (nur 1 Angebot zu 1 Produkt)
+        * Angebot, wo es bezogen werden kann [areaServed] (nur 1 Angebot zu 1 Standort)
 
 
 ### Bei discovers.swiss
