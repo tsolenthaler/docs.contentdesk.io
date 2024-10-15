@@ -397,8 +397,10 @@ Eigene können im Interface erstellt werden.
 * Angebot
 
     * Tags für Bspw. Gratiseintritte (reduction-free) oder Reduktion mit Tourismuskarte (reduction-citycard)
+    * Kampagnen-Tags von VGL: 5 %(vgl_glp-5)
 
 
 * Empfehlungsliste
 
     * definierte Tags setzten bei gewünschten Objekte (bspw. Place) - bspw. Tag Ausflugsziele (life-excursions)
+    * Kampagnen-Tags von VGL definiert: Home_3 (vgl_home-3), Home_1 (vgl_home-1), Home_2 (vgl_home-2)
