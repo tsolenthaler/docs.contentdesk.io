@@ -268,7 +268,8 @@ classDiagram
     * [ ] [itemOffered] --> Verknüpfte Produkte / Service bei discover.swiss?
     * [x] [areaServed] --> Verknüfpung von Offer zu Place
     * [x] Empfehlungen --> via Tags - muss definiert werden welche genutzt werden sollen!
-    * [ ] Zuweistung an Projekt bspw. vgl_app und vlg_web
+    * [x] Zuweistung an Projekt bspw. vgl-app
+    * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
 
 - [ ] contentdesk.io
     * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
@@ -283,7 +284,7 @@ classDiagram
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
     * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org
-    * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
+   
 
 ## Demo Inhalt
 
