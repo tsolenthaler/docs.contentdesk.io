@@ -283,6 +283,7 @@ classDiagram
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
     * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
+    * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
    
 
 ## Demo Inhalt
