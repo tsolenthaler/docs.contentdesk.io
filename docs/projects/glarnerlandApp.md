@@ -271,6 +271,9 @@ classDiagram
     * [x] Zuweistung an Projekt bspw. vgl-app
     * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
     * [x] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig (Bspw. Ausflugsziele (life-excursions))
+    * [ ] Klassifikation / Kategorie werde nicht übernommen
+    * [ ] Öffnungszeiten mit Zeitzonen werden nicht korrekt übernommen
+    * [ ] Call to Action Button und Link für App (+ Webseite) übernehmen
 
 - [ ] contentdesk.io
     * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
