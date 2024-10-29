@@ -285,7 +285,7 @@ classDiagram
     * [x] Produtke und Angebote immer mit Datum gütlig von und gültig bis (Pflichtfelder)
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
-    * [ ] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
+    * [x] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
     * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
    
 
