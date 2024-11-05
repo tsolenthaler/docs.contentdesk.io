@@ -287,8 +287,12 @@ classDiagram
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
     * [x] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
     * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
-    * [ ] isAccessibleForFree und publicAccess - Demo Inhalt
-    * [ ] publicTransport und parking
+    * [x] isAccessibleForFree und publicAccess - Demo Inhalt
+    * [x] publicTransport und parking
+    * [ ] Skilifte testen
+    * [ ] Langlaufloipen testen --> Poi mit Pfad/Strecke/Weg
+    * [x] AVS Object ID avs_object_id --> Zahl
+    * [x] Attributes Options Übersetzungen mit Tags bspw. PreisKategorien, und paymentAccepted
    
 
 ## Demo Inhalt
