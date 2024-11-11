@@ -32,6 +32,8 @@ extra_css:
 plugin:
   - search
   - tags:
+      enabled: true
+      tags: true
       tags_file: tags.md
   - awesome-pages
   - git-revision-date-localized:
