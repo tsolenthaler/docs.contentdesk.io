@@ -291,7 +291,7 @@ classDiagram
     * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
     * [x] isAccessibleForFree und publicAccess - Demo Inhalt
     * [x] publicTransport und parking
-    * [x] AVS Object ID avs_object_id --> Zahl
+    * [x] AVS Object ID avs_object_id --> Number bspw. 32
     * [x] Attributes Options Übersetzungen mit Tags bspw. PreisKategorien, und paymentAccepted
    
 
