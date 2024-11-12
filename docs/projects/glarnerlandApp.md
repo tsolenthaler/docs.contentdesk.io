@@ -273,7 +273,9 @@ classDiagram
     * [x] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig (Bspw. Ausflugsziele (life-excursions))
     * [ ] Klassifikation / Kategorie werde nicht übernommen
     * [ ] Öffnungszeiten mit Zeitzonen werden nicht korrekt übernommen
-    * [ ] Call to Action Button und Link für App (+ Webseite) übernehmen
+    * [x] Call to Action Button und Link für App (+ Webseite) übernehmen
+    * [ ] Skilifte testen
+    * [ ] Langlaufloipen testen --> Poi mit Pfad/Strecke/Weg
 
 - [ ] contentdesk.io
     * [x] Angebote pro Gästekarte (Tagepass) / nicht teilen über mehrere Tagespässe!!
@@ -289,8 +291,6 @@ classDiagram
     * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
     * [x] isAccessibleForFree und publicAccess - Demo Inhalt
     * [x] publicTransport und parking
-    * [ ] Skilifte testen
-    * [ ] Langlaufloipen testen --> Poi mit Pfad/Strecke/Weg
     * [x] AVS Object ID avs_object_id --> Zahl
     * [x] Attributes Options Übersetzungen mit Tags bspw. PreisKategorien, und paymentAccepted
    
