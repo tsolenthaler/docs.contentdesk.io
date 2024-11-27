@@ -271,8 +271,8 @@ classDiagram
     * [x] Zuweistung an Projekt bspw. vgl-app
     * [x] Tags für 20% oder Gratis, etc. bei discover.swiss pflegen
     * [x] Kampagnen-Tags für Empfehlung-Liste --> definieren der Tags notwendig (Bspw. Ausflugsziele (life-excursions))
-    * [ ] Klassifikation / Kategorie werde nicht übernommen
-    * [ ] Öffnungszeiten mit Zeitzonen werden nicht korrekt übernommen
+    * [x] Klassifikation / Kategorie werde nicht übernommen
+    * [x] Öffnungszeiten mit Zeitzonen werden nicht korrekt übernommen
     * [x] Call to Action Button und Link für App (+ Webseite) übernehmen
     * [ ] Skilifte testen
     * [ ] Langlaufloipen testen --> Poi mit Pfad/Strecke/Weg
@@ -293,6 +293,7 @@ classDiagram
     * [x] publicTransport und parking
     * [x] AVS Object ID avs_object_id --> Number bspw. 32
     * [x] Attributes Options Übersetzungen mit Tags bspw. PreisKategorien, und paymentAccepted
+    * [x] AVS QR-Code Check (avs_qr_reader) --> Self checking via QR-Code erstellen
    
 
 ## Demo Inhalt
