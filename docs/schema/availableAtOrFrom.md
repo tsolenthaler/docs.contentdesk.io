@@ -10,7 +10,8 @@ hide:
 
 Verknüpfung
 
-Definition: Dieses Attribut wird verwendet, um anzugeben, wo ein Produkt oder eine Dienstleistung verfügbar ist. Es kann sich um eine physische Adresse, eine URL oder einen anderen Ort handeln, an dem das Produkt oder die Dienstleistung erworben werden kann.
+## Definition
+Dieses Attribut wird verwendet, um anzugeben, wo ein Produkt oder eine Dienstleistung verfügbar ist. Es kann sich um eine physische Adresse, eine URL oder einen anderen Ort handeln, an dem das Produkt oder die Dienstleistung erworben werden kann.
 
 ## Beispiele
 
@@ -45,4 +46,10 @@ flowchart LR
 
 ## Ähnliche Verknüpfungen
 
-[areaServed](/areaServed) - 
+[areaServed](/schema/areaServed)
+
+## Hinweis
+
+!!! info "Hinweis"
+    Bei wird areaServed statt availableAtOrFrom für die Verknüpfung der Produkte mit einem POI verwendet.
+    https://docs.discover.swiss/dev/concepts/offers/

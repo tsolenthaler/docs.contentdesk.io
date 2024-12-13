@@ -12,7 +12,8 @@ Property
 
 Verknüpfung
 
-Definition: Dieses Attribut beschreibt das geografische Gebiet, in dem ein Dienst oder ein Produkt verfügbar ist. Es kann sich um ein Land, eine Region oder eine Stadt handeln.
+## Definition
+Dieses Attribut beschreibt das geografische Gebiet, in dem ein Dienst oder ein Produkt verfügbar ist. Es kann sich um ein Land, eine Region oder eine Stadt handeln.
 
 ## Beispiel
 
@@ -37,4 +38,12 @@ flowchart LR
 
 ## Ähnliche Verknüpfungen
 
-* [/availableAtOrFrom](availableAtOrFrom)
+* [availableAtOrFrom](/schema/availableAtOrFrom)
+
+
+## Hinweis
+
+!!! info "Hinweis"
+    Bei wird areaServed statt availableAtOrFrom für die Verknüpfung der Produkte mit einem POI verwendet.
+    https://docs.discover.swiss/dev/concepts/offers/
+
