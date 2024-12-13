@@ -12,4 +12,29 @@ Property
 
 Verknüpfung
 
+Definition: Dieses Attribut beschreibt das geografische Gebiet, in dem ein Dienst oder ein Produkt verfügbar ist. Es kann sich um ein Land, eine Region oder eine Stadt handeln.
+
 ## Beispiel
+
+### Product / Place
+```mermaid
+flowchart LR
+    Product(Produkt) -->|areaServed| Place(POI)
+```
+
+``` json
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Beispiel Produkt",
+  "availableAtOrFrom": {
+    "@type": "Place",
+    "name": "Beispiel lokaler Shop / Laden",
+    "url": "https://www.beispielshop.de"
+  }
+}
+```
+
+## Ähnliche Verknüpfungen
+
+* [/availableAtOrFrom](availableAtOrFrom)

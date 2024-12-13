@@ -8,10 +8,18 @@ hide:
 # availableAtOrFrom
 [https://schema.org/availableAtOrFrom](https://schema.org/availableAtOrFrom)
 
+Verknüpfung
+
+Definition: Dieses Attribut wird verwendet, um anzugeben, wo ein Produkt oder eine Dienstleistung verfügbar ist. Es kann sich um eine physische Adresse, eine URL oder einen anderen Ort handeln, an dem das Produkt oder die Dienstleistung erworben werden kann.
 
 ## Beispiele
 
-### Erhältlich bei oder von - availableAtOrFrom
+### Produkt ist bei folgenden POI(Place) verfügbar
+```mermaid
+flowchart LR
+    Product(Produkt) -->|availableAtOrFrom| Place(POI)
+```
+
 ``` json
 {
   "@context": "https://schema.org",
@@ -34,3 +42,7 @@ hide:
 }
 
 ```
+
+## Ähnliche Verknüpfungen
+
+[areaServed](/areaServed) - 
