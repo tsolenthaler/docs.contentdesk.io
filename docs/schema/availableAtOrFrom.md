@@ -48,7 +48,7 @@ flowchart LR
 
 [areaServed](/schema/areaServed)
 
-## Hinweis
+## Hinweise
 
 !!! info "Hinweis"
     Bei wird areaServed statt availableAtOrFrom für die Verknüpfung der Produkte mit einem POI verwendet.
