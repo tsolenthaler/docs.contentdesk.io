@@ -25,14 +25,14 @@ flowchart LR
 ``` json
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Beispiel Produkt",
-  "availableAtOrFrom": {
+  "@type": "Service",
+  "name": "Beispiel Dienst",
+  "areaServed": {
     "@type": "Place",
-    "name": "Beispiel lokaler Shop / Laden",
-    "url": "https://www.beispielshop.de"
+    "name": "Schweiz"
   }
 }
+
 ```
 
 ## Ähnliche Verknüpfungen
