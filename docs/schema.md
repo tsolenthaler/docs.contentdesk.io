@@ -1,5 +1,8 @@
 # Schema
 
+* Types
+* Properties
+
 Liste / Baum der Typen 
 
 Suchen nach einem Type oder Property
