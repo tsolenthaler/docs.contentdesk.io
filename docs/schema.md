@@ -14,4 +14,10 @@ https://docs.discover.swiss/dev/concepts/content-organization/types-and-addition
 
 ### Übersicht
 
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
 {{ read_csv('assets/tables/test.csv') }}
