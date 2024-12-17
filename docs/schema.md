@@ -9,4 +9,4 @@ Suchen nach einem Type oder Property
 [Suchefeld nach Typ]: ?q=Type
 
 
-{{ read_csv('assets/tables/types.csv') }}
+{{ read_csv('assets/tables/test.csv') }}
