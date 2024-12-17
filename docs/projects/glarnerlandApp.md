@@ -288,7 +288,7 @@ classDiagram
     * [x] Freizeittypen bei Produkt und Angebot
     * [ ] sitios / ginto läuft über discover.swiss (Tags?)
     * [x] discount (Rabatt in Prozenz) bei Angebot möglich? gemäss Schema.org - Abklären (vorerst einfach via Tags bei discover.swiss)
-    * [ ] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
+    * [x] Freizeittyp (leisure) Discover.swiss Kateogiren an discover.swiss übergeben
     * [x] isAccessibleForFree und publicAccess - Demo Inhalt
     * [x] publicTransport und parking
     * [x] AVS Object ID avs_object_id --> Number bspw. 32
