@@ -7,3 +7,6 @@ Suchen nach einem Type oder Property
 [Suchefeld nach Typ] (Input-Feld)
 
 [Suchefeld nach Typ]: ?q=Type
+
+
+{{ read_csv('types.csv') }}
