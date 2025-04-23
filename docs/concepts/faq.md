@@ -4,17 +4,24 @@
 
 ### Types
 
-* [https://schema.org/FAQPage]
-* [https://schema.org/QAPage]
-* [https://schema.org/Question]
-* [https://schema.org/Answer]
+* [https://schema.org/FAQPage](https://schema.org/FAQPage)
+* [https://schema.org/QAPage](https://schema.org/QAPage)
+* [https://schema.org/Question](https://schema.org/Question)
+* [https://schema.org/Answer](https://schema.org/Answer)
 
 ## Links
-[https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=de]
+[https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=de](https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=de)
 
-[https://honeynjam.com/tools/schema-markup-generators/qapage]
+[https://honeynjam.com/tools/schema-markup-generators/qapage](https://honeynjam.com/tools/schema-markup-generators/qapage)
 
 ## Konzept
+``` mermaid
+graph TD
+    FAQPage -->|mainEntity| Question
+    Question --> |acceptedAnswer| Answer
+```
+
+
 ``` mermaid
 graph TD
     FAQPage -->|mainEntity| Question1
