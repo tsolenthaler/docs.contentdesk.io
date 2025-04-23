@@ -17,8 +17,12 @@ https://honeynjam.com/tools/schema-markup-generators/qapage
 ## Konzept
 ``` mermaid
 graph TD
-    FAQPage -->|isRelatedTo| Question
-    Question --> |acceptedAnswer| Answer2
+    FAQPage -->|mainEntity| Question1
+    FAQPage -->|mainEntity| Question2
+    FAQPage -->|mainEntity| Question3
+    Question1 --> |acceptedAnswer| Answer1
+    Question2 --> |acceptedAnswer| Answer3
+    Question3 --> |acceptedAnswer| Answer5
 ```
 
 
