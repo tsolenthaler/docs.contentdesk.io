@@ -10,7 +10,7 @@
 * [https://schema.org/Answer](https://schema.org/Answer)
 
 ## Links
-[https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=de](https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=de)
+[https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=de](https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=de)
 
 [https://honeynjam.com/tools/schema-markup-generators/qapage](https://honeynjam.com/tools/schema-markup-generators/qapage)
 
@@ -31,6 +31,7 @@ graph TD
     Question2 --> |acceptedAnswer| Answer3
     Question3 --> |acceptedAnswer| Answer5
 ```
+
 
 
 ## Examples 
