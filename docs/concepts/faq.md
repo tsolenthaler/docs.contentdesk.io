@@ -32,7 +32,15 @@ graph TD
     Question3 --> |acceptedAnswer| Answer5
 ```
 
+### Properties
 
+* name
+* text
+
+!!! warning
+
+    Question und Answer verwenden "https://schema.org/text" nicht "https://schema.org/description"!
+    Wie alle https://schema.org/CreativeWork
 
 ## Examples 
 ``` JSON
