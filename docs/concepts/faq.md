@@ -4,25 +4,26 @@
 
 ### Types
 
-* [https://schema.org/FAQPage](https://schema.org/FAQPage)
-* [https://schema.org/QAPage](https://schema.org/QAPage)
-* [https://schema.org/Question](https://schema.org/Question)
-* [https://schema.org/Answer](https://schema.org/Answer)
+- [https://schema.org/FAQPage](https://schema.org/FAQPage)
+- [https://schema.org/QAPage](https://schema.org/QAPage)
+- [https://schema.org/Question](https://schema.org/Question)
+- [https://schema.org/Answer](https://schema.org/Answer)
 
 ## Links
+
 [https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=de](https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=de)
 
 [https://honeynjam.com/tools/schema-markup-generators/qapage](https://honeynjam.com/tools/schema-markup-generators/qapage)
 
 ## Konzept
-``` mermaid
+
+```mermaid
 graph TD
     FAQPage -->|mainEntity| Question
     Question --> |acceptedAnswer| Answer
 ```
 
-
-``` mermaid
+```mermaid
 graph TD
     FAQPage -->|mainEntity| Question1
     FAQPage -->|mainEntity| Question2
@@ -34,45 +35,35 @@ graph TD
 
 ### Properties
 
-* name
-* text
+- name
+- text
 
 !!! warning
 
     Question und Answer verwenden "https://schema.org/text" nicht "https://schema.org/description"!
     Wie alle https://schema.org/CreativeWork
 
-## Examples 
-``` JSON
+## Examples
+
+```JSON
 {
   "@context": "https://schema.org",
-  "@type": "QAPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Was ist Schema.org?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Schema.org ist eine gemeinsame Vokabularsammlung, die von Suchmaschinen verwendet wird, um strukturierte Daten auf Webseiten zu kennzeichnen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wie verwende ich JSON-LD?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JSON-LD kann in den <script> Tags im <head> oder <body> Ihrer HTML-Seite eingebettet werden, um strukturierte Daten bereitzustellen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was sind die Vorteile von strukturierten Daten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Strukturierte Daten helfen Suchmaschinen, den Inhalt Ihrer Seite besser zu verstehen, was zu einer besseren Sichtbarkeit in den Suchergebnissen führen kann."
-      }
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How to find an apprenticeship?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>We provide an official service to search through available apprenticeships. To get started, create an account here, specify the desired region, and your preferences. You will be able to search through all officially registered open apprenticeships.</p>"
     }
-  ]
+    }, {
+      "@type": "Question",
+      "name": "Whom to contact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact the apprenticeship office through our official phone hotline above, or with the web-form below. We generally respond to written requests within 7-10 days."
+      }
+    }]
 }
 ```
 
