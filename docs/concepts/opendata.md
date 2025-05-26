@@ -2,7 +2,7 @@
 
 
 ```mermaid
-graph TD;
+graph LR;
     A[Git Repositiory] --> B[Git Commit]
     B --> C[GitHub Action]
     C --> E[GitHub Pages]
