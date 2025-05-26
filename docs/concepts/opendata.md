@@ -1,6 +1,26 @@
 # OpenData Portal
 
 
+
+```mermaid
+graph LR;
+    A[Contentdesk Instanz] -->|API| B[opendata.xy.contentdesk.io]
+```
+
+* Alle Objekte die als CC-Lizenz (bspw. cc by sa, etc) defineirt sind
+* Vollständig
+* und aktive
+* Jeden Tag um 00:00 Uhr
+
+
+```mermaid
+graph LR;
+    A[Contentdesk Instanz] -->|extract via API| B[opendata.xy.contentdesk.io]
+    B -->|transform| C[schema.org JSON-LD]
+    C -->|load| D[create CSV, RSS]
+    D -->|deploy| E[create static Sites]
+```
+
 ```mermaid
 graph LR;
     A[lokal Git] -->|Commit| B[GitHub Repositiory]
