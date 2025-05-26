@@ -1,5 +1,13 @@
 # OpenData Portal
 
+
+```mermaid
+graph TD;
+    A[Git Repositiory] --> B[Git Commit]
+    B --> C[GitHub Action]
+    C --> E[GitHub Pages]
+```
+
 Prozess Open Data
 
 ```mermaid
