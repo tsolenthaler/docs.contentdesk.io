@@ -1,0 +1,6 @@
+id,label,parent
+Place,Place,Thing
+Thing,Thing,Thing
+Accommodation,Accommodation,Place
+Apartment,Apartment,Accommodation
+House,House,Accommodation
