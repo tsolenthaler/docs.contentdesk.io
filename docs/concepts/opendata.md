@@ -14,7 +14,7 @@ graph LR;
 
 
 ```mermaid
-graph LR;
+graph TD;
     A[Contentdesk Instanz] -->|extract via API| B[opendata.xy.contentdesk.io]
     B -->|transform| C[schema.org JSON-LD]
     C -->|load| D[create CSV, RSS]
