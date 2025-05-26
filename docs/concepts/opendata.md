@@ -3,9 +3,9 @@
 
 ```mermaid
 graph LR;
-    A[Git Repositiory] --> B[Git Commit]
+    A[lokal Git] -->|Commit| B[GitHub Repositiory]
     B --> C[GitHub Action]
-    C --> E[GitHub Pages]
+    C -->|deploy| D[GitHub Pages]
 ```
 
 Prozess Open Data
